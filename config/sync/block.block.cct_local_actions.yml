@@ -1,0 +1,20 @@
+uuid: 131f7848-3997-4be1-a7d0-d55c48670418
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cct
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: cct_local_actions
+theme: cct
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
