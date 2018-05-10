@@ -1,0 +1,36 @@
+uuid: 404158a1-3faa-47ac-92b8-dd8598421b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.demo_application_evaluation
+  enforced:
+    module:
+      - webform_demo_application_evaluation
+  module:
+    - webform
+  theme:
+    - bartik
+_core:
+  default_config_hash: gE26BSRtFDmJXDpbW9BnqUNHTsfxD3A0u37bnAEIFH8
+id: bartik_webform_demo_application_evaluation
+theme: bartik
+region: content
+weight: 5
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Demo: Application Evaluation'
+  provider: webform
+  label_display: '0'
+  webform_id: demo_application_evaluation
+  default_data: ''
+visibility:
+  webform:
+    id: webform
+    webforms:
+      demo_application: demo_application
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
