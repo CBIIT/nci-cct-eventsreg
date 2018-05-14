@@ -1,0 +1,24 @@
+uuid: bdd6ed5f-6a48-4fba-92dd-0a86ea7d7c9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - cct
+_core:
+  default_config_hash: MjMChFykEa-4UxdnGstVk1FcXqwUF3p_GBJLIFT3_XI
+id: cct_group_operations
+theme: cct
+region: sidebar_first
+weight: -20
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility: {  }
