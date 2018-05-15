@@ -1,0 +1,42 @@
+uuid:
+  -
+    value: 1f6c38f6-b9a1-4fa9-9b99-bc0d7166fb63
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: organization
+    target_type: group_type
+    target_uuid: b57e16c4-8654-44fe-8ad8-4bcf7e46b75e
+label:
+  -
+    value: 'Center for Cancer Training'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-05-15T19:38:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-05-15T19:50:51+00:00'
+    format: 'Y-m-d\TH:i:sP'
+path:
+  -
+    alias: /cct
+default_langcode:
+  -
+    value: true
+field_organization_web_site:
+  -
+    uri: 'https://www.cancer.gov/grants-training/training/at-nci'
+    title: 'Cancer Training at NCI'
+    options: {  }
+_content_sync:
+  entity_type: group
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

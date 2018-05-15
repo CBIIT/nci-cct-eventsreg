@@ -1,0 +1,53 @@
+uuid:
+  -
+    value: 1bb31d8d-7382-403e-93b6-7c0923ac6bae
+langcode:
+  -
+    value: en
+preferred_langcode:
+  -
+    value: en
+preferred_admin_langcode: {  }
+name:
+  -
+    value: ''
+mail:
+  value: null
+timezone:
+  -
+    value: ''
+status:
+  value: '0'
+created:
+  -
+    value: '2018-05-10T15:24:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-05-10T15:24:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+access:
+  -
+    value: '1970-01-01T00:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+login:
+  -
+    value: '1970-01-01T00:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+init: {  }
+roles:
+  - anonymous
+default_langcode:
+  -
+    value: true
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+user_picture: {  }
+_content_sync:
+  entity_type: user
+pass:
+  value: null
+  pre_hashed: true

@@ -1,0 +1,57 @@
+uuid:
+  -
+    value: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+langcode:
+  -
+    value: en
+preferred_langcode:
+  -
+    value: en
+preferred_admin_langcode: {  }
+name:
+  -
+    value: admin
+mail:
+  value: chris.kneisler@nih.gov
+timezone:
+  -
+    value: America/New_York
+status:
+  value: '1'
+created:
+  -
+    value: '2018-05-10T15:24:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-05-10T15:29:53+00:00'
+    format: 'Y-m-d\TH:i:sP'
+access:
+  -
+    value: '2018-05-15T20:45:42+00:00'
+    format: 'Y-m-d\TH:i:sP'
+login:
+  -
+    value: '2018-05-15T18:40:32+00:00'
+    format: 'Y-m-d\TH:i:sP'
+init:
+  -
+    value: chris.kneisler@nih.gov
+roles:
+  - authenticated
+  - administrator
+default_langcode:
+  -
+    value: true
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+user_picture: {  }
+_content_sync:
+  entity_type: user
+  entity_dependencies: {  }
+pass:
+  value: $S$E0w0ipZMQAhecezHXKt5Ws7MhODWexLioJdgdGtl6D6ZPz3uXqxT
+  pre_hashed: true
