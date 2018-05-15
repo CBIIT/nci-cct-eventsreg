@@ -1,0 +1,38 @@
+uuid: d3b7a4eb-79a3-4098-b3df-44f99f1570a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.organization.field_organization_web_site
+    - group.type.organization
+  module:
+    - link
+id: group.organization.default
+targetEntityType: group
+bundle: organization
+mode: default
+content:
+  field_organization_web_site:
+    weight: -4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

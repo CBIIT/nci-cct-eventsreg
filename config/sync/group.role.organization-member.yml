@@ -1,0 +1,30 @@
+uuid: c5761704-ff60-49ce-ac76-e78f0d4a7c15
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.organization
+id: organization-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: organization
+permissions_ui: true
+permissions:
+  0: 'view group'
+  1: 'create group_node:article entity'
+  2: 'delete any group_node:article entity'
+  3: 'delete own group_node:article entity'
+  4: 'update any group_node:article entity'
+  5: 'update own group_node:article entity'
+  6: 'view group_node:article entity'
+  7: 'view unpublished group_node:article entity'
+  8: 'create group_node:article content'
+  9: 'delete any group_node:article content'
+  10: 'delete own group_node:article content'
+  11: 'update any group_node:article content'
+  12: 'update own group_node:article content'
+  13: 'view group_node:article content'
+  15: 'view group_membership content'
+  16: 'access group_node overview'

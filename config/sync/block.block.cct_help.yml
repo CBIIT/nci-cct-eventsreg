@@ -1,6 +1,6 @@
 uuid: 95c63e6b-af03-47b4-865b-069458e56b14
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: cct_help
 theme: cct
 region: content
-weight: -30
+weight: -8
 provider: null
 plugin: help_block
 settings:
