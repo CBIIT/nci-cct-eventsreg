@@ -1,0 +1,23 @@
+uuid: 2cd2b827-ecb1-4f27-b116-2f7440c2b833
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_home_link
+    - node.type.event
+  module:
+    - link
+id: node.event.field_event_home_link
+field_name: field_event_home_link
+entity_type: node
+bundle: event
+label: 'Event Home Link'
+description: 'The relative path to the home page for this event. (i.e. /<organization code>/<event-name>)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 0
+field_type: link

@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.group.organization.field_code
+    - field.field.group.organization.field_group_home_page
     - field.field.group.organization.field_organization_web_site
     - group.type.organization
   module:
@@ -12,6 +14,30 @@ targetEntityType: group
 bundle: organization
 mode: default
 content:
+  field_code:
+    weight: -2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_group_home_page:
+    weight: -3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_organization_web_site:
     weight: -4
     label: above

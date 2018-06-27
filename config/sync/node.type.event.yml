@@ -1,0 +1,18 @@
+uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'This is a listing of events hosted by this website. Each event will have it''s own website and url.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

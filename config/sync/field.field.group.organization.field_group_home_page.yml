@@ -1,0 +1,23 @@
+uuid: c9d4ace1-5d10-4048-a64d-fb450b397fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_home_page
+    - group.type.organization
+  module:
+    - link
+id: group.organization.field_group_home_page
+field_name: field_group_home_page
+entity_type: group
+bundle: organization
+label: 'Organization Home Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

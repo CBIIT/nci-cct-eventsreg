@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.group.organization.field_code
+    - field.field.group.organization.field_group_home_page
     - field.field.group.organization.field_organization_web_site
     - group.type.organization
   module:
@@ -13,6 +15,22 @@ targetEntityType: group
 bundle: organization
 mode: default
 content:
+  field_code:
+    weight: 33
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_group_home_page:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_organization_web_site:
     weight: 31
     settings:

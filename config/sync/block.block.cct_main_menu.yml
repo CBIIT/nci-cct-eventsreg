@@ -13,7 +13,7 @@ _core:
 id: cct_main_menu
 theme: cct
 region: navigation_collapsible
-weight: -6
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -23,4 +23,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/organizations\r\n/events"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,26 @@
+uuid: f09bcd27-51db-4eeb-8b01-2b4bcf1d9371
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_published
+    - node.type.event
+  module:
+    - datetime_range
+id: node.event.field_event_published
+field_name: field_event_published
+entity_type: node
+bundle: event
+label: 'Event Published'
+description: 'Date Range Website will be published. (i.e. Available online)'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+60'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

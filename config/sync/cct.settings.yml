@@ -2,18 +2,18 @@ schemas:
   bootstrap: 8000
   cct: 8000
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: 'http://localhost:8080/themes/cct/favicon.ico'
-  use_default: 1
+  mimetype: image/png
+  path: 'public://favicon-16x16.png'
+  url: 'http://default/themes/cct/favicon.ico'
+  use_default: 0
 features:
   comment_user_picture: 1
   comment_user_verification: 1
-  favicon: 1
+  favicon: 0
   node_user_picture: 1
 logo:
-  path: 'public://logos/nci-logo-full.__v1.svg'
+  path: sites/default/files/logos/nci-logo-full.__v1.svg
   url: ''
-  use_default: 0
-cdn_jsdelivr_theme: bootstrap_theme
+  use_default: 1
+cdn_jsdelivr_theme: bootstrap
 table: ''
