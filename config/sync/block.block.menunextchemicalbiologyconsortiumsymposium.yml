@@ -11,7 +11,7 @@ dependencies:
 id: menunextchemicalbiologyconsortiumsymposium
 theme: cct
 region: header
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:menu---next---chemical-biol'
 settings:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/next/chemical-biology-consortium-symposium\r\n/next/chemical-biology-consortium-symposium/*"
+    pages: "/next/chemical-biology-consortium-symposium\r\n/next/chemical-biology-consortium-symposium/*\r\n<front>"
     negate: false
     context_mapping: {  }

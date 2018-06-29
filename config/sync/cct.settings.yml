@@ -3,7 +3,7 @@ schemas:
   cct: 8000
 favicon:
   mimetype: image/png
-  path: 'public://favicon-16x16.png'
+  path: sites/default/files/favicon-16x16.png
   url: 'http://default/themes/cct/favicon.ico'
   use_default: 0
 features:
@@ -12,8 +12,8 @@ features:
   favicon: 0
   node_user_picture: 1
 logo:
-  path: sites/default/files/logos/nci-logo-full.__v1.svg
+  path: sites/default/files/logos/next_logo.png
   url: ''
-  use_default: 1
+  use_default: 0
 cdn_jsdelivr_theme: bootstrap
 table: ''

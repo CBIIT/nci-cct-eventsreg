@@ -1,15 +1,15 @@
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: sites/default/files/favicon-16x16.png
   url: ''
-  use_default: true
+  use_default: false
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
 logo:
-  path: sites/default/files/logos/nci-logo-full.__v1.svg
+  path: sites/default/files/logos/next_logo.png
   url: ''
   use_default: false
 _core:
