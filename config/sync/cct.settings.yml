@@ -16,4 +16,5 @@ logo:
   url: ''
   use_default: 0
 cdn_jsdelivr_theme: bootstrap
+navbar_position: static-top
 table: ''
