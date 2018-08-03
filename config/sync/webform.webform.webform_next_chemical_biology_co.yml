@@ -83,9 +83,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: inline
-  confirmation_title: /next/home
-  confirmation_message: 'Thank you for registering for the Chemical Biology Consortium Symposium'
+  confirmation_type: modal
+  confirmation_title: 'Registration Submitted'
+  confirmation_message: '<p>Thank you for registering for the <strong>Chemical Biology Consortium Fall Symposium 2018</strong>.</p>'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: false
@@ -151,4 +151,37 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  registrant_s_email:
+    id: email
+    label: 'Registrant''s Email'
+    handler_id: registrant_s_email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: "[webform_submission:values:first_name] [webform_submission:values:last_name],\n\nThank you for registering for the Chemical Biology Consortium Fall Symposium 2018.\n\nEvent Location:\nUniversity of California\nMission Bay Conference Center\nSan Francisco, CA\n\nEvent Date: November 16, 2018\n\n<p>Submitted values are:</p>\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
