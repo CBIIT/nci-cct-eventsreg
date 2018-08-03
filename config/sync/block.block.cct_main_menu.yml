@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/organizations\r\n/events"
-    negate: false
+    pages: /next/chemical-biology-consortium-symposium
+    negate: true
     context_mapping: {  }

@@ -6,12 +6,13 @@ dependencies:
     - system.menu.menu---next---chemical-biol
   module:
     - system
+    - user
   theme:
     - cct
 id: menunextchemicalbiologyconsortiumsymposium
 theme: cct
 region: header
-weight: -8
+weight: -7
 provider: null
 plugin: 'system_menu_block:menu---next---chemical-biol'
 settings:
@@ -22,8 +23,10 @@ settings:
   level: 1
   depth: 0
 visibility:
-  request_path:
-    id: request_path
-    pages: "/next/chemical-biology-consortium-symposium\r\n/next/chemical-biology-consortium-symposium/*\r\n<front>"
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      user: '@user.current_user_context:current_user'

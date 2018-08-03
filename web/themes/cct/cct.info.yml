@@ -8,8 +8,8 @@ package: 'Bootstrap'
 
 regions:
   navigation: 'Navigation'
-  navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
+  navigation_collapsible: 'Navigation (Collapsible)'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'

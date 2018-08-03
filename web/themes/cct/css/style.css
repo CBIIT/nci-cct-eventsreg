@@ -1,18 +1,6 @@
 /**
  * Place your custom styles here.
  */
-/*
-.region-footer {
-	border:1px solid green;
-}
-
-.region-footer ul.menu {
-    margin: 0;
-    padding: 0 0 0.5em;
-    list-style-type: none;
-    text-align: center;
-}
-*/
 
 .region-footer { padding-top: 5px;}
 .region-footer .block-menu { display:block; width:100%; float:none;}
@@ -23,4 +11,7 @@
 .region-footer .block-block div {text-align: center; padding-top: 0.5em; font-size: 12px; color: #737373;}
 .footer {
 	padding-top:15px;
+}
+div[role="main"] h1 {
+    display:none;
 }
