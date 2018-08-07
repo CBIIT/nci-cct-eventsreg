@@ -20,6 +20,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/autologout": "^1.0",
         "drupal/bootstrap": "^3.11",
         "drupal/console": "^1.0.2",
         "drupal/content_sync": "^2.0",

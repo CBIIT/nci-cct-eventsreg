@@ -17,7 +17,7 @@ id: webform_next_chemical_biology_co
 title: 'Registration - Chemical Biology Consortium'
 description: "Chemical Biology Consortium<br />\r\nRegistration"
 category: next
-elements: "title_text:\n  '#type': processed_text\n  '#text': \"<h2>Chemical Biology Consortium Fall Symposium 2018 - Registration</h2>\\n\\n<div>\\n<p><strong>University of California, San Francisco, Mission Bay Conference Center, November 16, 2018</strong></p>\\n</div>\\n\"\n  '#format': full_html\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-6 col-offset-1'\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#required': true\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#required': true\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#unique': true\n      '#unique_error': 'This email has already been registered for this event.'\n    address:\n      '#type': textfield\n      '#title': Address\n      '#title_display': before\n      '#required': true\n    telephone:\n      '#type': webform_telephone\n      '#title': Telephone\n      '#title_display': invisible\n      '#required': true\n      '#type__access': false\n      '#phone__required': true\n      '#ext__access': false\n      '#phone__international_initial_country': US\n    affiliation:\n      '#type': textfield\n      '#title': Affiliation\n      '#required': true\n    how_did_you_hear_about_us_:\n      '#type': textarea\n      '#title': 'How did you hear about us?'\n      '#required': true\n    position:\n      '#type': textfield\n      '#title': Title/Job/Position\n      '#required': true\nrow_02:\n  '#type': container\n  '#attributes':\n    class:\n      - 'container-inline clearfix'\n      - row\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n"
+elements: "title_text:\n  '#type': processed_text\n  '#text': \"<h2>Chemical Biology Consortium Fall Symposium 2018 - Registration</h2>\\n\\n<div>\\n<p><strong>University of California, San Francisco, Mission Bay Conference Center, November 16, 2018</strong></p>\\n</div>\\n\"\n  '#format': full_html\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-6 col-offset-1'\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#required': true\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#required': true\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#unique': true\n      '#unique_error': 'This email has already been registered for this event.'\n    address:\n      '#type': textarea\n      '#title': Address\n      '#rows': '3'\n      '#required': true\n    telephone:\n      '#type': webform_telephone\n      '#title': Telephone\n      '#title_display': invisible\n      '#required': true\n      '#type__access': false\n      '#phone__required': true\n      '#ext__access': false\n      '#phone__international_initial_country': US\n    affiliation:\n      '#type': textfield\n      '#title': Affiliation\n      '#required': true\n    how_did_you_hear_about_us_:\n      '#type': textarea\n      '#title': 'How did you hear about us?'\n      '#required': true\n    position:\n      '#type': textfield\n      '#title': Title/Job/Position\n      '#required': true\nrow_02:\n  '#type': container\n  '#attributes':\n    class:\n      - 'container-inline clearfix'\n      - row\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n"
 css: ".center-block {\r\n    float: none !important\r\n}"
 javascript: ''
 settings:
@@ -83,9 +83,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: modal
+  confirmation_type: inline
   confirmation_title: 'Registration Submitted'
-  confirmation_message: '<p>Thank you for registering for the <strong>Chemical Biology Consortium Fall Symposium 2018</strong>.</p>'
+  confirmation_message: "<p><br />\r\n<br />\r\nThank you for registering for the <strong>Chemical Biology Consortium Fall Symposium 2018</strong>.</p>"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: false
@@ -170,9 +170,9 @@ handlers:
       bcc_options: {  }
       from_mail: _default
       from_options: {  }
-      from_name: _default
-      subject: _default
-      body: "[webform_submission:values:first_name] [webform_submission:values:last_name],\n\nThank you for registering for the Chemical Biology Consortium Fall Symposium 2018.\n\nEvent Location:\nUniversity of California\nMission Bay Conference Center\nSan Francisco, CA\n\nEvent Date: November 16, 2018\n\n<p>Submitted values are:</p>\n[webform_submission:values]"
+      from_name: 'Chemical Biology Consortium Fall Symposium 2018'
+      subject: 'Chemical Biology Consortium Fall Symposium 2018 - Registration'
+      body: "[webform_submission:values:first_name] [webform_submission:values:last_name],<br />\n<br />\nThank you for registering for the <strong>Chemical Biology Consortium Fall Symposium 2018.</strong><br />\n<br />\nEvent Location:<br />\nUniversity of California<br />\nMission Bay Conference Center<br />\nSan Francisco, CA<br />\n<br />\nEvent Date: November 16, 2018"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
