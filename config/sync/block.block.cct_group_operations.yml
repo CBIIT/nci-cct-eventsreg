@@ -1,10 +1,10 @@
 uuid: bdd6ed5f-6a48-4fba-92dd-0a86ea7d7c9b
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - group
-    - system
+    - user
   theme:
     - cct
 _core:
@@ -12,7 +12,7 @@ _core:
 id: cct_group_operations
 theme: cct
 region: sidebar_second
-weight: -7
+weight: -8
 provider: null
 plugin: group_operations
 settings:
@@ -23,8 +23,10 @@ settings:
   context_mapping:
     group: '@group.group_route_context:group'
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_acronym
     - field.field.node.event.field_event_home_link
     - field.field.node.event.field_event_published
     - field.field.node.event.field_registration_open
@@ -33,6 +34,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_acronym:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_event_home_link:
     weight: 122
     settings:

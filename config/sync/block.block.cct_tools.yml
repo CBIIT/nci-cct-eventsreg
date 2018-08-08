@@ -1,11 +1,12 @@
 uuid: 4ca6133e-c098-43f2-a549-64d811ec0327
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
   module:
     - system
+    - user
   theme:
     - cct
 _core:
@@ -13,7 +14,7 @@ _core:
 id: cct_tools
 theme: cct
 region: sidebar_second
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
@@ -24,8 +25,10 @@ settings:
   level: 1
   depth: 0
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      user: '@user.current_user_context:current_user'

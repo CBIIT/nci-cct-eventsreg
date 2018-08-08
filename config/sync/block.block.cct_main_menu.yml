@@ -1,6 +1,6 @@
 uuid: e0f11145-e2b2-4a83-a2c2-c9097cc619ba
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
 id: cct_main_menu
 theme: cct
-region: navigation_collapsible
-weight: -8
+region: sidebar_second
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

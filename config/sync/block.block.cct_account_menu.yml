@@ -1,11 +1,12 @@
 uuid: 67f4f0bd-ac38-45a4-9434-c9d2b29ce3d7
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
   module:
     - system
+    - user
   theme:
     - cct
 _core:
@@ -13,7 +14,7 @@ _core:
 id: cct_account_menu
 theme: cct
 region: sidebar_second
-weight: -8
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -24,8 +25,10 @@ settings:
   level: 1
   depth: 1
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      user: '@user.current_user_context:current_user'

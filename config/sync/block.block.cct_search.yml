@@ -1,10 +1,11 @@
 uuid: 728104b1-2b60-4cdd-b827-92915fae0fb8
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
     - system
+    - user
   theme:
     - cct
 _core:
@@ -12,7 +13,7 @@ _core:
 id: cct_search
 theme: cct
 region: sidebar_second
-weight: -5
+weight: -6
 provider: null
 plugin: search_form_block
 settings:
@@ -26,3 +27,10 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
