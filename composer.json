@@ -21,10 +21,10 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.24",
         "drupal/autologout": "^1.0",
-        "drupal/bootstrap": "^3.11",
+        "drupal/bootstrap": "^3.12",
         "drupal/console": "^1.0.2",
         "drupal/content_sync": "^2.0",
-        "drupal/core": "~8.5.5",
+        "drupal/core": "8.5.6",
         "drupal/default_content_deploy": "^1.0@alpha",
         "drupal/externalauth": "^1.1",
         "drupal/group": "^1.0@RC",
@@ -36,7 +36,7 @@
         "drupal/pathauto": "^1.2",
         "drupal/recaptcha": "^2.3",
         "drupal/simplesamlphp_auth": "^3.0",
-        "drupal/webform": "^5.0@RC",
+        "drupal/webform": "^5.0",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
@@ -46,7 +46,7 @@
     "require-dev": {
         "drupal/backup_migrate": "^4.0",
         "drupal/devel": "^1.2",
-        "webflo/drupal-core-require-dev": "~8.5.5"
+        "webflo/drupal-core-require-dev": "8.5.6"
     },
     "conflict": {
         "drupal/drupal": "*"
