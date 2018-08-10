@@ -1,4 +1,14 @@
 global-styling:
   css:
     theme:
+      css/navbar.css: {}
       css/style.css: {}
+
+global-scripts:
+  js:
+    https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js: { type: external, minified: true }
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.dialog

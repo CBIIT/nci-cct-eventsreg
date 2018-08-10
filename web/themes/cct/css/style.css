@@ -12,9 +12,23 @@
 .footer {
 	padding-top:15px;
 }
+
 div[role="main"] h1 {
     display:none;
 }
+
 .nav-tabs > li {
 	display:none;
 }
+
+#site-logo img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+
+#navbar {
+  background-color:#fff;
+}
+

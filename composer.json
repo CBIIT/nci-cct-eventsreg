@@ -36,6 +36,7 @@
         "drupal/pathauto": "^1.2",
         "drupal/recaptcha": "^2.3",
         "drupal/simplesamlphp_auth": "^3.0",
+        "drupal/url_redirect": "^2.6",
         "drupal/webform": "^5.0",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",

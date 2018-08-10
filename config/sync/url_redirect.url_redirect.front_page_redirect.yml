@@ -1,0 +1,15 @@
+uuid: d2138283-e84f-4c4c-a630-52ccb7d9b024
+langcode: en
+status: '1'
+dependencies: {  }
+id: front_page_redirect
+label: 'Front Page Redirect'
+message: 'No'
+path: /
+redirect_path: /next/chemical-biology-consortium-symposium
+checked_for: Role
+negate: false
+user: null
+roles:
+  anonymous: anonymous
+  authenticated: authenticated

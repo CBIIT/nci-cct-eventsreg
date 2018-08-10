@@ -1,0 +1,15 @@
+uuid: 7733493a-a0a7-45ac-ad01-186c308df6de
+langcode: en
+status: '1'
+dependencies: {  }
+id: redirect_nci_connect
+label: 'Redirect NCI Connect'
+message: 'No'
+path: /nciconnect
+redirect_path: /nob/nciconnect
+checked_for: Role
+negate: false
+user: null
+roles:
+  anonymous: anonymous
+  authenticated: authenticated

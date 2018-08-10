@@ -21,3 +21,5 @@ regions:
 
 libraries:
   - 'cct/global-styling'
+  - 'cct/global-scripts'
+
