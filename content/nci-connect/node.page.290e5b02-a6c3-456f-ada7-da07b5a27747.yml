@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: 290e5b02-a6c3-456f-ada7-da07b5a27747
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-08-10T19:12:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'nob - nciconnect (lodging)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-08-10T19:10:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-08-10T19:12:13+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /nob/nciconnect/lodging
+menu_link: {  }
+body:
+  -
+    value: "<h2 class=\"rtecenter\" style=\"margin: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 5px !important; padding-left: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: bold; font-stretch: inherit; font-size: 16.64px; line-height: 1.4em; font-family: Arial, Helvetica, sans-serif; color: rgb(12, 92, 151); text-align: center; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Lodging</h2>\r\n\r\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Workshop participants are advised to reserve a hotel room at the<span>&nbsp;</span><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 600; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; color: rgb(0, 0, 0);\">Bethesda</strong><span>&nbsp;</span>Marriott (information below) as the NIH will provide shuttle service from the Bethesda Marriott to the NIH meeting location to facilitate the visitor badging process and an on-time arrival. Workshop participants who make reservations at an alternate hotel can meet at the Bethesda Marriott to ride on the provided shuttle. Otherwise, participants are responsible for their own transportation to and from the meeting.</p>\r\n\r\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 600; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; color: rgb(0, 0, 0);\">Bethesda Marriott</strong><br />\r\n5151 Pooks Hill Road<br />\r\nBethesda, MD 20814<br />\r\nT: 301-897-9400</p>\r\n\r\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><a class=\"ext\" href=\"https://www.marriott.com/hotels/travel/wasbt-bethesda-marriott/\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12.8px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; outline: 0px; color: rgb(12, 92, 151); text-decoration: underline;\" target=\"_blank\" title=\"Click here to make a hotel reservation at the Bethesda Marriott\">Click here to make a hotel reservation at the Bethesda Marriott.</a><span>&nbsp;</span>Please note: There is not a hotel block or reserved rate for this workshop. We encourage you to book at your earliest convenience to secure a room.</p>\r\n\r\n<p class=\"rtecenter\" style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; text-align: center; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><a href=\"/nob/nciconnect/registration\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12.8px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; outline: 0px; color: rgb(12, 92, 151); text-decoration: underline;\" title=\"REGISTER LINK\">REGISTER LINK</a></p>\r\n"
+    format: full_html
+    processed: "<h2 class=\"rtecenter\" style=\"margin: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 5px !important; padding-left: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: bold; font-stretch: inherit; font-size: 16.64px; line-height: 1.4em; font-family: Arial, Helvetica, sans-serif; color: rgb(12, 92, 151); text-align: center; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Lodging</h2>\n\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Workshop participants are advised to reserve a hotel room at the<span>\_</span><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 600; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; color: rgb(0, 0, 0);\">Bethesda</strong><span>\_</span>Marriott (information below) as the NIH will provide shuttle service from the Bethesda Marriott to the NIH meeting location to facilitate the visitor badging process and an on-time arrival. Workshop participants who make reservations at an alternate hotel can meet at the Bethesda Marriott to ride on the provided shuttle. Otherwise, participants are responsible for their own transportation to and from the meeting.</p>\n\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><strong style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 600; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; color: rgb(0, 0, 0);\">Bethesda Marriott</strong><br />\n5151 Pooks Hill Road<br />\nBethesda, MD 20814<br />\nT: 301-897-9400</p>\n\n<p style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><a class=\"ext\" href=\"https://www.marriott.com/hotels/travel/wasbt-bethesda-marriott/\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12.8px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; outline: 0px; color: rgb(12, 92, 151); text-decoration: underline;\" target=\"_blank\" title=\"Click here to make a hotel reservation at the Bethesda Marriott\">Click here to make a hotel reservation at the Bethesda Marriott.</a><span>\_</span>Please note: There is not a hotel block or reserved rate for this workshop. We encourage you to book at your earliest convenience to secure a room.</p>\n\n<p class=\"rtecenter\" style=\"margin: 0px 0px 20px; padding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 12.8px; line-height: 1.5em; font-family: Arial, Helvetica, sans-serif; text-align: center; color: rgb(68, 68, 68); letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><a href=\"/nob/nciconnect/registration\" style=\"margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 12.8px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; outline: 0px; color: rgb(12, 92, 151); text-decoration: underline;\" title=\"REGISTER LINK\">REGISTER LINK</a></p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
