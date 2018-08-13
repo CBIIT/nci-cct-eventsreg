@@ -69,8 +69,8 @@
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     //console.log("Going to: "+assets[index].title);
-    if(assets[index].event == "nob-nciconnect") {
-
+    if(assets[index].event == "next-cbcs") {
+      $('#navbar').css('background-color', '#eee');
     }
     if(assets[index].event == "nob-nciconnect") {
     	var logo = '<div id="logo" class="pull-left"><div id="site-logo"><a href="'+assets[index].home+'" title="Home">          <img src="/sites/default/files/logos/nci-logo.svg" alt="Home"></a></div></div>';
