@@ -1,0 +1,46 @@
+uuid:
+  -
+    value: 2934549c-5105-4f2e-b9d3-f0350c1e2e11
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+title:
+  -
+    value: Home
+description: {  }
+menu_name:
+  -
+    value: nav-nci-connect
+link:
+  -
+    uri: 'internal:/nob/nciconnect'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: 0
+expanded:
+  -
+    value: false
+enabled:
+  -
+    value: true
+parent: {  }
+changed:
+  -
+    value: '2018-08-08T18:50:26+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: menu_link_content

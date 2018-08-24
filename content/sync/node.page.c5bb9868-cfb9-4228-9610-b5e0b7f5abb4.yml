@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: c5bb9868-cfb9-4228-9610-b5e0b7f5abb4
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-08-10T19:19:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'nob-nciconnect (travel)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-08-10T19:04:22+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-08-10T19:19:57+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /nob/nciconnect/travel
+menu_link: {  }
+body:
+  -
+    value: "<h3 class=\"text-align-center\" style=\"color:#0C5C97\">Travel</h3>\r\n\r\n<p><strong>Travel</strong></p>\r\n\r\n<ul>\r\n\t<li>Meeting Participants:\r\n\t<ul>\r\n\t\t<li>The meeting will start early on Thursday, September 27. Participants may choose to arrive on the evening of Wednesday, September 26, 2018 to be certain they can access the shuttle from the hotel to NIH security Gateway.</li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n\r\n<p><strong>Airports</strong></p>\r\n\r\n<ul>\r\n\t<li>Dulles International Airport (IAD): Approximately 30-60 minutes away from the Marriott &amp; the NIH</li>\r\n\t<li>Ronald Reagan Washington National Airport (DCA): Approximately 35-60 minutes away from the Marriott &amp; the NIH</li>\r\n\t<li>Baltimore-Washington International Airport (BWI): Approximately 45 minutes to 2 hours away from the Marriott &amp; the NIH</li>\r\n</ul>\r\n\r\n<p><a href=\"/nob/nciconnect/registration\">REGISTER LINK</a></p>\r\n"
+    format: full_html
+    processed: "<h3 class=\"text-align-center\" style=\"color:#0C5C97\">Travel</h3>\n\n<p><strong>Travel</strong></p>\n\n<ul><li>Meeting Participants:\n\t<ul><li>The meeting will start early on Thursday, September 27. Participants may choose to arrive on the evening of Wednesday, September 26, 2018 to be certain they can access the shuttle from the hotel to NIH security Gateway.</li>\n\t</ul></li>\n</ul><p><strong>Airports</strong></p>\n\n<ul><li>Dulles International Airport (IAD): Approximately 30-60 minutes away from the Marriott &amp; the NIH</li>\n\t<li>Ronald Reagan Washington National Airport (DCA): Approximately 35-60 minutes away from the Marriott &amp; the NIH</li>\n\t<li>Baltimore-Washington International Airport (BWI): Approximately 45 minutes to 2 hours away from the Marriott &amp; the NIH</li>\n</ul><p><a href=\"/nob/nciconnect/registration\">REGISTER LINK</a></p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

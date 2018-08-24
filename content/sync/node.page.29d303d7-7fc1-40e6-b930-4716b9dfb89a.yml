@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: 29d303d7-7fc1-40e6-b930-4716b9dfb89a
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-08-24T00:03:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct - sallie-rosen-kaplan (home)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-08-23T15:18:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-08-24T00:03:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /cct/sallie-rosen-kaplan
+menu_link: {  }
+body:
+  -
+    value: "<h3 class=\"text-align-center\"><span><span><span>Sallie Rosen Kaplan Postdoctoral Fellowship for Women Scientists in Cancer Research</span></span></span></h3>\r\n\r\n<h4 class=\"text-align-center\"><span><span><span>(Only for current NCI Postdoctoral Fellows)</span></span></span></h4>\r\n\r\n<h4><span><span><span>Program Description</span></span></span></h4>\r\n\r\n<p><span><span><span>The Sallie Rosen Kaplan (SRK) Postdoctoral Fellowship for Women Scientists in Cancer Research was established in 2000 through the estate of Sallie Rosen Kaplan.&nbsp; Mrs. Kaplan could not pursue her own higher education, but she had a deep interest in the education of her family members and, in particular, of women.&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>Historically, women leave academic science at the transition from a mentored to an independent stage of their careers.&nbsp; Based upon recent observational, longitudinal, and intervention studies, women in science were significantly more likely to leave the science field earlier than men.&nbsp; By providing additional mentoring opportunities, seminars, and workshops designed to strengthen leadership skills over a one-year period, NCI’s female postdoctoral fellows may be better equipped to transition to independent research careers.&nbsp; Work-life balance is not only about children and parenting, it encompasses sharing experiences and information for personal and professional gain achieved by mentoring and networking.&nbsp; These proposed enrichment activities will better prepare these highly qualified female postdoctoral fellows currently onboard at the NCI to face the competitive nature of the job market.&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>The highlight of this selective program includes a 30-week course entitled “Career Building for Women in Science.” &nbsp;&nbsp;This course includes two day-long workshops.&nbsp; Following each day-long session, a 14-week 2-hour bi-weekly meeting will be conducted to network among individual participants and the facilitator.&nbsp;&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>This one-year program will also include the following activities:</span></span></span></p>\r\n\r\n<ul>\r\n\t<li><span><span><span><span>Mentoring opportunities with successful women scientists from government, industry, and academia</span></span></span></span></li>\r\n\t<li><span><span><span><span>Seminars on relevant topics such as networking, managing people, time management, promoting self</span></span></span></span></li>\r\n</ul>\r\n\r\n<p><span><span><span>This enrichment program requires your dedication and time commitment.&nbsp; NO supplemental stipend is provided.&nbsp; Details for specific uploads are described under \"How to Apply \" at <a href=\"http://www.cancer.gov/grants-training/training/at-nci/srk\">http://www.cancer.gov/grants-training/training/at-nci/srk</a></span></span></span></p>\r\n\r\n<h4>Dates</h4>\r\n\r\n<dl>\r\n\t<dt>Start/End Dates:</dt>\r\n\t<dd>November 19, 2018 to September 20, 2019</dd>\r\n\t<dt>Announcement Posted:</dt>\r\n\t<dd>September 17, 2018</dd>\r\n\t<dt>Application Due Date:</dt>\r\n\t<dd>October 12, 2018</dd>\r\n\t<dt>Application Review:</dt>\r\n\t<dd>October 26, 2018</dd>\r\n\t<dt>Decision Notification:</dt>\r\n\t<dd>November 12, 2018</dd>\r\n</dl>\r\n\r\n<h4>Uploads</h4>\r\n\r\n<p>(required) personal statement with ratings - pdf<br />\r\n(required) professional history and resume - pdf<br />\r\n(required) work environment - pdf<br />\r\n(required) TWO letters of recommendation - pdf<br />\r\n(optional) any special circumstances - pdf</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    format: full_html
+    processed: "<h3 class=\"text-align-center\"><span><span><span>Sallie Rosen Kaplan Postdoctoral Fellowship for Women Scientists in Cancer Research</span></span></span></h3>\n\n<h4 class=\"text-align-center\"><span><span><span>(Only for current NCI Postdoctoral Fellows)</span></span></span></h4>\n\n<h4><span><span><span>Program Description</span></span></span></h4>\n\n<p><span><span><span>The Sallie Rosen Kaplan (SRK) Postdoctoral Fellowship for Women Scientists in Cancer Research was established in 2000 through the estate of Sallie Rosen Kaplan.\_ Mrs. Kaplan could not pursue her own higher education, but she had a deep interest in the education of her family members and, in particular, of women.\_</span></span></span></p>\n\n<p><span><span><span>Historically, women leave academic science at the transition from a mentored to an independent stage of their careers.\_ Based upon recent observational, longitudinal, and intervention studies, women in science were significantly more likely to leave the science field earlier than men.\_ By providing additional mentoring opportunities, seminars, and workshops designed to strengthen leadership skills over a one-year period, NCI’s female postdoctoral fellows may be better equipped to transition to independent research careers.\_ Work-life balance is not only about children and parenting, it encompasses sharing experiences and information for personal and professional gain achieved by mentoring and networking.\_ These proposed enrichment activities will better prepare these highly qualified female postdoctoral fellows currently onboard at the NCI to face the competitive nature of the job market.\_</span></span></span></p>\n\n<p><span><span><span>The highlight of this selective program includes a 30-week course entitled “Career Building for Women in Science.” \_\_This course includes two day-long workshops.\_ Following each day-long session, a 14-week 2-hour bi-weekly meeting will be conducted to network among individual participants and the facilitator.\_\_</span></span></span></p>\n\n<p><span><span><span>This one-year program will also include the following activities:</span></span></span></p>\n\n<ul><li><span><span><span><span>Mentoring opportunities with successful women scientists from government, industry, and academia</span></span></span></span></li>\n\t<li><span><span><span><span>Seminars on relevant topics such as networking, managing people, time management, promoting self</span></span></span></span></li>\n</ul><p><span><span><span>This enrichment program requires your dedication and time commitment.\_ NO supplemental stipend is provided.\_ Details for specific uploads are described under \"How to Apply \" at <a href=\"http://www.cancer.gov/grants-training/training/at-nci/srk\">http://www.cancer.gov/grants-training/training/at-nci/srk</a></span></span></span></p>\n\n<h4>Dates</h4>\n\n<dl><dt>Start/End Dates:</dt>\n\t<dd>November 19, 2018 to September 20, 2019</dd>\n\t<dt>Announcement Posted:</dt>\n\t<dd>September 17, 2018</dd>\n\t<dt>Application Due Date:</dt>\n\t<dd>October 12, 2018</dd>\n\t<dt>Application Review:</dt>\n\t<dd>October 26, 2018</dd>\n\t<dt>Decision Notification:</dt>\n\t<dd>November 12, 2018</dd>\n</dl><h4>Uploads</h4>\n\n<p>(required) personal statement with ratings - pdf<br />\n(required) professional history and resume - pdf<br />\n(required) work environment - pdf<br />\n(required) TWO letters of recommendation - pdf<br />\n(optional) any special circumstances - pdf</p>\n\n<p>\_</p>\n\n<p>\_</p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

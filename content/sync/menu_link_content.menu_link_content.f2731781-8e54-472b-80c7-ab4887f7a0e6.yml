@@ -1,0 +1,46 @@
+uuid:
+  -
+    value: f2731781-8e54-472b-80c7-ab4887f7a0e6
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+title:
+  -
+    value: Agenda
+description: {  }
+menu_name:
+  -
+    value: nav-nci-connect
+link:
+  -
+    uri: 'internal:/nob/nciconnect/agenda'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: 0
+expanded:
+  -
+    value: false
+enabled:
+  -
+    value: true
+parent: {  }
+changed:
+  -
+    value: '2018-08-08T19:18:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: menu_link_content

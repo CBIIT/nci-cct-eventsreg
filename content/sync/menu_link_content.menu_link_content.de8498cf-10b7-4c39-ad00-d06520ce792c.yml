@@ -1,0 +1,48 @@
+uuid:
+  -
+    value: de8498cf-10b7-4c39-ad00-d06520ce792c
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+title:
+  -
+    value: Registration
+description:
+  -
+    value: chemical-biology-consortium-symposium
+menu_name:
+  -
+    value: menu---next---chemical-biol
+link:
+  -
+    uri: 'internal:/next/chemical-biology-consortium-symposium'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: -48
+expanded:
+  -
+    value: false
+enabled:
+  -
+    value: true
+parent: {  }
+changed:
+  -
+    value: '2018-08-03T15:18:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: menu_link_content

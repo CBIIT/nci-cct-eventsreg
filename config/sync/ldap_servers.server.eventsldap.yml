@@ -5,8 +5,8 @@ dependencies: {  }
 id: eventsldap
 label: eventsldap
 type: ad
-address: unknown
-port: 100
+address: 'ldaps://nihdcadhub3.nih.gov'
+port: 636
 timeout: 10
 tls: false
 followrefs: null
@@ -14,7 +14,7 @@ weight: null
 bind_method: user
 binddn: null
 bindpw: null
-basedn: unknown
+basedn: 'OU=Users,OU=NCI,OU=NIH,OU=AD,DC=nih,DC=gov'
 user_attr: samaccountname
 account_name_attr: ''
 mail_attr: mail

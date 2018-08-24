@@ -22,7 +22,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-05-15T19:50:51+00:00'
+    value: '2018-06-18T01:26:12+00:00'
     format: 'Y-m-d\TH:i:sP'
 path:
   -
@@ -30,6 +30,16 @@ path:
 default_langcode:
   -
     value: true
+field_code:
+  -
+    uri: 'internal:/cct'
+    title: cct
+    options: {  }
+field_group_home_page:
+  -
+    uri: 'internal:/cct'
+    title: cct
+    options: {  }
 field_organization_web_site:
   -
     uri: 'https://www.cancer.gov/grants-training/training/at-nci'

@@ -40,6 +40,13 @@ roles:
 default_langcode:
   -
     value: true
+ldap_user_puid_sid: {  }
+ldap_user_puid: {  }
+ldap_user_puid_property: {  }
+ldap_user_current_dn: {  }
+ldap_user_prov_entries: {  }
+ldap_user_last_checked: {  }
+ldap_user_ldap_exclude: {  }
 path:
   -
     alias: null

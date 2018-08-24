@@ -1,0 +1,49 @@
+uuid:
+  -
+    value: 23185539-a419-4c8b-beb6-eae0bb2f7bdd
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: organization-group_membership
+    target_type: group_content_type
+    target_uuid: 47bfae6a-5a14-46c8-b6dd-334469796451
+gid:
+  -
+    target_type: group
+    target_uuid: 0b872377-eab7-40f8-8d9d-bcb4e3ebaa56
+entity_id:
+  -
+    target_type: user
+    target_uuid: be03dd25-51cf-4c82-af05-7537019ecc1a
+label:
+  -
+    value: next_user
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-06-29T23:48:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-06-29T23:48:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+path:
+  -
+    alias: /group/3/member/6
+default_langcode:
+  -
+    value: true
+group_roles: {  }
+_content_sync:
+  entity_type: group_content
+  entity_dependencies:
+    group:
+      - group.organization.0b872377-eab7-40f8-8d9d-bcb4e3ebaa56
+    user:
+      - user.user.be03dd25-51cf-4c82-af05-7537019ecc1a
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

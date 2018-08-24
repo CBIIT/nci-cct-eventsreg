@@ -1,0 +1,46 @@
+uuid:
+  -
+    value: b70f1f02-f073-476e-b6f0-29c3f25ef0af
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+title:
+  -
+    value: FOIA
+description: {  }
+menu_name:
+  -
+    value: footer
+link:
+  -
+    uri: 'http://www.cancer.gov/policies/foia'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: false
+weight:
+  -
+    value: -43
+expanded:
+  -
+    value: false
+enabled:
+  -
+    value: true
+parent: {  }
+changed:
+  -
+    value: '2018-06-29T20:30:53+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: menu_link_content
