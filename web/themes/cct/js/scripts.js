@@ -43,7 +43,7 @@
     },{
         event:'cct-srk',
         title : '',
-        logo_image:'/sites/default/files/logos/nci-logo.svg',
+        logo_image:'/sites/default/files/logos/cct-logo.png',
         home:'/cct/sallie-rosen-kaplan',
         title_href:'https://www.cancer.gov/grants-training/training/at-nci/srk',
         org:'CCT',
