@@ -121,10 +121,10 @@
     //CCT Sallie Rosen Kaplan
     if(assets[index].event == "cct-srk") {
       var logo = '<div id="logo" class="pull-left"><div id="site-logo"><a href="'+asset.home+'" title="Home"><img src="'+asset.logo_image+'" alt="Home"></a></div></div>';
-      var slogan ='<div id="search_box" class="pull-left"><div class="content pull-right" style="width:500px;"><div class="rteright"><div style="font-size:22px;float:right;" title="'+asset.org_title+'">'+asset.org+'</div><br><div style="clear:both;"></div><div style="font-size:14px;float:right;text-align:right;"><a href="'+asset.title_href+'" target="_blank">'+asset.slogan+'</a></div></div></div></ div>';
+      var slogan ='<div id="search_box" class="pull-left"><div class="content pull-right" style="width:500px;"><br><div style="font-size:14px;float:right;text-align:right;"><a href="'+asset.title_href+'" target="_blank">'+asset.slogan+'</a></div></div></div></div></div><div style="clear: both;">';
       // Replace header
-      $('header .navbar-header').css('margin-top', '30px');
-      $('header .navbar-header').css('height', '80px');
+      //$('header .navbar-header').css('margin-top', '30px');
+      $('header .navbar-header').css('height', '100%');
       $('.region-navigation').empty().append(logo+slogan);
 
       var menu = `
