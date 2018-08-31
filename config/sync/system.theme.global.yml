@@ -1,8 +1,8 @@
 favicon:
   mimetype: image/png
-  path: ''
+  path: sites/default/files/favicon-16x16.png
   url: ''
-  use_default: true
+  use_default: false
 features:
   comment_user_picture: true
   comment_user_verification: true
