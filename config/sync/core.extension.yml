@@ -52,6 +52,7 @@ module:
   quickedit: 0
   rdf: 0
   recaptcha: 0
+  redirect_after_login: 0
   search: 0
   serialization: 0
   shortcut: 0

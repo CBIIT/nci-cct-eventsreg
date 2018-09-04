@@ -56,6 +56,15 @@
     //console.log("Going to: "+assets[index].title);
     if(asset.event == "next-cbcs") {
       $('#navbar').css('background-color', '#eee');
+      // Replace header
+      //$('header .navbar-header').css('margin-top', '30px');
+      //$('header .navbar-header').css('height', '80px');
+
+      var logo = '<a class="logo navbar-btn pull-left" href="/next/chemical-biology-consortium-symposium" title="Home" rel="home">      <img src="/sites/default/files/logos/next_logo.png" alt="Home">    </a>';
+      var slogan = '<div class="pull-right">    <a class="name navbar-brand" href="https://next.cancer.gov/fallsymposium2018/default.htm" target="_blank" title="NExT" rel="home">NExT - NCI Experimental Therapeutics Program</a>    <div>      </div>                      </div>';
+      $('.region-navigation').empty().append(logo+slogan);
+      //alert("it works");
+
     }
     //NCI-Connect
     if(asset.event == "nob-nciconnect") {
@@ -106,7 +115,7 @@
             case "travel":
           $('#nci-connect-menu li:nth-child(4)').addClass('active');
                 break;
-            case "lodgings":
+            case "lodging":
           $('#nci-connect-menu li:nth-child(5)').addClass('active');
                 break;
             case "nih-campus-access":

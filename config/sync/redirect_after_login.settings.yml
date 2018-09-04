@@ -1,0 +1,5 @@
+login_redirection:
+  anonymous: null
+  authenticated: /events
+  administrator: /events
+  content_editor: /events
