@@ -348,7 +348,7 @@ display:
             alter_text: true
             text: Results
             make_link: true
-            path: 'http://localhost:8080/admin/structure/webform/manage/cct_srk_application_/results/submissions'
+            path: /admin/structure/webform/manage/cct_srk_application_/results/submissions
             absolute: false
             external: false
             replace_spaces: false
