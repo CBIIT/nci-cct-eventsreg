@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 187f1437-aba7-4369-a2ee-d57767363bb0
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+filename:
+  -
+    value: alan-rabson-article.jpeg
+uri:
+  -
+    value: 'public://assets/alan-rabson-article.jpeg'
+    url: /sites/default/files/assets/alan-rabson-article.jpeg
+filemime:
+  -
+    value: image/jpeg
+filesize:
+  -
+    value: 83106
+status:
+  -
+    value: true
+created:
+  -
+    value: '2018-09-09T15:39:46+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-09T15:39:46+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

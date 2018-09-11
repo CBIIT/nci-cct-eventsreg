@@ -405,15 +405,16 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        body_value:
-          id: body_value
-          table: node__body
-          field: body_value
+          group: 1
+        field_acronym_value:
+          id: field_acronym_value
+          table: node__field_acronym
+          field: field_acronym_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '!='
-          value: ''
+          operator: '='
+          value: cct-srk
           group: 1
           exposed: false
           expose:
@@ -478,6 +479,10 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

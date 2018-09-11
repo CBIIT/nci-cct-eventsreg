@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/navbar.css: {}
+      css/cancer.css: {}
       css/style.css: {}
 
 global-scripts:

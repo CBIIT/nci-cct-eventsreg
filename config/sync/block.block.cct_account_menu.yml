@@ -1,6 +1,6 @@
 uuid: 67f4f0bd-ac38-45a4-9434-c9d2b29ce3d7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -32,3 +32,8 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /all-events
+    negate: false
+    context_mapping: {  }

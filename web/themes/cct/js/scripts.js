@@ -17,6 +17,11 @@
         event = "cct-srk";
         $.updateAssets(event); 
       }
+      //console.log(url_path.substring(0, 21).toLowerCase());
+      if(url_path.substring(0, 21).toLowerCase() == '/od/rabson-remembered') {
+        event = "od-rr";
+        $.updateAssets(event); 
+      }
     }
   }
 
@@ -49,11 +54,38 @@
         org:'CCT',
         org_title: 'Center for Cancer Training',
         slogan:'Sallie Rosen Kaplan Postdoctoral Fellowship'
+    },{
+        event:'od-rr',
+        title : 'Rabson Remembered',
+        logo_image:'',
+        home:'/od/rabson-remembered',
+        title_href:'',
+        org:'od',
+        org_title: 'Office of the Director',
+        slogan:'Alan S. Rabson, MD: Celebrating a Life in Science, Leadership, and Patient Care'
     }];
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     var asset = assets[index];
     //console.log("Going to: "+assets[index].title);
+    if(asset.event == "od-rr") {
+      $('#eventsreg-nav-bar li').removeClass('active');
+      var url_path = window.location.pathname;
+      var tab_active = url_path.substring(22,50).toLowerCase();
+      //console.log(tab_active);
+        switch(tab_active) {
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+            break;
+          case "sentiments":
+            $('#eventsreg-nav-bar li:nth-child(3)').addClass('active');
+             break;
+          default:
+            $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');
+            break;
+        }
+    }
+
     if(asset.event == "next-cbcs") {
       $('#navbar').css('background-color', '#eee');
       // Replace header

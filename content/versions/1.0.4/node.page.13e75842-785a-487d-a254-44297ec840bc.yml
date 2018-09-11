@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: 13e75842-785a-487d-a254-44297ec840bc
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-09-11T20:27:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'od - Rabson Remembered (Home)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-09T15:27:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-11T20:27:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /od/rabson-remembered
+menu_link: {  }
+body:
+  -
+    value: "<div class=\"nci-body\">\r\n<div class=\"container-fluid\">\r\n<div class=\"row\">\r\n<div class=\"col-lg-12\">\r\n<h2 class=\"text-align-center nci-red\" style=\"font-size:26px;\">Alan S. Rabson, MD: Celebrating a Life in Science, Leadership, and Patient Care</h2>\r\n\r\n<h4 class=\"text-align-center\">Rabson’s career at the National Cancer Institute spanned six decades.</h4>\r\n\r\n<div class=\"container-fluid\" style=\"background-color:LightGray;\">\r\n<div class=\"row\">\r\n<div class=\"col-lg-4\">\r\n<div style=\"width:100%;padding:25px 0px 0px 10px;\">\r\n<div class=\"panel panel-default\"><!-- Panel Body -->\r\n<div class=\"panel-body\">\r\n<p class=\"text-align-center\"><img alt=\"Alan S. Rabson, M.D.\" class=\"figure-img img-fluid z-depth-1\" src=\"https://genesis55.github.io/assets/images/alan-rabson-article.jpeg\" width=\"100%\" /></p>\r\n</div>\r\n<!-- Panel Footer -->\r\n\r\n<div class=\"panel-footer\">Alan Rabson, M.D., in his office on the NIH campus in Bethesda, MD.<br />\r\nCredit: National Cancer Institute</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div class=\"col-lg-8\">\r\n<div class=\"well\" style=\"background-color:Snow;margin:25px 10px;\">\r\n<h3 class=\"text-align-center\">Dr. Alan S. Rabson</h3>\r\n\r\n<p class=\"text-align-center\"><strong>{Short Bio Draft}</strong></p>\r\n\r\n<p>I was born and brought up in New York City, and went to medical school in Brooklyn at a school that was at that time called the Long Island College of Medicine. While I was in medical school, I became interested in cancer and cancer research.</p>\r\n\r\n<p>My first contact with the NCI began in 1947 when I was in my second year of medical school, and I decided I wanted to come to the National Cancer Institute to spend the summer as a student. I wrote to the head of Biochemistry, a very famous biochemist named Jesse Greenstein, and Jesse wrote me back saying that what I didn't understand is how hot it was in Washington in the summertime. There was no air conditioning at the NIH at that time, and he said he personally never spends summers here, that he spent his summers in Berkeley. And he thought it would be nice if I did the same thing. So that was my first attempt to get to the NCI.</p>\r\n\r\n<p>Then after I graduated, I interned in medicine in Boston and then had a year of pathology residency at a hospital in New York City. At this point, the Korean War was raging, and my draft board was urging me to accept a com mission in the Army or someplace so I could serve. They told me at the end of my residency that was all the deferment I would get, and I found out Alan about the Commissioned Corps of the Public Health Service which could be used in lieu of going to Korea in the Army, so I signed up for that. (<a href=\"https://history.nih.gov/archives/downloads/rabsontranscript.pdf\" target=\"_blank\">Source</a>)</p>\r\n\r\n<p class=\"text-align-center\">For additional information on Dr. Alan Rabson read our <a href=\"https://www.cancer.gov/news-events/cancer-currents-blog/2018/alan-rabson-passes-away\" target=\"_blank\">post</a> on <a href=\"https://www.cancer.gov/news-events/cancer-currents-blog/2018/alan-rabson-passes-away\" target=\"_blank\">cancer.gov</a>.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div class=\"container-fluid\">\r\n<div class=\"row\">\r\n<div class=\"col-lg-12\">\r\n<p style=\"font-weight:bold;\">Agenda to be annonuced soon.</p>\r\n<table class=\"table table-condensed table-bordered\" name=\"agenda\" style=\"margin:auto;width:60%;\">\r\n\t<caption>\r\n\t<p class=\"text-align-center\" style=\"color:black;\"><strong>Agenda</strong></p>\r\n\t</caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Opening</td>\r\n\t\t\t<td class=\"text-align-center\">Dr. Ned Sharpless</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 1</td>\r\n\t\t\t<td class=\"text-align-center\">Dr. Collins</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 2</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 3</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 4</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Video Montage</td>\r\n\t\t\t<td class=\"text-align-center\">Please help us by submiting content on the <a href=\"/od/rabson-remembered/sentiments\">Sentiments</a> page</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 5</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 6</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Speaker 7</td>\r\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">Closing</td>\r\n\t\t\t<td class=\"text-align-center\">Dr. Sharpless</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div class=\"container-fluid\">\r\n<div class=\"row\">\r\n<div class=\"col-lg-12\">\r\n<p class=\"text-align-center\">Please <a href=\"/od/rabson-remembered/registration\">register</a> for this event.</p>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+    format: full_html
+    processed: "<div class=\"nci-body\">\n<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<h2 class=\"text-align-center nci-red\" style=\"font-size:26px;\">Alan S. Rabson, MD: Celebrating a Life in Science, Leadership, and Patient Care</h2>\n\n<h4 class=\"text-align-center\">Rabson’s career at the National Cancer Institute spanned six decades.</h4>\n\n<div class=\"container-fluid\" style=\"background-color:LightGray;\">\n<div class=\"row\">\n<div class=\"col-lg-4\">\n<div style=\"width:100%;padding:25px 0px 0px 10px;\">\n<div class=\"panel panel-default\"><!-- Panel Body -->\n<div class=\"panel-body\">\n<p class=\"text-align-center\"><img alt=\"Alan S. Rabson, M.D.\" class=\"figure-img img-fluid z-depth-1\" src=\"https://genesis55.github.io/assets/images/alan-rabson-article.jpeg\" width=\"100%\" /></p>\n</div>\n<!-- Panel Footer -->\n\n<div class=\"panel-footer\">Alan Rabson, M.D., in his office on the NIH campus in Bethesda, MD.<br />\nCredit: National Cancer Institute</div>\n</div>\n</div>\n</div>\n\n<div class=\"col-lg-8\">\n<div class=\"well\" style=\"background-color:Snow;margin:25px 10px;\">\n<h3 class=\"text-align-center\">Dr. Alan S. Rabson</h3>\n\n<p class=\"text-align-center\"><strong>{Short Bio Draft}</strong></p>\n\n<p>I was born and brought up in New York City, and went to medical school in Brooklyn at a school that was at that time called the Long Island College of Medicine. While I was in medical school, I became interested in cancer and cancer research.</p>\n\n<p>My first contact with the NCI began in 1947 when I was in my second year of medical school, and I decided I wanted to come to the National Cancer Institute to spend the summer as a student. I wrote to the head of Biochemistry, a very famous biochemist named Jesse Greenstein, and Jesse wrote me back saying that what I didn't understand is how hot it was in Washington in the summertime. There was no air conditioning at the NIH at that time, and he said he personally never spends summers here, that he spent his summers in Berkeley. And he thought it would be nice if I did the same thing. So that was my first attempt to get to the NCI.</p>\n\n<p>Then after I graduated, I interned in medicine in Boston and then had a year of pathology residency at a hospital in New York City. At this point, the Korean War was raging, and my draft board was urging me to accept a com mission in the Army or someplace so I could serve. They told me at the end of my residency that was all the deferment I would get, and I found out Alan about the Commissioned Corps of the Public Health Service which could be used in lieu of going to Korea in the Army, so I signed up for that. (<a href=\"https://history.nih.gov/archives/downloads/rabsontranscript.pdf\" target=\"_blank\">Source</a>)</p>\n\n<p class=\"text-align-center\">For additional information on Dr. Alan Rabson read our <a href=\"https://www.cancer.gov/news-events/cancer-currents-blog/2018/alan-rabson-passes-away\" target=\"_blank\">post</a> on <a href=\"https://www.cancer.gov/news-events/cancer-currents-blog/2018/alan-rabson-passes-away\" target=\"_blank\">cancer.gov</a>.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n\n<div>\_</div>\n\n<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<p style=\"font-weight:bold;\">Agenda to be annonuced soon.</p>\n<table class=\"table table-condensed table-bordered\" name=\"agenda\" style=\"margin:auto;width:60%;\"><caption>\n\t<p class=\"text-align-center\" style=\"color:black;\"><strong>Agenda</strong></p>\n\t</caption>\n\t<tbody><tr><td class=\"text-align-center\">Opening</td>\n\t\t\t<td class=\"text-align-center\">Dr. Ned Sharpless</td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 1</td>\n\t\t\t<td class=\"text-align-center\">Dr. Collins</td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 2</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 3</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 4</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Video Montage</td>\n\t\t\t<td class=\"text-align-center\">Please help us by submiting content on the <a href=\"/od/rabson-remembered/sentiments\">Sentiments</a> page</td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 5</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 6</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Speaker 7</td>\n\t\t\t<td class=\"text-align-center\"><strong>{Insert Name} </strong></td>\n\t\t</tr><tr><td class=\"text-align-center\">Closing</td>\n\t\t\t<td class=\"text-align-center\">Dr. Sharpless</td>\n\t\t</tr></tbody></table></div>\n</div>\n</div>\n\n<div>\_</div>\n\n<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<p class=\"text-align-center\">Please <a href=\"/od/rabson-remembered/registration\">register</a> for this event.</p>\n</div>\n</div>\n</div>\n\n<div>\_</div>\n</div>\n</div>\n</div>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
