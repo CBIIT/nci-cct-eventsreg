@@ -107,29 +107,27 @@
       $('header .navbar-header').css('height', '80px');
       $('.region-navigation').empty().append(logo+slogan);
 
-      var menu = `
-      <nav id="event-menu" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div id="nci-connect-menu" class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/nob/nciconnect/">Home</a></li>
-        <li><a href="/nob/nciconnect/registration">Registration</a></li>
-        <li><a href="/nob/nciconnect/agenda">Agenda</a></li>
-        <li><a href="/nob/nciconnect/travel">Travel</a></li>
-        <li><a href="/nob/nciconnect/lodging">Lodging</a></li>
-        <li><a href="/nob/nciconnect/nih-campus-access">Campus Access</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-`;
+      var menu = '<nav id="event-menu" class="navbar navbar-default">' +
+  '<div class="container-fluid">' +
+   '<div class="navbar-header">' +
+     '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">' +
+       '<span class="icon-bar"></span>' +
+       '<span class="icon-bar"></span>' +
+       '<span class="icon-bar"></span>' +
+     '</button>' +
+   '</div>' +
+     '<div id="nci-connect-menu" class="collapse navbar-collapse" id="myNavbar">' +
+       '<ul class="nav navbar-nav">' +
+         '<li class="active"><a href="/nob/nciconnect/">Home</a></li>' +
+         '<li><a href="/nob/nciconnect/registration">Registration</a></li>' +
+         '<li><a href="/nob/nciconnect/agenda">Agenda</a></li>' +
+         '<li><a href="/nob/nciconnect/travel">Travel</a></li>' +
+         '<li><a href="/nob/nciconnect/lodging">Lodging</a></li>' +
+         '<li><a href="/nob/nciconnect/nih-campus-access">Campus Access</a></li>' +
+         '</ul>' +
+     '</div>' +
+   '</div>' +
+   '</nav>';
     $('.menu--footer a:first').attr('href', assets[index].home);
     if ($('#event-menu').length == 0) {
       $('#main-content').before(menu);
@@ -168,25 +166,24 @@
       $('header .navbar-header').css('height', '100%');
       $('.region-navigation').empty().append(logo+slogan);
 
-      var menu = `
-      <nav id="event-menu" class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div id="nci-connect-menu" class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/cct/sallie-rosen-kaplan">Home</a></li>
-        <li><a href="/cct/sallie-rosen-kaplan/application">Application</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-`;
+      var menu = '<nav id="event-menu" class="navbar navbar-default">' +
+  '<div class="container-fluid">' +
+   '<div class="navbar-header">' +
+     '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">' +
+       '<span class="icon-bar"></span>' +
+       '<span class="icon-bar"></span>' +
+       '<span class="icon-bar"></span>' +
+     '</button>' +
+   '</div>' +
+     '<div id="nci-connect-menu" class="collapse navbar-collapse" id="myNavbar">' +
+      '<ul class="nav navbar-nav">' +
+        '<li class="active"><a href="/cct/sallie-rosen-kaplan">Home</a></li>' +
+        '<li><a href="/cct/sallie-rosen-kaplan/application">Application</a></li>' +
+      '</ul>' +
+    '</div>' +
+  '</div>' +
+'</nav>';
+
     $('.menu--footer a:first').attr('href', assets[index].home);
     if ($('#event-menu').length == 0) {
       $('#main-content').before(menu);
