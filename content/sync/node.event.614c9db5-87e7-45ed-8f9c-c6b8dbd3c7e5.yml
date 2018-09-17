@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-06-29T17:22:36+00:00'
+    value: '2018-09-05T20:59:33+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-06-29T17:22:36+00:00'
+    value: '2018-09-05T20:59:33+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -54,8 +54,16 @@ path:
     pid: null
     langcode: en
 menu_link: {  }
-body: {  }
-field_acronym: {  }
+body:
+  -
+    value: "<p>Chemical Biology Consortium Symposium</p>\r\n"
+    format: basic_html
+    processed: '<p>Chemical Biology Consortium Symposium</p>'
+    summary: ''
+    summary_processed: ''
+field_acronym:
+  -
+    value: next-cbcs
 field_event_home_link:
   -
     uri: 'internal:/next/chemical-biology-consortium-symposium'
@@ -64,11 +72,11 @@ field_event_home_link:
 field_event_published:
   -
     value: '2018-06-25'
-    end_value: '2018-08-23'
+    end_value: '2019-01-01'
 field_registration_open:
   -
     value: '2018-06-24'
-    end_value: '2018-08-22'
+    end_value: '2019-01-01'
 _content_sync:
   entity_type: node
   entity_dependencies:

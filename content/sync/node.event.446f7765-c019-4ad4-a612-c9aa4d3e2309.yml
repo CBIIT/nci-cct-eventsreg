@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-08-10T18:34:43+00:00'
+    value: '2018-09-05T21:00:49+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-08-10T18:34:43+00:00'
+    value: '2018-09-05T21:00:49+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -54,7 +54,13 @@ path:
     pid: null
     langcode: en
 menu_link: {  }
-body: {  }
+body:
+  -
+    value: "<p>NCI Connect</p>\r\n"
+    format: basic_html
+    processed: '<p>NCI Connect</p>'
+    summary: ''
+    summary_processed: ''
 field_acronym:
   -
     value: nob-ncic
