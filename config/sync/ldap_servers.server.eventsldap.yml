@@ -22,7 +22,7 @@ mail_template: ''
 picture_attr: ''
 unique_persistent_attr: ''
 unique_persistent_attr_binary: false
-user_dn_expression: ''
+user_dn_expression: 'cn=%username,%basedn'
 testing_drupal_username: ''
 testing_drupal_user_dn: ''
 grp_unused: false
