@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: a87b499c-fdf7-406a-8ebb-26a84ad11ae6
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 292d0eaa-0246-4202-bf3d-694d2fed30e2
+filename:
+  -
+    value: file_2.png
+uri:
+  -
+    value: 'private://webform/od_rr_sentiments_/_sid_/file_2.png'
+    url: /system/files/webform/od_rr_sentiments_/_sid_/file_2.png
+filemime:
+  -
+    value: image/png
+filesize:
+  -
+    value: 16196
+status:
+  -
+    value: false
+created:
+  -
+    value: '2018-09-17T20:18:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-17T20:18:41+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.292d0eaa-0246-4202-bf3d-694d2fed30e2

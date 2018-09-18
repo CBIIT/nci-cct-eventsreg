@@ -89,6 +89,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/content_sync": {
+                "Issue #2966022 by sccherry: Make generateSiteUUIDFile method public": 
+                "https://www.drupal.org/files/issues/2018-06-07/content_sync-batch-export-2966022-6-D8.patch"
+            }
         }
     }
 }
