@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: ad6f016c-1359-44a0-ac60-2c73f346c4db
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+filename:
+  -
+    value: 'SSSC ProfDevDay.2017(1).docx'
+uri:
+  -
+    value: 'public://assets/cct-sssc-pdd-2018/SSSC ProfDevDay.2017(1).docx'
+    url: /sites/default/files/assets/cct-sssc-pdd-2018/SSSC%20ProfDevDay.2017%281%29.docx
+filemime:
+  -
+    value: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+filesize:
+  -
+    value: 149990
+status:
+  -
+    value: true
+created:
+  -
+    value: '2018-09-19T14:29:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-19T14:29:11+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

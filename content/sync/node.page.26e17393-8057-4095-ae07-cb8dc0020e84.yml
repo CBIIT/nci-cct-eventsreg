@@ -11,7 +11,7 @@ type:
     target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
 revision_timestamp:
   -
-    value: '2018-09-19T00:53:15+00:00'
+    value: '2018-09-19T14:30:41+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-09-19T00:53:15+00:00'
+    value: '2018-09-19T14:30:41+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -45,16 +45,18 @@ sticky:
 default_langcode:
   -
     value: true
-revision_translation_affected: {  }
+revision_translation_affected:
+  -
+    value: true
 path:
   -
     alias: /cct/sssc-pdd-2018/agenda
 menu_link: {  }
 body:
   -
-    value: "<h2>Annual NCI SSSC Professional Development Day</h2>\r\n\r\n<p>Agenda</p>\r\n"
-    format: basic_html
-    processed: "<h2>Annual NCI SSSC Professional Development Day</h2>\n\n<p>Agenda</p>"
+    value: "<h2>Agenda</h2>\r\n\r\n<p><i class=\"fa fa-download\" aria-hidden=\"true\"></i>\r\n&nbsp;<a href=\"/sites/default/files/assets/cct-sssc-pdd-2018/SSSC%20ProfDevDay.2017(1).docx\">Download Agenda</a></p>\r\n\r\n<p>Agenda will be frequently updated.&nbsp; Please check back for updates.</p>\r\n\r\n<table class=\"table-striped table-bordered\" style=\"width:100%\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<th style=\"padding: 10px; width: 122px;\">Time</th>\r\n\t\t\t<th style=\"padding: 10px; width: 661px;\">Topic</th>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">8:30</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Registration</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">9:00 – 10:15</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Opening Remarks:</strong> Tom Misteli, Ph.D., CCR Director</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">10:15 – 10:30</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><b>text goes here</b></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">10:15 – 10:30</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Break</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">10:30 – 12:00</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">12:00 – 1:00</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Lunch on your own</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">1:00 – 2:30</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">2:30 – 2:45</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Break</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"padding: 10px; width: 122px;\">2:45 – 4:15</td>\r\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    format: full_html
+    processed: "<h2>Agenda</h2>\n\n<p><i class=\"fa fa-download\" aria-hidden=\"true\"></i>\n\_<a href=\"/sites/default/files/assets/cct-sssc-pdd-2018/SSSC%20ProfDevDay.2017(1).docx\">Download Agenda</a></p>\n\n<p>Agenda will be frequently updated.\_ Please check back for updates.</p>\n\n<table class=\"table-striped table-bordered\" style=\"width:100%\"><tbody><tr><th style=\"padding: 10px; width: 122px;\">Time</th>\n\t\t\t<th style=\"padding: 10px; width: 661px;\">Topic</th>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">8:30</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Registration</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">9:00 – 10:15</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Opening Remarks:</strong> Tom Misteli, Ph.D., CCR Director</td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">10:15 – 10:30</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><b>text goes here</b></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">10:15 – 10:30</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Break</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">10:30 – 12:00</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">12:00 – 1:00</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Lunch on your own</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">1:00 – 2:30</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">2:30 – 2:45</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>Break</strong></td>\n\t\t</tr><tr><td style=\"padding: 10px; width: 122px;\">2:45 – 4:15</td>\n\t\t\t<td style=\"padding: 10px; width: 661px;\"><strong>text goes here</strong></td>\n\t\t</tr></tbody></table>"
     summary: ''
     summary_processed: ''
 _content_sync:
