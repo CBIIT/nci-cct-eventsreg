@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-09-18T20:27:44+00:00'
+    value: '2018-09-19T18:38:18+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-09-18T20:27:44+00:00'
+    value: '2018-09-19T18:38:18+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -79,7 +79,7 @@ field_registration_open:
     end_value: '2019-01-01'
 field_results:
   -
-    uri: 'internal:/admin/structure/webform/manage/registration_sssc_professional_d/results/submissions'
+    uri: 'internal:/admin/structure/webform/manage/cct_sssc_pdd_2018_registration_/results/submissions'
     title: Registrations
     options: {  }
 _content_sync:

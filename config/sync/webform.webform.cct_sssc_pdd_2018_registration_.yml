@@ -87,8 +87,8 @@ settings:
   draft_saved_message: ''
   draft_loaded_message: ''
   confirmation_type: page
-  confirmation_title: ''
-  confirmation_message: ''
+  confirmation_title: 'Registration Confirmation'
+  confirmation_message: "Thank you for registering for the&nbsp;<strong>SSSC Professional Development Day</strong> on November 16, 2018 at the&nbsp;<em><a href=\"http://localhost:8080/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a>,&nbsp;</em>Building 35, Room 610, NIH Bethesda Campus.<br />\r\n<br />\r\nYou should receive an email confirmation.&nbsp;&nbsp;"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -154,4 +154,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  cct_sssc_pdd_2018_registration:
+    id: email
+    label: cct-sssc-pdd-2018-registration
+    handler_id: cct_sssc_pdd_2018_registration
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'SSSC Professional Development Day 2018'
+      subject: 'SSSC Professional Development Day Registration Confirmation'
+      body: "[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\n<br />\nThank you for registering for the&nbsp;<strong>SSSC Professional Development Day.</strong><br />\n<br />\n<strong>Event Location:</strong><br />\n<em><a href=\"https://events.cancer.gov/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a></em><br />\nBuilding 35, Room 610, NIH Bethesda Campus<br />\n<br />\n<strong>Event Date:</strong> November 16, 2018"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme: ''
