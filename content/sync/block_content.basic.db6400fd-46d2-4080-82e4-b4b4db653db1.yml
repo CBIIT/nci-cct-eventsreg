@@ -1,0 +1,43 @@
+uuid:
+  -
+    value: db6400fd-46d2-4080-82e4-b4b4db653db1
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: basic
+    target_type: block_content_type
+    target_uuid: 3e4a0c36-55fd-487c-9c7b-7cea71fe5f3f
+revision_created:
+  -
+    value: '2018-09-19T00:59:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'cct - sssc-pdd-2018 (Information)'
+changed:
+  -
+    value: '2018-09-19T00:59:58+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<h4>General Information</h4>\r\n\r\n<p>For conference related questions please contact:&nbsp;<strong><em><a href=\"mailto:garnernn@nih.gov\">Nicole Garner</a></em></strong></p>\r\n\r\n<h4>Location</h4>\r\n\r\n<p><a href=\"https://events-stage.nci.nih.gov/cct/sssc-pdd-2018/venue\">Porter Neuroscience Ctr.</a><br />\r\n35 Covent Drive<br />\r\nBuilding 35, Room 610<br />\r\nBethesda, Md. 20892</p>\r\n"
+    format: basic_html
+    processed: "<h4>General Information</h4>\n\n<p>For conference related questions please contact:\_<strong><em><a href=\"mailto:garnernn@nih.gov\">Nicole Garner</a></em></strong></p>\n\n<h4>Location</h4>\n\n<p><a href=\"https://events-stage.nci.nih.gov/cct/sssc-pdd-2018/venue\">Porter Neuroscience Ctr.</a><br />\n35 Covent Drive<br />\nBuilding 35, Room 610<br />\nBethesda, Md. 20892</p>"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: block_content
+  entity_dependencies: {  }

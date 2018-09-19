@@ -17,14 +17,17 @@
         event = "cct-srk";
         $.updateAssets(event); 
       }
-      //console.log(url_path.substring(0, 21).toLowerCase());
       if(url_path.substring(0, 21).toLowerCase() == '/od/rabson-remembered') {
         event = "od-rr";
         $.updateAssets(event); 
       }
+      //console.log(url_path.substring(0, 21).toLowerCase());
+      if(url_path.substring(0, 18).toLowerCase() == '/cct/sssc-pdd-2018') {
+        event = "cct-sssc-pdd-2018";
+        $.updateAssets(event); 
+      }
     }
   }
-
   $.updateAssets = function(event) {
  	//console.log("Event"+event);
     var assets = [{
@@ -63,11 +66,41 @@
         org:'od',
         org_title: 'Office of the Director',
         slogan:'Alan S. Rabson, MD: Celebrating a Life in Science, Leadership, and Patient Care'
+    },{
+        event:'cct-sssc-pdd-2018',
+        title : 'SSSC Professional Development Day',
+        logo_image:'',
+        home:'/cct/sssc-pdd-2018',
+        title_href:'',
+        org:'od',
+        org_title: '',
+        slogan:''
     }];
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     var asset = assets[index];
     //console.log("Going to: "+assets[index].title);
+    if(asset.event == "cct-sssc-pdd-2018") {
+      $('#eventsreg-nav-bar li').removeClass('active');
+      var url_path = window.location.pathname;
+      var tab_active = url_path.substring(19,50).toLowerCase();
+      //console.log(tab_active);
+        switch(tab_active) {
+          case "agenda":
+            $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+            break;
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(3)').addClass('active');
+             break;
+          case "venue":
+            $('#eventsreg-nav-bar li:nth-child(4)').addClass('active');
+             break;
+          default:
+            $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');
+            break;
+        }
+    }
+
     if(asset.event == "od-rr") {
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;

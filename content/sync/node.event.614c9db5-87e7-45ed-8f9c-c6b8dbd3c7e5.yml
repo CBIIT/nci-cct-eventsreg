@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-09-05T20:59:33+00:00'
+    value: '2018-09-19T00:13:58+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-09-05T20:59:33+00:00'
+    value: '2018-09-19T00:13:58+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -77,6 +77,11 @@ field_registration_open:
   -
     value: '2018-06-24'
     end_value: '2019-01-01'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/webform_next_chemical_biology_co/results/submissions'
+    title: Registrations
+    options: {  }
 _content_sync:
   entity_type: node
   entity_dependencies:

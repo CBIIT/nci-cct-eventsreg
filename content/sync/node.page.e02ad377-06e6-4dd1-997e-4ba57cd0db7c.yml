@@ -1,0 +1,65 @@
+uuid:
+  -
+    value: e02ad377-06e6-4dd1-997e-4ba57cd0db7c
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-09-19T00:53:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct - sssc-pdd-2018 (Venue/Directions)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-19T00:38:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-19T00:53:04+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected: {  }
+path:
+  -
+    alias: /cct/sssc-pdd-2018/venue
+menu_link: {  }
+body:
+  -
+    value: "<h2>Annual NCI SSSC Professional Development Day</h2>\r\n\r\n<p>Venue/Directions</p>\r\n"
+    format: basic_html
+    processed: "<h2>Annual NCI SSSC Professional Development Day</h2>\n\n<p>Venue/Directions</p>"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
