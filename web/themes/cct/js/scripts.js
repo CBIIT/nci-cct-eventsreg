@@ -21,9 +21,13 @@
         event = "od-rr";
         $.updateAssets(event); 
       }
-      //console.log(url_path.substring(0, 21).toLowerCase());
       if(url_path.substring(0, 18).toLowerCase() == '/cct/sssc-pdd-2018') {
         event = "cct-sssc-pdd-2018";
+        $.updateAssets(event); 
+      }
+      console.log(url_path.substring(0, 19).toLowerCase());
+      if(url_path.substring(0, 19).toLowerCase() == '/presto/stewardship') {
+        event = "presto-stewardship";
         $.updateAssets(event); 
       }
     }
@@ -75,11 +79,35 @@
         org:'od',
         org_title: '',
         slogan:''
+    },{
+        event:'presto-stewardship',
+        title : 'NCI Clinical Trials Stewardship Training',
+        logo_image:'',
+        home:'/presto/stewardship',
+        title_href:'',
+        org:'presto',
+        org_title: '',
+        slogan:''
     }];
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     var asset = assets[index];
-    //console.log("Going to: "+assets[index].title);
+    console.log("Going to: "+assets[index].title);
+    if(asset.event == "presto-stewardship") {
+      $('#eventsreg-nav-bar li').removeClass('active');
+      var url_path = window.location.pathname;
+      var tab_active = url_path.substring(20,50).toLowerCase();
+      console.log(tab_active);
+        switch(tab_active) {
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+             break;
+          default:
+            $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');
+            break;
+        }
+    }
+
     if(asset.event == "cct-sssc-pdd-2018") {
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;

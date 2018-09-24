@@ -94,9 +94,7 @@
         "patches": {
             "drupal/content_sync": {
                 "Issue #2966022 by sccherry: Make generateSiteUUIDFile method public": 
-                "https://www.drupal.org/files/issues/2018-06-07/content_sync-batch-export-2966022-6-D8.patch",
-                "Content Sync Batch - Show process.": 
-                "https://www.drupal.org/files/issues/2018-06-19/content_sync-batch_never_finishes-0-D8.patch"
+                "https://www.drupal.org/files/issues/2018-06-07/content_sync-batch-export-2966022-6-D8.patch"
             }
         }
     }
