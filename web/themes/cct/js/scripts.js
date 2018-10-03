@@ -2,20 +2,20 @@
   Drupal.behaviors.icrpBehavior = {
     attach: function (context, settings) {
 //      alert("Hello World");
-	  var event = "";
+      var event = "";
       var url_path = window.location.pathname;
       //console.log(url_path);
       if(url_path.substring(0, 43).toLowerCase() == '/next/chemical-biology-consortium-symposium') {
         event="next-cbcs";
-        $.updateAssets(event); 
+        $.updateAssets(event);
       }
       if(url_path.substring(0, 15).toLowerCase() == '/nob/nciconnect') {
         event = "nob-nciconnect";
-        $.updateAssets(event); 
+        $.updateAssets(event);
       }
       if(url_path.substring(0, 24).toLowerCase() == '/cct/sallie-rosen-kaplan') {
         event = "cct-srk";
-        $.updateAssets(event); 
+        $.updateAssets(event);
       }
       if(url_path.substring(0, 21).toLowerCase() == '/od/rabson-remembered') {
         event = "od-rr";
@@ -25,15 +25,18 @@
         event = "cct-sssc-pdd-2018";
         $.updateAssets(event); 
       }
-      console.log(url_path.substring(0, 19).toLowerCase());
+      //console.log(url_path.substring(0, 50).toLowerCase());
       if(url_path.substring(0, 19).toLowerCase() == '/presto/stewardship') {
         event = "presto-stewardship";
         $.updateAssets(event); 
       }
+      if(url_path.substring(0, 24).toLowerCase() == '/cct/fyi-colloquium-2019') {
+        event = "cct-fyi-colloquium-2019";
+        $.updateAssets(event); 
+      }
     }
-  }
+  } 
   $.updateAssets = function(event) {
- 	//console.log("Event"+event);
     var assets = [{
         event:'next-cbcs',
         title : 'NExT - NCI Experimental Therapeutics Program',
@@ -43,7 +46,7 @@
         org:'NExT',
         org_title: '',
         slogan:'NCI Experimental Therapeutics Program'
-	  },{
+    },{
         event:'nob-nciconnect',
         title : '',
         logo_image:'/sites/default/files/logos/nci-logo.svg',
@@ -88,11 +91,37 @@
         org:'presto',
         org_title: '',
         slogan:''
+    },{
+        event:'cct-fyi-colloquium-2019',
+        title : 'Fellowship and Young Investigators Colloquium',
+        logo_image:'',
+        home:'/cct/fyi-colloquium-2019',
+        title_href:'',
+        org:'cct',
+        org_title: '',
+        slogan:''
     }];
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     var asset = assets[index];
     console.log("Going to: "+assets[index].title);
+
+    
+    if(asset.event == "cct-fyi-colloquium-2019") {
+      $('#eventsreg-nav-bar li').removeClass('active');
+      var url_path = window.location.pathname;
+      var tab_active = url_path.substring(25,50).toLowerCase();
+      console.log(tab_active)
+        switch(tab_active) {
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+             break;
+          default:
+            $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');
+            break;
+        }
+    }
+
     if(asset.event == "presto-stewardship") {
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;

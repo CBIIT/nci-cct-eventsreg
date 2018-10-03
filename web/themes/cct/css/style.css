@@ -43,3 +43,14 @@ dt {
 .nci-body, #cct-srk-body {
 	font-size:16px;
 }
+
+/*fixes padding issues for Select Other boxes inside of flexbox -- usded on CCT/FYI Colloquium */
+.legend-fix > legend {
+  padding-bottom: 4px;
+}
+
+/*changes panel title to bold and larger font -- usded on CCT/FYI Colloquium */
+.panel-title {
+  font-weight: bold;
+  font-size: 18px;
+}
