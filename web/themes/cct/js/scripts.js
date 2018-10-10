@@ -34,8 +34,13 @@
         event = "cct-fyi-colloquium-2019";
         $.updateAssets(event); 
       }
+      if(url_path.substring(0, 9).toLowerCase() == '/cct/dcdp') {
+        event = "cct-dcdp";
+        $.updateAssets(event); 
+      }
     }
-  } 
+  }
+
   $.updateAssets = function(event) {
     var assets = [{
         event:'next-cbcs',
@@ -100,6 +105,15 @@
         org:'cct',
         org_title: '',
         slogan:''
+    },{
+        event:'cct-dcdp',
+        title : 'Diversity Career Development Program (DCDP)',
+        logo_image:'',
+        home:'/cct/dcdp',
+        title_href:'',
+        org:'cct',
+        org_title: '',
+        slogan:''
     }];
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
@@ -107,14 +121,35 @@
     console.log("Going to: "+assets[index].title);
 
     
+    if(asset.event == "cct-dcdp") {
+      $('#eventsreg-nav-bar li').removeClass('active');
+      var url_path = window.location.pathname;
+      var tab_active = url_path.substring(10,50).toLowerCase();
+      console.log(tab_active)
+        switch(tab_active) {
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+             break;
+          default:
+            $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');
+            break;
+        }
+    }
+
     if(asset.event == "cct-fyi-colloquium-2019") {
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(25,50).toLowerCase();
       console.log(tab_active)
         switch(tab_active) {
-          case "registration":
+          case "abstracts":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
+             break;
+          case "registration":
+            $('#eventsreg-nav-bar li:nth-child(3)').addClass('active');
+             break;
+          case "venue":
+            $('#eventsreg-nav-bar li:nth-child(4)').addClass('active');
              break;
           default:
             $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');

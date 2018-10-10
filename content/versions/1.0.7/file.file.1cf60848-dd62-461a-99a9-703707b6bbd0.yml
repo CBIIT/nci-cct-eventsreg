@@ -1,0 +1,39 @@
+uuid:
+  -
+    value: 1cf60848-dd62-461a-99a9-703707b6bbd0
+langcode:
+  -
+    value: en
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+filename:
+  -
+    value: 'Shady Grove_2.jpg'
+uri:
+  -
+    value: 'public://inline-images/Shady Grove_2.jpg'
+    url: /sites/default/files/inline-images/Shady%20Grove_2.jpg
+filemime:
+  -
+    value: image/jpeg
+filesize:
+  -
+    value: 188929
+status:
+  -
+    value: true
+created:
+  -
+    value: '2018-10-03T15:31:31+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-10-03T15:33:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+_content_sync:
+  entity_type: file
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
