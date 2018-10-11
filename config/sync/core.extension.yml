@@ -24,6 +24,7 @@ module:
   default_content: 0
   default_content_deploy: 0
   devel: 0
+  doc_serialization: 0
   dynamic_page_cache: 0
   editor: 0
   externalauth: 0
@@ -70,6 +71,7 @@ module:
   webform_node: 0
   webform_ui: 0
   webform_views: 0
+  extlink: 1
   menu_link_content: 1
   pathauto: 1
   webform_bootstrap: 1
