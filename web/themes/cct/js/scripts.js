@@ -127,7 +127,7 @@
       var tab_active = url_path.substring(10,50).toLowerCase();
       console.log(tab_active)
         switch(tab_active) {
-          case "registration":
+          case "application":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
              break;
           default:
