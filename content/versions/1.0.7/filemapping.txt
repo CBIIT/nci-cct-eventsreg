@@ -4,8 +4,9 @@ cct - fyi-colloquium-2019 (Home) (23) = node.page.69990bca-8af3-43fa-a3af-2ed837
 cct - fyi-colloquium-2019 (24) = node.event.1f3a107b-a2fe-4e67-89b0-2f4ef44d4067.yml
 cct - fyi-colloquium-2019 (Abstracts) (25) = node.page.60265d2d-5fc2-4994-bdc6-396e7e4ca680.yml
 cct - FYI Colloquium 2019 (Venue) (26) = node.page.341c5a38-019d-4416-b87e-f19559da7106.yml
+General Information block  = block_content.basic.c97c20db-f1c0-4b0e-85e3-409ddbcb7773.yml 
 
 Diversity Career Development Program (DCDP)
 
 cct - diversity-career-development-program (home) (27) = node.page.7aa3f204-2292-45e6-a91b-e7730878fb7f.yml
-cct-dcdp (28) - node.event.1303d19e-8560-44b3-8dd9-2c0aea96627c.yml
+cct-dcdp (28) = node.event.1303d19e-8560-44b3-8dd9-2c0aea96627c.yml
