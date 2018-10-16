@@ -57,9 +57,10 @@
     console.log("add listeners");
     $("#edit-organization-type-select").change(function(){
       console.log("The text has been changed. "+$('#edit-organization-type-select').val());
-      if($('#edit-organization-type-select').val() == "NCI") {
+      if($('#edit-organization-type-select').val() == "HNC") {
         console.log("You selected NCI.  Hurry.");
-        //$.getColloquiumBranchList("NCI");
+        $.getColloquiumBranchList("NCI");
+        //alert("We have the NCI - National Cancer Institute");
       }
     }); 
   }

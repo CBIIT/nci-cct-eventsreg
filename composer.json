@@ -81,8 +81,9 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "drush cr",
-            "drush wfld"
+            "drush wfld",
+            "drush updatedb -y",
+            "drush cr"
         ]
     },
     "extra": {
