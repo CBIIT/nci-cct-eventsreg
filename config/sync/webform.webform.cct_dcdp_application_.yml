@@ -158,4 +158,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  cct_dcdp_email:
+    id: email
+    label: cct-dcdp-email
+    handler_id: cct_dcdp_email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:work_email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'DCDP Application'
+      subject: 'DCDP Application Confirmation'
+      body: "<p>Thank you for your application.&nbsp; Note, your application is not considered complete until your supervisor submits the nomination form.&nbsp; Please feel free to contact&nbsp;<a href=\"mailto:NCICCTIDWB@mail.nih.gov\">NCICCTIDWB@mail.nih.gov</a>, if you have any questions.</p>\n\n<p><strong>Summary of application submitted:</strong></p>\n<strong>Full Name:</strong>&nbsp;[webform_submission:values:full_name]<br />\n<strong>NCI Division:</strong>&nbsp;[webform_submission:values:nci_division]<br />\n<strong>Start Date at NCI:</strong>&nbsp;[webform_submission:values:start_date_at_nci]<br />\n<strong>Lab/Branch/Office:</strong>&nbsp;[webform_submission:values:lab_branch_office]<br />\n<strong>Campus Address: </strong>&nbsp;[webform_submission:values:campus_address]<br />\n<strong>Campus Phone:</strong>&nbsp;[webform_submission:values:campus_telephone]<br />\n<strong>Work Email:</strong>&nbsp;[webform_submission:values:work_email]<br />\n<strong>Name of Supervisor:</strong>&nbsp;[webform_submission:values:mentor]<br />\n<strong>Curriculum Vitae Upload:</strong>&nbsp;[webform_submission:values:curriculum_vitae_cv_] <strong>Personal Statement Upload:</strong>&nbsp;[webform_submission:values:personal_statement]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
