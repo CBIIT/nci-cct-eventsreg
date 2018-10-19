@@ -10,6 +10,11 @@ header {
 #utility-bar {
     background: #2A71A5;
 }
+#utility-bar > .container > .row {
+  height:28.4px;
+  margin-right:20px;
+  margin-left:20px;
+}
 .utility a {
   color:white;
   text-decoration: none;
@@ -22,10 +27,21 @@ header {
     float:right;
 }
 .utility span {
-    padding: .2em 1em;
+    /* padding: .2em 1em; */
     display: inline-block;
-    height: 30px;
+    /* height: 30px; */
+    margin-top:3px;
 }
+/* Turn off external link in utility bar */
+.utility > span > a > span.ext {
+  display:none;
+}
+/* Turn off external link in New Footer */
+#new-footer span.ext {
+  display:none;
+}
+
+
 
 /* EventsReg Menu */
 #eventsreg-nav-bar {

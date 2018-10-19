@@ -1,10 +1,10 @@
 (function ($) {
-  Drupal.behaviors.icrpBehavior = {
+  Drupal.behaviors.cctBehavior = {
     attach: function (context, settings) {
-//      alert("Hello World");
+      //alert("Hello World");
       var event = "";
       var url_path = window.location.pathname;
-      //console.log(url_path);
+      console.log(url_path);
       if(url_path.substring(0, 43).toLowerCase() == '/next/chemical-biology-consortium-symposium') {
         event="next-cbcs";
         $.updateAssets(event);
@@ -39,46 +39,7 @@
         $.updateAssets(event); 
       }
       
-      if(url_path.substring(0, 37).toLowerCase() == '/cct/fyi-colloquium-2019/registration') {
-        $.setupColloquiumListeners(); 
-      }
     }
-  }
-  /*
-  Step 1: get Org by Short name #organization-type-select
-      a) Convert to SAC code
-      b) Get list of children of that SAC code. (i.e. NCI has a sac code of HNC)
-      c) Query https://userinfo-dev.nci.nih.gov/api/org/short-name/nci and get sac code of HNC.
-      d) Query https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/hnc to get a list of Divisions (DOCs).
-  */
-  var userinfo_server = "https://userinfo-dev.nci.nih.gov/api/org/";
-
-  $.setupColloquiumListeners = function() {
-    console.log("add listeners");
-    $("#edit-organization-type-select").change(function(){
-      console.log("The text has been changed. "+$('#edit-organization-type-select').val());
-      if($('#edit-organization-type-select').val() == "HNC") {
-        console.log("You selected NCI.  Hurry.");
-        $.getColloquiumBranchList("NCI");
-        //alert("We have the NCI - National Cancer Institute");
-      }
-    }); 
-  }
-
-  $.getColloquiumBranchList = function(org) {
-    //Look up SAC code by org name
-    var query = userinfo_server + 'short-name/' + org;
-    console.log('query: '+query);
-    $.ajax({
-      url: query
-    })
-      .done(function( data ) {
-        if ( console && console.log ) {
-          console.log( "Sample of data:", data);
-        }
-    });
-
-
   }
 
   $.updateAssets = function(event) {
@@ -165,7 +126,7 @@
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(10,50).toLowerCase();
-      console.log(tab_active)
+      console.log("What is this: "+tab_active)
         switch(tab_active) {
           case "application":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
