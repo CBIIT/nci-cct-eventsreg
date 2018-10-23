@@ -44,6 +44,7 @@ dt {
 	font-size:16px;
 }
 
+/* Directors Colloquium */
 /*fixes padding issues for Select Other boxes inside of flexbox -- usded on CCT/FYI Colloquium */
 .legend-fix > legend {
   padding-bottom: 4px;
@@ -53,4 +54,8 @@ dt {
 .panel-title {
   font-weight: bold;
   font-size: 18px;
+}
+
+#edit-organization-type-other {
+  margin-bottom: 20px;
 }
