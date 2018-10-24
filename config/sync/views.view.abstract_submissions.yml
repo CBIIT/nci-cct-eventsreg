@@ -622,7 +622,18 @@ display:
       title: Abstract-Submissions
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'There are no registrations at this time.'
+          plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -645,7 +656,7 @@ display:
           doc_serialization:
             template_file:
               - '134'
-      path: cct/fyi-directors-colloquium-2019/abstract-submissions
+      path: cct/fyi-colloquium-2019/abstract-submissions
     cache_metadata:
       max-age: -1
       contexts:
