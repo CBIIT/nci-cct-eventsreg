@@ -141,7 +141,7 @@
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(25,50).toLowerCase();
-      console.log(tab_active)
+      console.log(tab_active);
         switch(tab_active) {
           case "abstracts":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
@@ -151,6 +151,9 @@
              break;
           case "venue":
             $('#eventsreg-nav-bar li:nth-child(4)').addClass('active');
+             break;
+          case "abstract-submissions" :
+            $('#eventsreg-nav-bar li:nth-child(5)').addClass('active');
              break;
           default:
             $('#eventsreg-nav-bar li:nth-child(1)').addClass('active');

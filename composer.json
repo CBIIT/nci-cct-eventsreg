@@ -42,6 +42,7 @@
         "drupal/redirect_after_login": "^2.3",
         "drupal/simplesamlphp_auth": "^3.0",
         "drupal/url_redirect": "^2.6",
+        "drupal/views_data_export": "^1.0@beta",
         "drupal/webform": "^5.0",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",
