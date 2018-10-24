@@ -45,6 +45,7 @@ dt {
 }
 
 /* Directors Colloquium */
+
 /*fixes padding issues for Select Other boxes inside of flexbox -- usded on CCT/FYI Colloquium */
 .legend-fix > legend {
   padding-bottom: 4px;
@@ -56,6 +57,18 @@ dt {
   font-size: 18px;
 }
 
+/*changes specific other option to have margin below -- usded on CCT/FYI Colloquium */
 #edit-organization-type-other {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/*changes specific abstract view -- usded on CCT/FYI Colloquium */
+.row-style {
+  margin-top: 20px;
+}
+
+.item-list2 li {
+      list-style-type: none;
+    border-top: 2px solid #CCC;
+    padding-bottom: 15px;
 }
