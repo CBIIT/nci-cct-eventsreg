@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
+    - field.field.node.event.field_acronym
+    - field.field.node.event.field_event_home_link
+    - field.field.node.event.field_event_published
+    - field.field.node.event.field_registration_open
+    - field.field.node.event.field_results
     - node.type.event
   module:
     - text
@@ -25,4 +30,11 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_acronym: true
+  field_event_home_link: true
+  field_event_published: true
+  field_registration_open: true
+  field_results: true
