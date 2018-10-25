@@ -95,7 +95,7 @@ settings:
   draft_loaded_message: ''
   confirmation_type: page
   confirmation_title: 'Registration Confirmation'
-  confirmation_message: "Thank you for registering for the&nbsp;<strong>SSSC Professional Development Day</strong> on November 16, 2018 at the&nbsp;<em><a href=\"http://localhost:8080/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a>,&nbsp;</em>Building 35, Room 610, NIH Bethesda Campus.<br />\r\n<br />\r\nYou should receive an email confirmation.&nbsp;&nbsp;"
+  confirmation_message: "Thank you for registering for the <strong>19th Annual CCR Fellows and Young Investigators Colloquium</strong>.<br />\r\n<br />\r\nAn email confirmation has been sent to the email you have provided.&nbsp;"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

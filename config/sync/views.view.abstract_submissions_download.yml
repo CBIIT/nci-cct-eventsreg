@@ -648,8 +648,10 @@ display:
     display_options:
       display_extenders:
         doc_serialization: {  }
-      path: cct/fyi-directors-colloquium-2019/abstract-submissions-download
-      filename: ''
+      path: cct/fyi-colloquium-2019/abstract-submissions-download
+      filename: ' CCR Fellows and Young Investigators Colloquium - Abstract Submissions - 2019.csv'
+      auth:
+        - cookie
     cache_metadata:
       max-age: -1
       contexts:
@@ -662,14 +664,11 @@ display:
     display_plugin: page
     id: page_1
     display_title: Page
-    position: 1
+    position: 2
     display_options:
       display_extenders:
-        doc_serialization:
-          doc_serialization:
-            template_file:
-              - '134'
-      path: cct/fyi-directors-colloquium-2019/abstract-submissions-download2
+        doc_serialization: {  }
+      path: test
     cache_metadata:
       max-age: -1
       contexts:

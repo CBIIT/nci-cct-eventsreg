@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - user.role.administrator
+    - user.role.content_editor
     - webform.webform.cct_fyi_colloquium_2019_registra
   module:
+    - user
     - webform
     - webform_views
 id: abstract_submissions
@@ -23,8 +26,11 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            administrator: administrator
+            content_editor: content_editor
       cache:
         type: tag
         options: {  }
@@ -619,8 +625,19 @@ display:
             group_items: {  }
           plugin_id: webform_submission_select_filter
       sorts: {  }
-      title: Abstract-Submissions
-      header: {  }
+      title: 'cct - fyi-colloquium-2019 Abstract-Submissions'
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<div class=\"survey-results-table\">\n\t<div class=\"pull-left site-color\"><h2>Individual Responses</h2></div>\n\t<div class=\"pull-right\" style=\"padding-bottom:15px;\">\n\t\t<a id=\"survey-download-btn\" class=\"btn btn-default\" href=\"/cct/fyi-colloquium-2019/abstract-submissions-download?_format=csv\"><i class=\"fas fa-download\"></i> Export</a>\n\t</div>\n</div>\n<div class=\"clearfix\"></div>"
+          plugin_id: text_custom
       footer: {  }
       empty:
         area_text_custom:
@@ -644,6 +661,7 @@ display:
         - url
         - url.query_args
         - user
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -664,4 +682,5 @@ display:
         - url
         - url.query_args
         - user
+        - user.roles
       tags: {  }
