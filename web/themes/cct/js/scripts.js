@@ -4,7 +4,7 @@
       //alert("Hello World");
       var event = "";
       var url_path = window.location.pathname;
-      console.log(url_path);
+      //console.log(url_path);
       if(url_path.substring(0, 43).toLowerCase() == '/next/chemical-biology-consortium-symposium') {
         event="next-cbcs";
         $.updateAssets(event);
@@ -119,14 +119,14 @@
     //console.dir(assets);
     var index = assets.map(function(o) { return o.event; }).indexOf(event);
     var asset = assets[index];
-    console.log("Going to: "+assets[index].title);
+    //console.log("Going to: "+assets[index].title);
 
     
     if(asset.event == "cct-dcdp") {
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(10,50).toLowerCase();
-      console.log("What is this: "+tab_active)
+      //console.log("What is this: "+tab_active)
         switch(tab_active) {
           case "application":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
@@ -141,7 +141,7 @@
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(25,50).toLowerCase();
-      console.log(tab_active);
+      //console.log(tab_active);
         switch(tab_active) {
           case "abstracts":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
@@ -165,7 +165,7 @@
       $('#eventsreg-nav-bar li').removeClass('active');
       var url_path = window.location.pathname;
       var tab_active = url_path.substring(20,50).toLowerCase();
-      console.log(tab_active);
+      //console.log(tab_active);
         switch(tab_active) {
           case "registration":
             $('#eventsreg-nav-bar li:nth-child(2)').addClass('active');
