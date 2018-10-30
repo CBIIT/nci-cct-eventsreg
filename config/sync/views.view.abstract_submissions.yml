@@ -7,7 +7,11 @@ dependencies:
     - user.role.content_editor
     - webform.webform.cct_fyi_colloquium_2019_registra
   module:
+    - csv_serialization
+    - rest
+    - serialization
     - user
+    - views_data_export
     - webform
     - webform_views
 id: abstract_submissions
@@ -660,6 +664,52 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
+        - user.roles
+      tags: {  }
+  data_export_1:
+    display_plugin: data_export
+    id: data_export_1
+    display_title: 'Data export'
+    position: 2
+    display_options:
+      display_extenders:
+        doc_serialization: {  }
+      path: cct/fyi-colloquium-2019/abstract-submissions-csv
+      filename: Abstract-Submissions.csv
+      style:
+        type: data_export
+        options:
+          formats:
+            csv: csv
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+          xls_settings:
+            xls_format: Excel2007
+            metadata:
+              creator: ''
+              last_modified_by: ''
+              title: ''
+              description: ''
+              subject: ''
+              keywords: ''
+              category: ''
+              manager: ''
+              company: ''
+      displays:
+        page_1: page_1
+        default: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - request_format
+        - url
         - user
         - user.roles
       tags: {  }

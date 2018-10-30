@@ -6,7 +6,7 @@ id: front_page_redirect
 label: 'Front Page Redirect'
 message: 'No'
 path: /
-redirect_path: /next/chemical-biology-consortium-symposium
+redirect_path: /current-events
 checked_for: Role
 negate: false
 user: null
