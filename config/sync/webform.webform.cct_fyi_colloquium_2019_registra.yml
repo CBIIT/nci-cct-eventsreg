@@ -178,17 +178,17 @@ handlers:
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
-      bcc_mail: ''
+      bcc_mail: leidoswebteam@gmail.com
       bcc_options: {  }
       from_mail: _default
       from_options: {  }
-      from_name: 'SSSC Professional Development Day 2018'
-      subject: 'SSSC Professional Development Day Registration Confirmation'
-      body: "[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\n<br />\nThank you for registering for the&nbsp;<strong>SSSC Professional Development Day.</strong><br />\n<br />\n<strong>Event Location:</strong><br />\n<em><a href=\"https://events.cancer.gov/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a></em><br />\nBuilding 35, Room 610, NIH Bethesda Campus<br />\n<br />\n<strong>Event Date:</strong> November 16, 2018"
+      from_name: '19th Annual Fellows and Young Investigators Colloquium'
+      subject: '19th Annual Fellows and Young Investigators Colloquium Registration Confirmation'
+      body: "[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\r\n<br />\r\nThank you for registering for the&nbsp;<strong>19th Annual Fellows and Young Investigators Colloquium</strong>.<br />\r\n<br />\r\n<strong>Event Location:</strong><br />\r\nNCI-Shady Grove<br />\r\nTE-406/408/410<br />\r\nRockville, MD. 20850<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted by: [webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]<br />\r\n&nbsp;"
       excluded_elements: {  }
-      ignore_access: false
+      ignore_access: true
       exclude_empty: true
-      exclude_empty_checkbox: false
+      exclude_empty_checkbox: true
       html: true
       attachments: false
       twig: false
