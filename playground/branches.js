@@ -121,6 +121,7 @@ wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC4" > HNC4.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNCB" > HNCB.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC5" > HNC5.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1" > HNC1.json
+
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1D" > HNC1D.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1P" > HNC1P.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1Q" > HNC1Q.json
@@ -135,6 +136,15 @@ wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1K" > HNC1K.js
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC17" > HNC17.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC16" > HNC16.json
 wget "https://userinfo-dev.nci.nih.gov/api/org/subbranches/sac/HNC1J" > HNC1J.json            
+
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNC7"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNCC"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNCD"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNC9"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNC4" 
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNCB"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNC5"
+wget "https://userinfo-dev.nci.nih.gov/api/org/descendants/sac/HNC1"
 
 
 */

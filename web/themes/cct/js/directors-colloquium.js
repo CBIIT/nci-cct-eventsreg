@@ -106,7 +106,8 @@ http://localhost:8080/cct/fyi-colloquium-2019/abstract-submissions-csv?webform_s
 
 	$("#edit-branch-lab option").each(function() {
 
-		if( sac == "HNC7"){
+		//if( sac == "HNC7" || sac == "HNC9"){
+			
 			if(sac == this.value.substr(0, lenOfSACName) && this.value.length  >= (sac.length +1)) {
 				//console.log(this.value + "Remove Hidden");
 			    $('#edit-branch-lab option[value="' + this.value + '"]').removeProp('hidden');
@@ -116,6 +117,7 @@ http://localhost:8080/cct/fyi-colloquium-2019/abstract-submissions-csv?webform_s
 			    $('#edit-branch-lab option[value="' + this.value + '"]').attr('hidden', true);
 			    $('#edit-branch-lab option[value="' + this.value + '"]').attr('disabled', true);
 			}
+			/*
 		} else {
 
 			if (sac == this.value.substr(0, lenOfSACName) && this.value.length  == (sac.length +1)) {
@@ -129,6 +131,7 @@ http://localhost:8080/cct/fyi-colloquium-2019/abstract-submissions-csv?webform_s
 
 	   		}
 	   	}
+	   	*/
 		if( sac == ""){
 		    $('#edit-branch-lab option[value="' + this.value + '"]').attr('hidden', true);
 		    $('#edit-branch-lab option[value="' + this.value + '"]').attr('disabled', true);
