@@ -35,3 +35,6 @@ web/sites/*/services.yml
 #Remove content/sync files for now.  (i.e. Not being used)
 /content/sync/*
 
+#ignore settings.php #
+settings.php
+
