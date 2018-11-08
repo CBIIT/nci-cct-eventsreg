@@ -1,11 +1,7 @@
 #~/bin/sh
-if [ -d "/local/drupal/events" ]; then
+if [ -d "/local/drupal/events/" ]; then
         echo "Skipping drupal"
 else
-  echo "Making drupal Directory"
-  mkdir -p /local/drupal
-  cd /local/drupal
-  echo "Cloning the repository"
   git clone https://github.com/CBIIT/nci-cct-eventsreg events
   cp /tmp/settings.php /local/drupal/events/web/sites/default
   cd /local/drupal/events

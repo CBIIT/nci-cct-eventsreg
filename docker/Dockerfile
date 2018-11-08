@@ -9,6 +9,7 @@ RUN git clone https://github.com/drush-ops/drush.git /usr/local/src/drush
 WORKDIR /usr/local/src/drush
 RUN ln -s /usr/local/src/drush/drush /usr/bin/drush
 RUN composer install
+RUN mkdir -p /local/drupal
 COPY run.sh /usr/bin/run.sh
 COPY settings.php /tmp/settings.php
 COPY 000-default.conf /etc/apache2/sites-available
