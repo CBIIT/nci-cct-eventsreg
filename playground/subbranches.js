@@ -15,7 +15,7 @@ for (i=0; i < division_sacs.length; i++) {
 	var branches = JSON.parse(contents);
 	//console.dir(branches);
 	//console.log("Get Division:" + division_sacs[i]);
-	console.log("DIVISION CODE: "+division_sacs[i]);
+	//console.log("DIVISION CODE: "+division_sacs[i]);
 	//console.log(division_sacs[i]);
 	//console.dir("DIVISION Branch Length: "+branches.length);
 	//console.log("countThem: "+countThem(division_sacs[i]));
