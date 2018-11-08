@@ -25,7 +25,8 @@ services:
         networks:
             app_net:
                 ipv4_address: 172.16.238.11
-
+        volumes:
+            - ~/docker_volumes/eventsreg/themes:/local/drupal/events/web/themes
 networks:
   app_net:
     driver: bridge
