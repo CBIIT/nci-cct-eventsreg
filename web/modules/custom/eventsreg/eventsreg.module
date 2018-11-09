@@ -1,0 +1,43 @@
+<?php 
+
+use \Drupal\node\NodeInterface;
+
+function eventsreg_preprocess_page(&$variables) {
+	//drupal_set_message("eventsreg_preprocess_page");
+	//ICRP Partnership Forum
+	$variables['route_name'] = \Drupal::routeMatch()->getRouteName();
+
+	//dpm($variables['route_name']);
+	if(isset($variables['node'])) {
+		//dpm("We got a node");
+		//dpm($variables['node']->bundle());
+		$node = \Drupal::routeMatch()->getParameter('node');
+		if ($node instanceof \Drupal\node\NodeInterface) {
+		  // You can get nid and anything else you need from the node object.
+			$nid = $node->id();
+			$alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
+			//dpm($nid."  ".$alias);
+			//dpm($alias);
+		}
+	} else {
+		//dpm("We don't got a node");
+	}
+	//dump($variables);
+	/*
+	$node = \Drupal::routeMatch()->getParameter('node');
+	if ($node instanceof \Drupal\node\NodeInterface) {
+	  // You can get nid and anything else you need from the node object.
+		$nid = $node->id();
+		dpm($nid);
+	}
+	*/
+}
+
+function eventsreg_form_alter($form, FormStateInterface $form_state, $form_id)  {
+  $form_idtext = print_r($form_id,true);
+  //dpm($form_id);
+  //drupal_set_message("Form ID:".$form_id, 'status', FALSE);
+  if ( strpos($form_idtext,'test_form') !== false) {
+    $form['actions']['submit']['#validate'][] = 'myModule_form_validate';
+  }
+}

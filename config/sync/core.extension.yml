@@ -28,6 +28,7 @@ module:
   doc_serialization: 0
   dynamic_page_cache: 0
   editor: 0
+  eventsreg: 0
   externalauth: 0
   field: 0
   field_ui: 0
