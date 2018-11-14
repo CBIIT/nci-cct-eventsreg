@@ -1,0 +1,16 @@
+uuid: 0dcfb2d4-30ff-417d-94ee-c5d8953395e3
+langcode: en
+status: true
+dependencies: {  }
+id: reports
+label: Reports
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer shortcuts'
+  - 'administer themes'
+  - 'view own unpublished content'

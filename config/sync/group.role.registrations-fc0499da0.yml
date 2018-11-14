@@ -1,0 +1,17 @@
+uuid: 6e156b74-a5cc-4452-b57e-f1ab29c1de15
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.registrations
+  enforced:
+    config:
+      - user.role.reports
+id: registrations-fc0499da0
+label: Reports
+weight: 4
+internal: true
+audience: outsider
+group_type: registrations
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,10 @@
+uuid: 2a4dd597-b3fa-49bd-bcf0-f7d7dd49087f
+langcode: en
+status: true
+dependencies: {  }
+id: registrations
+label: Registrations
+description: 'to be able to use the registration pages from webforms'
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

@@ -1,0 +1,14 @@
+uuid: 1206a8d1-0026-4597-87cf-f05c6e1f22db
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reports
+  module:
+    - user
+id: user_remove_role_action.reports
+label: 'Remove the Reports role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: reports
