@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_published
     - field.field.node.event.field_registration_open
     - field.field.node.event.field_results
+    - field.field.node.event.field_tags
     - node.type.event
   module:
     - datetime_range
@@ -70,6 +71,15 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_tags:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path

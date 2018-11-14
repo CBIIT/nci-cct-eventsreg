@@ -1,0 +1,4 @@
+current-events.library:
+  css:
+    theme:
+      css/current-events.css: {}

@@ -16,13 +16,15 @@ function eventsreg_preprocess_page(&$variables) {
 		  // You can get nid and anything else you need from the node object.
 			$nid = $node->id();
 			$alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-			//dpm($nid."  ".$alias);
-			//dpm($alias);
+			dpm($nid."  ".$alias);
+			dpm($alias);
 		}
 	} else {
 		//dpm("We don't got a node");
+		//drupal_set_message("page['#title'] Title: ".$variables['page']['#title']);
 	}
 	//dump($variables);
+	//dpm($variables);
 	/*
 	$node = \Drupal::routeMatch()->getParameter('node');
 	if ($node instanceof \Drupal\node\NodeInterface) {
@@ -33,6 +35,104 @@ function eventsreg_preprocess_page(&$variables) {
 	*/
 }
 
+function removeInternalFromUri($str) {
+
+	return $str;
+}
+
+function getCurrentEventsLinks($nid) {
+	//Return Webform links for a $nid.
+	$query = "SELECT nfr.field_results_title, nfr.field_results_uri ";
+	$query .= "FROM node__field_results nfr where nfr.entity_id = $nid;";
+
+
+	$result = db_query($query);
+
+	$links = [];
+	for ($count = 0; $row = $result->fetchObject(); $count++) {
+		$link = array('title' => $row->field_results_title,
+					'url' => removeInternalFromUri($row->field_results_uri));
+		array_push($links, $link);
+
+	}
+
+	return $links;
+}
+
+function getCurrentEventsSites() {
+	
+	$query = "SELECT nfd.nid, nfd.title, nb.body_summary, nb.body_value, nfehl.field_event_home_link_uri ";
+	$query .= "FROM node_field_data nfd, node__body nb, node__field_event_home_link nfehl ";
+	$query .= "where nfd.nid = nb.entity_id and nfd.nid = nfehl.entity_id and nfd.status = 1 and nfd.type = 'event' "; 
+	$query .= "order by nfd.nid desc;";
+
+	//drupal_set_message($query);
+
+	$result = db_query($query);
+
+	$sites = [];
+	for ($count = 0; $row = $result->fetchObject(); $count++) {
+		$links = getCurrentEventsLinks($row->nid);
+		$site = array('nid' => $row->nid,
+					'acronym' => $row->title,
+					'title' => $row->body_summary, 
+					'description' => $row->body_value,
+					'url' => removeInternalFromUri($row->field_event_home_link_uri),
+					'links' => $links);
+		array_push($sites, $site);
+	}
+	//dpm(printr($sites, TRUE));
+
+
+	//return $sites;
+	return $sites;
+}
+
+function getCurrentEventsHTML() {
+  //  Load and render a twig template
+  $twig = \Drupal::service('twig');
+  $sites = getCurrentEventsSites();
+  //dump($test);
+
+  //$config = \Drupal::config('webform.webform.icrp_website_survey');
+  
+  //drupal_set_message($config->get('open'));  //DateTime String if scheduled
+  //drupal_set_message($config->get('close'));  //DateTime String if scheduled
+  //drupal_set_message($config->get('status'));  //'open', 'closed', 'scheduled'
+
+/*
+  $reasons_data = getSurveyData('reasons');
+  $background_data = getSurveyData('background');
+  $familiarity_data = getSurveyData('familiarity');
+  $region_data = getSurveyData('region');
+  $helpful_data = getSurveyData('helpful');
+  $feedback_data = getSurveyData('feedback');
+*/
+  /*
+  $sites = [];
+  $links = [];
+
+  $link = array("title" => "Registrations", "url" => "/hello");
+  array_push($links, $link);
+  $link = array("title" => "Application", "url" => "/what/is/next");
+  array_push($links, $link);
+
+  $site = ["title" => "Title1", "description" => "This is a description area", 'links' => $links];
+  array_push($sites, $site);
+
+  $links = [];
+  $site = ["title" => "Title2", "description" => "This is a second description area", 'links' => $links];
+  array_push($sites, $site);
+
+  //dump($sites);
+  */
+  $template = $twig->loadTemplate('modules/custom/eventsreg/templates/current.events.html.twig');
+  $response = $template->render(['sites' => $sites]);
+
+  return $response;
+}
+
+/*
 function eventsreg_form_alter($form, FormStateInterface $form_state, $form_id)  {
   $form_idtext = print_r($form_id,true);
   //dpm($form_id);
@@ -41,3 +141,4 @@ function eventsreg_form_alter($form, FormStateInterface $form_state, $form_id)  
     $form['actions']['submit']['#validate'][] = 'myModule_form_validate';
   }
 }
+*/

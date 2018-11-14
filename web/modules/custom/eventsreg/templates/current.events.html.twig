@@ -1,0 +1,29 @@
+<div class="current-events-container">
+	<h2>Events Registration Websites</h2>
+
+	<p>The <a href="https://events.cancer.gov" title="http://events.cancer.gov" alt="https://events.cancer.gov">events.cancer.gov</a> website provides registration services for NCI-sponsored events or conferences for the NCI community. Registration services include collecting contact information from attendees via an online form. Attendee information can be downloaded and processed offline for handling logistics related to the event.</p>
+	 
+	<p style="margin-bottom:10px;">If your Division, Office, or Center is interested in the creation of an event website, please <a href="https://service.cancer.gov/ncisp?id=nci_sc_cat_item&sys_id=2a8376f4db5d63002cbcfb0e0f96193f" title="submit a ticket to NCI at Your Service" alt="submit a ticket to NCI at Your Service" target="_blank">submit a ticket to NCI at Your Service</a>.</p>
+
+    <p></p>
+	
+	<div class="row">
+		{% for site in sites %}
+	      <div class="col-sm-6 col-md-4">
+	        <div class="thumbnail card">
+	          <div class="card__content">
+	            <h4 class="card__title">{{ site.title }}</h4>
+	            <p>{{ site.nid }}</p>
+	            <p>{{ site.description|striptags }}</p>
+	          </div>
+	          <footer class="card__footer">
+	            <a href="{{ site.url }}" class="btn btn-primary">Visit Site</a>&nbsp;&nbsp;&nbsp;
+	            {% for link in site.links %}
+		        	<a style="padding-left:5px;float:right;font-size:8px;" href="{{ link.url }}"><span style="font-size:8px;">{{ link.title }}</span></a>
+	            {% endfor %}
+	          </footer>
+	        </div>
+	      </div>
+		{% endfor %}
+	</div>
+</div>

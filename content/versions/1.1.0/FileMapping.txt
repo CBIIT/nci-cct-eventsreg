@@ -8,3 +8,12 @@ Finish Subranches = 1 hour
 
 3. Landing Page
 4. Rebrand all sites with page.html.twig
+
+CCR WEBSITES:
+https://tracker.nci.nih.gov/browse/EVENTSREG-82?filter=23005
+Ticket:EVENTSREG-82
+Traco Site
+url: /ccr/traco
+Node 29 cc-traco EVENT
+Node 30 cc-traco (home)
+Node 31 ccr-traco (registration)

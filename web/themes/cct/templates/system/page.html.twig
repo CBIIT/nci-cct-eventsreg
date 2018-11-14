@@ -51,6 +51,14 @@
  * @see html.html.twig
  */
 #}
+{#
+{% set isAdmin="false" %}
+{% for role in user.roles %}
+    {% if (role == "administrator" %}
+        {% set isAdmin="true" %}
+    {% endif %}
+{% endfor %}
+#}
 <!-- HEADER -->
 <header>
   <div class="container">
@@ -63,6 +71,7 @@
 </header>
 <!-- END HEADER -->
 <!-- UTILITY NAV -->
+<!--
 <div id="utility-bar">
   <div class="container">
     <div class="row">
@@ -72,8 +81,10 @@
     </div>
   </div>
 </div>
+-->
 <!-- END UTILITY NAV -->
 <!-- NAV Bar - Collapsable -->
+<!--
 <div id="eventsreg-nav-bar" class="utility-background">
   <div class="container">
     <nav class="navbar navbar-inverse">
@@ -97,6 +108,7 @@
     </nav>
   </div>
 </div>
+-->
 <div class="container">
   <div class="row general-page-body-container">
     <div id="cct-srk-body">
@@ -165,12 +177,18 @@
     <nav role="navigation">
       <ul class="menu">
         <li>
-          <a href="/cct/dcdp">Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
           <span>|</span>
           <a href="/contact">Contact Us</a>
         </li>
+        {% if isAdmin %}
+          <li>
+            <span>|</span>
+            <a href="/all-events">All Events</a>
+          </li>
+        {% endif %}
         {% if logged_in %}
           <li>
             <span>|</span>

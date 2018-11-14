@@ -55,6 +55,35 @@ class EventsRegController extends ControllerBase {
     ];
   }
 
+	public function getCurrentEvents() {
+
+		\Drupal::service('page_cache_kill_switch')->trigger();
+		
+	    $build = [];
+
+	    // CSS and JavaScript libraries can be attached to elements in a renderable
+	    // array. This way, if the element ends up being rendered and displayed you
+	    // know for sure the CSS/JavaScript will also be included. But, if for
+	    // some reason the element isn't ever rendered then Drupal can skip the
+	    // unnecessary extra files.
+	    //
+	    // Learn more about attaching CSS and JavaScript libraries with the
+	    // #attached property here:
+	    // https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/group/theme_render/#sec_attached
+   
+	    $build['#attached'] = [
+	      'library' => [
+	        'eventsreg/current-events.library',
+	      ],
+	    ];
+
+		$build['#markup'] = getCurrentEventsHTML();
+		$build['#cache'] =	['max-age' => 0,];	 //Set cache for 0 seconds.
+
+		return $build;
+	}
+
+
   /**
    * A more complex _controller callback that takes arguments.
    *

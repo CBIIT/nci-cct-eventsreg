@@ -84,6 +84,6 @@ eventsreg.arguments:
 eventsreg.current_events:
   path: '/current-events'
   defaults:
-    _controller: '\Drupal\eventsreg\Controller\EventsRegController::CurrentEvents'
+    _controller: '\Drupal\eventsreg\Controller\EventsRegController::getCurrentEvents'
   requirements:
     _permission: 'access content'

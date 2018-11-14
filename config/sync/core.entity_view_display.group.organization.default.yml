@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.group.organization.field_code
     - field.field.group.organization.field_group_home_page
+    - field.field.group.organization.field_org_code
     - field.field.group.organization.field_organization_web_site
     - group.type.organization
   module:
@@ -37,6 +38,14 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_org_code:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_organization_web_site:
     weight: -4
