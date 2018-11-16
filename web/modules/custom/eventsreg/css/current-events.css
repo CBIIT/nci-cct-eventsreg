@@ -1,3 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  width: 335px;
+  margin: 10px;
+}
+
 .current-events-container h2 {
   color: #C6375E;
 }
@@ -17,8 +27,8 @@
 }
 .card__content {
   padding: 20px 20px;
-  height: 100%;
-  min-height: 200px;
+  /*height: 100%;
+  min-height: 200px; */
 }
 .card__footer {
   padding: 20px;
@@ -27,7 +37,7 @@
 .card__title {
   margin: 0 0 15px;
 }
-
+/*
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  
@@ -38,7 +48,22 @@ and (max-device-width : 1024px)
   height: 100%;
   min-height: 200px;
 }
+*/
 
+@media screen and (max-width: 1200px) {
+  .flex-container > div {
+    width: 270px;
+  }
+}
 
+@media screen and (max-width: 992px) {
+  .flex-container > div {
+    width: 300px;
+  }
+}
 
-
+@media screen and (max-width: 767px) {
+  .flex-container > div {
+    width: 400px;
+  }
+}

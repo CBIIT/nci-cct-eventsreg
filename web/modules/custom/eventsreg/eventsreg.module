@@ -1,6 +1,19 @@
 <?php 
 
 use \Drupal\node\NodeInterface;
+function eventsreg_preprocess_html(&$variables) {
+	//dump($variables);
+	$something = "Set by Preprocess_html";
+  $variables['head_title']['title'] = $something;
+}
+
+function eventsreg_preprocess_block(&$variables) {
+
+  if ('page_title_block' == $variables['plugin_id']) {
+	$something = "Set by Preprocess_block";
+    $variables['content']['#title'] = $something;
+  }
+}
 
 function eventsreg_preprocess_page(&$variables) {
 	//drupal_set_message("eventsreg_preprocess_page");
@@ -16,8 +29,8 @@ function eventsreg_preprocess_page(&$variables) {
 		  // You can get nid and anything else you need from the node object.
 			$nid = $node->id();
 			$alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-			dpm($nid."  ".$alias);
-			dpm($alias);
+			//dpm($nid."  ".$alias);
+			//dpm($alias);
 		}
 	} else {
 		//dpm("We don't got a node");
@@ -61,10 +74,10 @@ function getCurrentEventsLinks($nid) {
 
 function getCurrentEventsSites() {
 	
-	$query = "SELECT nfd.nid, nfd.title, nb.body_summary, nb.body_value, nfehl.field_event_home_link_uri ";
-	$query .= "FROM node_field_data nfd, node__body nb, node__field_event_home_link nfehl ";
-	$query .= "where nfd.nid = nb.entity_id and nfd.nid = nfehl.entity_id and nfd.status = 1 and nfd.type = 'event' "; 
-	$query .= "order by nfd.nid desc;";
+	$query = "SELECT nfd.nid, nfd.title, nb.body_summary, nb.body_value, nfehl.field_event_home_link_uri, nfedt.field_event_date_time_value ";
+	$query .= "FROM node_field_data nfd, node__body nb, node__field_event_home_link nfehl, node__field_event_date_time nfedt ";
+	$query .= "where nfd.nid = nb.entity_id and nfd.nid = nfehl.entity_id and nfd.nid = nfedt.entity_id and nfd.status = 1 and nfd.type = 'event' "; 
+	$query .= "order by nfedt.field_event_date_time_value desc;";
 
 	//drupal_set_message($query);
 
@@ -78,6 +91,7 @@ function getCurrentEventsSites() {
 					'title' => $row->body_summary, 
 					'description' => $row->body_value,
 					'url' => removeInternalFromUri($row->field_event_home_link_uri),
+					'event_date' => $row->field_event_date_time_value,
 					'links' => $links);
 		array_push($sites, $site);
 	}

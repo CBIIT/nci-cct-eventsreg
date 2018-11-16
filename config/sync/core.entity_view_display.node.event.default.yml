@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_acronym
+    - field.field.node.event.field_event_banner_logo
+    - field.field.node.event.field_event_date_time
     - field.field.node.event.field_event_home_link
     - field.field.node.event.field_event_published
     - field.field.node.event.field_registration_open
@@ -13,6 +15,7 @@ dependencies:
     - node.type.event
   module:
     - datetime_range
+    - image
     - link
     - text
     - user
@@ -35,6 +38,25 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_event_banner_logo:
+    weight: 109
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_event_date_time:
+    weight: 108
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
     region: content
   field_event_home_link:
     weight: 102

@@ -17,3 +17,23 @@ url: /ccr/traco
 Node 29 cc-traco EVENT
 Node 30 cc-traco (home)
 Node 31 ccr-traco (registration)
+
+
+UPDATE EVENTS:
+In UpdateEvents Directory.
+Update the Event content of Events Nodes to make sure the /current-evnets page works with current info.  Title is acroynm, Summary is Title, Body is Description.
+Store all Content Sync items under the events directory. 
+Node 28: CCR WEBSITES:
+
+nid	title	body_value
+28	cct-dcdp "Diversity Career Development Program (DCDP)</p>"
+24	cct-fyi-colloquium-2019 "19th Annual CCR Fellows and Young Investigators Colloquium</p>"
+22	presto-stewardship "Clinical Trial Stewardship</p>"
+16	cct-sssc-pdd-2018 "SSSC Professional Development Day</p>"
+13	od-rr "Rabson Remembered</p>"
+12	cct-srk "Sallie Rosen Kaplan Postdoctoral Fellowship for Women Scientists in Cancer Research</p>"
+5	nob-nciconnect "NCI Connect"
+2	next-cbcs "Chemical Biology Consortium Symposium	"<p>The real description - Chemical Biology Consortium ymposium"
+
+Node to HASH:
+28:

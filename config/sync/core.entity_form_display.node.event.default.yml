@@ -5,14 +5,18 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_acronym
+    - field.field.node.event.field_event_banner_logo
+    - field.field.node.event.field_event_date_time
     - field.field.node.event.field_event_home_link
     - field.field.node.event.field_event_published
     - field.field.node.event.field_registration_open
     - field.field.node.event.field_results
     - field.field.node.event.field_tags
+    - image.style.thumbnail
     - node.type.event
   module:
     - datetime_range
+    - image
     - link
     - path
     - text
@@ -26,8 +30,8 @@ content:
     weight: 121
     settings:
       rows: 9
+      placeholder: 'Summary is Website Title and Body is Description of Website'
       summary_rows: 3
-      placeholder: ''
     third_party_settings: {  }
     region: content
   created:
@@ -44,11 +48,25 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_event_banner_logo:
+    weight: 129
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_event_date_time:
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
   field_event_home_link:
     weight: 122
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      placeholder_url: 'Enter url for website'
+      placeholder_title: 'Website Name'
     third_party_settings: {  }
     type: link_default
     region: content
@@ -113,8 +131,8 @@ content:
     weight: -5
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      size: 14
+      placeholder: 'Acronym for this Website ''<org code>-<website name>'''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

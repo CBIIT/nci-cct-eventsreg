@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_acronym
+    - field.storage.node.field_event_date_time
     - field.storage.node.field_event_home_link
     - field.storage.node.field_results
     - node.type.event
@@ -77,6 +77,71 @@ display:
       row:
         type: fields
       fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -125,72 +190,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_acronym:
-          id: field_acronym
-          table: node__field_acronym
-          field: field_acronym
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Acronym
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
+          click_sort_column: summary
+          type: text_summary_or_trimmed
           settings:
-            link_to_entity: false
+            trim_length: 600
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -336,6 +339,71 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: field
+        field_event_date_time:
+          id: field_event_date_time
+          table: node__field_event_date_time
+          field: field_event_date_time
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Event Date Time'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: custom
+            custom_date_format: 'M j, y'
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_results:
           id: field_results
           table: node__field_results
@@ -479,21 +547,18 @@ display:
           plugin_id: bundle
           group: 1
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_event_date_time_value:
+          id: field_event_date_time_value
+          table: node__field_event_date_time
+          field: field_event_date_time_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: DESC
           exposed: false
           expose:
             label: ''
-          granularity: second
+          plugin_id: standard
       title: Events
       header:
         area:
@@ -528,7 +593,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_acronym'
+        - 'config:field.storage.node.field_event_date_time'
         - 'config:field.storage.node.field_event_home_link'
         - 'config:field.storage.node.field_results'
   page_1:
@@ -555,6 +620,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_acronym'
+        - 'config:field.storage.node.field_event_date_time'
         - 'config:field.storage.node.field_event_home_link'
         - 'config:field.storage.node.field_results'
