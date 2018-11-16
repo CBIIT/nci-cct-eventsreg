@@ -1,3 +1,4 @@
+{{ user }}
 <div class="current-events-container">
 	<h2>Events Registration Websites</h2>
 
@@ -33,11 +34,9 @@
 	          </div>
 	          <footer class="card__footer">
 	            <a href="{{ site.url }}" class="btn btn-primary">Visit Site</a>&nbsp;&nbsp;&nbsp;
-	            {% if logged_in %}
 		            {% for link in site.links %}
 			        	<a style="padding-left:5px;float:right;font-size:8px;" href="{{ link.url }}"><span style="font-size:8px;">{{ link.title }}</span></a>
 		            {% endfor %}
-	            {% endif %}
 	          </footer>
 	        </div>
 	      </div>

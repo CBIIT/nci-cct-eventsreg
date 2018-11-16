@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: 446f7765-c019-4ad4-a612-c9aa4d3e2309
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-16T00:59:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: nob-ncic
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-08-08T18:43:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-16T00:59:27+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'nob-ncic | Events Registration'
+    canonical_url: 'http://localhost:8080/node/5'
+    description: 'NCI Connect'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>The workshop for the NCI-CONNECT (Comprehensive Oncology Network Evaluating Rare CNS Tumors) will begin with a mandatory kick-off session starting at 6:00 p.m. September 26, 2018 followed by a full meeting day on September 27, 2018.</p>\r\n"
+    format: basic_html
+    processed: '<p>The workshop for the NCI-CONNECT (Comprehensive Oncology Network Evaluating Rare CNS Tumors) will begin with a mandatory kick-off session starting at 6:00 p.m. September 26, 2018 followed by a full meeting day on September 27, 2018.</p>'
+    summary: 'NCI Connect'
+    summary_processed: 'NCI Connect'
+field_acronym:
+  -
+    value: nob-ncic
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-09-26T22:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/nob/nciconnect'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-08-08'
+    end_value: '2120-08-06'
+field_registration_open:
+  -
+    value: '2018-08-07'
+    end_value: '2050-08-05'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/nob_nciconnect_registration_/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
