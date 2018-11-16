@@ -1,0 +1,15 @@
+uuid: acccc965-1d9e-414f-b630-5838cb66f153
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.registrations
+id: registrations-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: registrations
+permissions_ui: true
+permissions:
+  - 'view group'

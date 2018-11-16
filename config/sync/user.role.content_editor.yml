@@ -7,10 +7,10 @@ label: 'Content editor'
 weight: 3
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access content overview'
-  - 'access in-place editing'
+  - 'access toolbar'
+  - 'use text format basic_html'
   - 'use text format full_html'
-  - 'view any webform submission'
+  - 'view own unpublished content'
   - 'view the administration theme'
-  - 'view webform revisions'
-  - 'view webform submissions any node'
