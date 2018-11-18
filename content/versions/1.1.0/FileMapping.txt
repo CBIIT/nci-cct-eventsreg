@@ -14,8 +14,8 @@ https://tracker.nci.nih.gov/browse/EVENTSREG-82?filter=23005
 Ticket:EVENTSREG-82
 Traco Site
 url: /ccr/traco
-Node 29 cc-traco EVENT
-Node 30 cc-traco (home)
+Node 29 cc-traco (home)
+Node 30 cc-traco EVENT
 Node 31 ccr-traco (registration)
 
 

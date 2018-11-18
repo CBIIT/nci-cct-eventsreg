@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+X-WR-CALNAME:Translational Research in Clinical Oncology (TRACO)
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+TZURL:http://tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20181116T174614Z
+UID:20181116T174614Z-2099402058@marudot.com
+DTSTART;TZID="America/New_York":20190903T160000
+DTEND;TZID="America/New_York":20190903T180000
+SUMMARY:Translational Research in Clinical Oncology (TRACO)
+URL:https%3A%2F%2Fevents.cancer.gov%2Fccr%2Ftraco
+DESCRIPTION:TRACO is designed to provide an overview of general principles of cancer biology and treatment\, epidemiology\, genomics\, precision medicine\, mechanisms of resistance\, use of preclinical models\, and identification of novel molecular targets. Participants will have an unprecedented opportunity to learn new information\, glimpse into future developments of translational research in clinical oncology and meet leaders in cancer research. The participation of NIH Postdoctoral and Clinical Fellows is encouraged.
+LOCATION: Bldg. 50 ground floor auditorium (Rooms 1227/1233) with videoconferencing to NCI Frederick (Bldg. 549\, Rm. B). In addition lectures will be videocast and archived.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Translational Research in Clinical Oncology (TRACO)
+TRIGGER:-P1W
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -77,3 +77,8 @@ dt {
     font-size:30px;
     margin-top:0px;
 }
+
+/* Webform as a Node show author by default.  Let's remove it. */
+.author {
+  display:none;
+}

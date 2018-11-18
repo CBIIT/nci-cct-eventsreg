@@ -1,51 +1,55 @@
 <?php 
 
-use \Drupal\node\NodeInterface;
+use Drupal\node\NodeInterface;
+use Drupal\eventsreg\Utility\EventsRegPageMaker;
+
 function eventsreg_preprocess_html(&$variables) {
 	//dump($variables);
-	$something = "Set by Preprocess_html";
-  $variables['head_title']['title'] = $something;
+	//$something = "ccr-traco (Home)";
+  //$variables['head_title']['title'] = $something;
 }
 
 function eventsreg_preprocess_block(&$variables) {
+  //dump($variables);
 
-  if ('page_title_block' == $variables['plugin_id']) {
-	$something = "Set by Preprocess_block";
-    $variables['content']['#title'] = $something;
-  }
+  //if ('page_title_block' == $variables['plugin_id']) {
+  //	$something = "Set by Preprocess_block";
+  //  $variables['content']['#title'] = $something;
+  //}
 }
 
-function eventsreg_preprocess_page(&$variables) {
-	//drupal_set_message("eventsreg_preprocess_page");
-	//ICRP Partnership Forum
-	$variables['route_name'] = \Drupal::routeMatch()->getRouteName();
+function decodeAlias($alias){
+	//$pieces = explode("/", substr($alias, 1));
+	return str_replace("/", "-", substr($alias, 1));
+}
 
-	//dpm($variables['route_name']);
-	if(isset($variables['node'])) {
-		//dpm("We got a node");
-		//dpm($variables['node']->bundle());
-		$node = \Drupal::routeMatch()->getParameter('node');
-		if ($node instanceof \Drupal\node\NodeInterface) {
-		  // You can get nid and anything else you need from the node object.
-			$nid = $node->id();
-			$alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-			//dpm($nid."  ".$alias);
-			//dpm($alias);
-		}
-	} else {
-		//dpm("We don't got a node");
-		//drupal_set_message("page['#title'] Title: ".$variables['page']['#title']);
-	}
+function isMenu($menu) {
+	//dpm($menu);
+	return true;
+}
+
+/*
+function getAcronymFromWebformNode($nid) {
+	$acronym = "";
+
+	$query = "SELECT webform_target_id FROM node__webform where entity_id = $nid";
+	$result = db_query($query);
+	$row = $result->fetchObject();
+	$webform_id = $row->webform_target_id;
+	$pieces = explode("_", $webform_id);
+	$acronym = $pieces[0].'-'.$pieces[1];
+
+	return $acronym;
+}
+*/
+
+function eventsreg_preprocess_page(&$variables) {
+
+	EventsRegPageMaker::setupPage($variables);
 	//dump($variables);
-	//dpm($variables);
-	/*
-	$node = \Drupal::routeMatch()->getParameter('node');
-	if ($node instanceof \Drupal\node\NodeInterface) {
-	  // You can get nid and anything else you need from the node object.
-		$nid = $node->id();
-		dpm($nid);
-	}
-	*/
+
+//$attachment = EventsRegPageMaker::setupPage($nid, \Drupal::routeMatch()->getRouteName());
+
 }
 
 function removeInternalFromUri($str) {
@@ -67,14 +71,12 @@ function getCurrentEventsLinks($nid) {
 		$query = "SELECT nfr.field_results_title, nfr.field_results_uri ";
 		$query .= "FROM node__field_results nfr where nfr.entity_id = $nid;";
 
-
 		$result = db_query($query);
 
 		for ($count = 0; $row = $result->fetchObject(); $count++) {
 			$link = array('title' => $row->field_results_title,
 						'url' => removeInternalFromUri($row->field_results_uri));
 			array_push($links, $link);
-
 		}
 	}
 
@@ -154,14 +156,3 @@ function getCurrentEventsHTML() {
 
   return $response;
 }
-
-/*
-function eventsreg_form_alter($form, FormStateInterface $form_state, $form_id)  {
-  $form_idtext = print_r($form_id,true);
-  //dpm($form_id);
-  //drupal_set_message("Form ID:".$form_id, 'status', FALSE);
-  if ( strpos($form_idtext,'test_form') !== false) {
-    $form['actions']['submit']['#validate'][] = 'myModule_form_validate';
-  }
-}
-*/
