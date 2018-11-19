@@ -525,17 +525,6 @@ display:
           entity_type: node
           plugin_id: entity_link_edit
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data
@@ -571,8 +560,8 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<h2>Events Registration Websites</h2>'
-            format: basic_html
+            value: '<h2 class="eventsreg-red">Events Registration Websites</h2>'
+            format: full_html
           plugin_id: text
       footer: {  }
       empty: {  }

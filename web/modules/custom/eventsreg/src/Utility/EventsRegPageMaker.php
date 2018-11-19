@@ -8,11 +8,11 @@ use Drupal\node\Entity\Node;
  */
 class EventsRegPageMaker {
 
-  public function setupPage(&$variables) {
+  public static function setupPage(&$variables) {
     self::setupMenus($variables); 
   }
   
-  public function setupMenus(&$variables) {
+  public static function setupMenus(&$variables) {
 
     $route_name = \Drupal::routeMatch()->getRouteName();
 
@@ -28,6 +28,8 @@ class EventsRegPageMaker {
       //$bundle = $node->getType();
       $path = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
       $variables['eventsreg']['active_link'] = $path;
+      $variables['eventsreg']['home_link'] = self::formatHomeLink($path);
+
       //drupal_set_message("OFFICIAL PATH: ".$path);
       $acronym = self::getAcronymFromPath($path);
       //drupal_set_message("OFFICIAL ACRONYM: ".$acronym);
@@ -72,6 +74,7 @@ class EventsRegPageMaker {
       case 'entity.node.canonical':
         // Get a node storage object.
         $eventsreg['active_link'] = $path;
+        $eventsreg['home_link'] = self::formatHomeLink($path);
 
         switch ($bundle) {
           case 'page':
@@ -217,6 +220,15 @@ class EventsRegPageMaker {
     if($pieces[0] == 'entity') {
       $link = "/".$pieces[1];
     }
+    return $link;
+  }
+
+  private static function formatHomeLink($path) {
+    //Home Link will always be the frist two varialbes of the $current_path
+
+    $pieces = explode("/", $path);
+    $link = "/".$pieces[1]."/".$pieces[2];
+
     return $link;
   }
 

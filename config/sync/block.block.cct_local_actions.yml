@@ -1,6 +1,6 @@
 uuid: 69b84404-6e62-45ad-8cef-c4eedd75b746
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - cct
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: cct_local_actions
 theme: cct
-region: content
-weight: -6
+region: sidebar_first
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

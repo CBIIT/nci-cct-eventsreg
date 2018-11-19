@@ -37,12 +37,35 @@ dt {
   width:200px;
   float:left;
 }
-.nci-red, .site-color, #cct-srk-title {
+/* Globals */
+.eventsreg-red, .nci-red, .site-color, #cct-srk-title {
 	color: #C6375E;
 }
 .nci-body, #cct-srk-body {
 	font-size:16px;
 }
+/* Center table */
+/* https://www.granneman.com/webdev/coding/css/centertables */
+div.container-table-eventsreg {
+  width:98%; 
+  margin:1%;
+}
+table#table1 {
+}
+/* Need a differnet width? Add max-width style on <table> */
+/* and/or add min-width */
+table.table-eventsreg {
+    margin-left:auto; 
+    margin-right:auto; 
+    max-width:600px;
+    background-color:white;
+}
+
+table.table-eventsreg > thead > tr  {
+  background-color:LightSteelBlue;
+  font-weight:bold;
+  text-align:center;
+} 
 
 /* Directors Colloquium */
 
