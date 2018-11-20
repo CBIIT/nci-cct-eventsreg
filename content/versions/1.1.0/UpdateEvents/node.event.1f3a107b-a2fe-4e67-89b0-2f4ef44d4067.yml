@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-11-16T01:00:05+00:00'
+    value: '2018-11-19T21:13:33+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -23,7 +23,7 @@ status:
     value: true
 title:
   -
-    value: cct-dc19
+    value: cct-fyic19
 uid:
   -
     target_type: user
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-11-16T01:00:05+00:00'
+    value: '2018-11-19T21:13:33+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -50,7 +50,7 @@ revision_translation_affected:
     value: true
 metatag:
   value:
-    title: 'cct-dc19 | Events Registration'
+    title: 'cct-fyic19 | Events Registration'
     canonical_url: 'http://localhost:8080/node/24'
     description: '19th Annual CCR Fellows and Young Investigators Colloquium'
 path:

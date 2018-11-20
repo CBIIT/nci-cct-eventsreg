@@ -1,0 +1,72 @@
+uuid:
+  -
+    value: 5a544d64-bb37-4a45-98db-cee0b5dcd050
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-11-19T16:33:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'ccr-traco (Home)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-11-16T17:56:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-19T16:33:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'ccr-traco (Home) | Events Registration'
+    canonical_url: 'http://localhost:8080/ccr/traco'
+    description: "Translational Research in Clinical Oncology (TRACO)\n\nRecent advances in understanding cancer biology are beginning to be translated into improvements in diagnosis and treatment of cancer. In the post-genome era, we increasingly rely on strong collaboration between basic and clinical scientists to develop novel approaches for treatment of human disease."
+path:
+  -
+    alias: /ccr/traco
+menu_link: {  }
+body:
+  -
+    value: "<h2 class=\"text-align-center nci-red\">Translational Research in Clinical Oncology (TRACO)</h2>\r\n\r\n<p>Recent advances in understanding cancer biology are beginning to be translated into improvements in diagnosis and treatment of cancer. In the post-genome era, we increasingly rely on strong collaboration between basic and clinical scientists to develop novel approaches for treatment of human disease. The Center for Cancer Research (CCR) of the NCI is one of the largest centers for cancer research in the world, with over 200 Principal Investigators, and has a major role in development and implementation of many of new technologies, such as nanotechnology, next generation sequencing, genomics and proteomics.</p>\r\n\r\n<p>The Translational Research in Clinical Oncology (TRACO) course is usually held on Monday afternoons from September to December at the Bethesda Campus, Bldg. 50 ground floor auditorium. TRACO is designed to provide an overview of general principles of cancer biology and treatment, epidemiology, genomics, precision medicine, mechanisms of resistance, use of preclinical models, and identification of novel molecular targets. Participants will have an unprecedented opportunity to learn new information, glimpse into future developments of translational research in clinical oncology and meet leaders in cancer research. The participation of NIH Postdoctoral and Clinical Fellows is encouraged.</p>\r\n\r\n<h2>Links and Related Training Opportunities</h2>\r\n\r\n<p>This course is part of a developing curriculum for training NCI clinical and postdoctoral fellows. TRACO complements other topics in human diseases and therapies covered in \"Demystifying Medicine for PhDs\" which is hosted by <a alt=\"Dr. Irwin M. Arias\" href=\"mailto:iarias@helix.nih.gov\" title=\"Dr. Irwin M. Arias\">Dr. Irwin M. Arias</a>. Additional classes offered by the CCR Office of Training and Education include: “Redox Biology (RB), Statistical Analysis of Research Data (SARD), Cancer Biotechnology (CB), Teaching In Medical Education (TIME) and Scientific Management Training (SMT). For additional postdoctoral training at NIH view <a href=\"http://www.training.nih.gov/\" target=\"_blank\" title=\"http://www.training.nih.gov/\">http://www.training.nih.gov/</a>.</p>\r\n\r\n<h2>Registration</h2>\r\n\r\n<p><a href=\"/ccr/traco/registration\">The TRACO registration is now <strong>OPEN</strong>.</a></p>\r\n\r\n<p>There is no registration fee. The deadline for Registration is September 4, 2018. For more information contact <a alt=\"Dr. Terry Moody\" href=\"mailto:moodyt@mail.nih.gov\" title=\"Dr. Terry Moody\">Dr. Terry Moody</a>, by e-mail or by phone (240-276-7785).</p>\r\n\r\n<h2>Certificate</h2>\r\n\r\n<p>Participants, who register for the course, may receive a certificate of completion after attending the lectures and completing a computer-based examination.</p>\r\n\r\n<h2>Location and Time</h2>\r\n\r\n<p>Two hour sessions will usually occur on Mondays, 4-6 p.m., Bldg. 50 ground floor auditorium (Rooms 1227/1233) with videoconferencing to NCI Frederick (Bldg. 549, Rm. B). In addition lectures will be <a alt=\"https://videocast.nih.gov/\" href=\"https://videocast.nih.gov/\" target=\"_blank\" title=\"https://videocast.nih.gov/\">videocast</a> and archived. Each session will have two 50-min lectures in Basic and Clinical Sciences with ample time for discussion and analysis. A handout for each lecture will be distributed on site. Classes will occur from Sept. 4, 2018-Dec. 3, 2018. Course registrants can attend NCI tumor boards, Grand Rounds, and/or visit technical facilities. Please contact <a alt=\"Dr. Moody\" href=\"mailto:moodyt@mail.nih.gov\" title=\"Dr. Moody\">Dr. Moody</a> to make appropriate reservations.</p>\r\n\r\n<h2>Additional Activities</h2>\r\n\r\n<p>Course registrants can also attend NCI tumor boards, CCR Grand Rounds, and/or visit technical facilities. Please contact&nbsp;<a href=\"mailto:moodyt@mail.nih.gov\">Dr. Moody</a>&nbsp;to make appropriate reservations.</p>\r\n"
+    format: full_html
+    processed: "<h2 class=\"text-align-center nci-red\">Translational Research in Clinical Oncology (TRACO)</h2>\n\n<p>Recent advances in understanding cancer biology are beginning to be translated into improvements in diagnosis and treatment of cancer. In the post-genome era, we increasingly rely on strong collaboration between basic and clinical scientists to develop novel approaches for treatment of human disease. The Center for Cancer Research (CCR) of the NCI is one of the largest centers for cancer research in the world, with over 200 Principal Investigators, and has a major role in development and implementation of many of new technologies, such as nanotechnology, next generation sequencing, genomics and proteomics.</p>\n\n<p>The Translational Research in Clinical Oncology (TRACO) course is usually held on Monday afternoons from September to December at the Bethesda Campus, Bldg. 50 ground floor auditorium. TRACO is designed to provide an overview of general principles of cancer biology and treatment, epidemiology, genomics, precision medicine, mechanisms of resistance, use of preclinical models, and identification of novel molecular targets. Participants will have an unprecedented opportunity to learn new information, glimpse into future developments of translational research in clinical oncology and meet leaders in cancer research. The participation of NIH Postdoctoral and Clinical Fellows is encouraged.</p>\n\n<h2>Links and Related Training Opportunities</h2>\n\n<p>This course is part of a developing curriculum for training NCI clinical and postdoctoral fellows. TRACO complements other topics in human diseases and therapies covered in \"Demystifying Medicine for PhDs\" which is hosted by <a alt=\"Dr. Irwin M. Arias\" href=\"mailto:iarias@helix.nih.gov\" title=\"Dr. Irwin M. Arias\">Dr. Irwin M. Arias</a>. Additional classes offered by the CCR Office of Training and Education include: “Redox Biology (RB), Statistical Analysis of Research Data (SARD), Cancer Biotechnology (CB), Teaching In Medical Education (TIME) and Scientific Management Training (SMT). For additional postdoctoral training at NIH view <a href=\"http://www.training.nih.gov/\" target=\"_blank\" title=\"http://www.training.nih.gov/\">http://www.training.nih.gov/</a>.</p>\n\n<h2>Registration</h2>\n\n<p><a href=\"/ccr/traco/registration\">The TRACO registration is now <strong>OPEN</strong>.</a></p>\n\n<p>There is no registration fee. The deadline for Registration is September 4, 2018. For more information contact <a alt=\"Dr. Terry Moody\" href=\"mailto:moodyt@mail.nih.gov\" title=\"Dr. Terry Moody\">Dr. Terry Moody</a>, by e-mail or by phone (240-276-7785).</p>\n\n<h2>Certificate</h2>\n\n<p>Participants, who register for the course, may receive a certificate of completion after attending the lectures and completing a computer-based examination.</p>\n\n<h2>Location and Time</h2>\n\n<p>Two hour sessions will usually occur on Mondays, 4-6 p.m., Bldg. 50 ground floor auditorium (Rooms 1227/1233) with videoconferencing to NCI Frederick (Bldg. 549, Rm. B). In addition lectures will be <a alt=\"https://videocast.nih.gov/\" href=\"https://videocast.nih.gov/\" target=\"_blank\" title=\"https://videocast.nih.gov/\">videocast</a> and archived. Each session will have two 50-min lectures in Basic and Clinical Sciences with ample time for discussion and analysis. A handout for each lecture will be distributed on site. Classes will occur from Sept. 4, 2018-Dec. 3, 2018. Course registrants can attend NCI tumor boards, Grand Rounds, and/or visit technical facilities. Please contact <a alt=\"Dr. Moody\" href=\"mailto:moodyt@mail.nih.gov\" title=\"Dr. Moody\">Dr. Moody</a> to make appropriate reservations.</p>\n\n<h2>Additional Activities</h2>\n\n<p>Course registrants can also attend NCI tumor boards, CCR Grand Rounds, and/or visit technical facilities. Please contact\_<a href=\"mailto:moodyt@mail.nih.gov\">Dr. Moody</a>\_to make appropriate reservations.</p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
