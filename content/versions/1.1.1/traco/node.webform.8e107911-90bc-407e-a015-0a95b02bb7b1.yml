@@ -1,0 +1,75 @@
+uuid:
+  -
+    value: 8e107911-90bc-407e-a015-0a95b02bb7b1
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: webform
+    target_type: node_type
+    target_uuid: 126e8cd7-951e-4541-bb64-779ff023c63a
+revision_timestamp:
+  -
+    value: '2018-11-17T17:00:10+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'ccr-traco (Registration)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-11-17T16:52:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-30T15:47:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'ccr-traco (Registration) | Events Registration'
+    canonical_url: 'http://localhost:8080/cct/traco/registration'
+path:
+  -
+    alias: /cct/traco/registration
+menu_link: {  }
+body: {  }
+webform:
+  -
+    target_id: cct_traco
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_type: webform
+    target_uuid: 7dec4f44-d1fc-44ac-961f-43571741b729
+    url: /form/cct-traco
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

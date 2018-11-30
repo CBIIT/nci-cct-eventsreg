@@ -1,8 +1,0 @@
-uuid: 59bf9a91-ba37-465c-a64a-33fccb5ff2b5
-langcode: en
-status: true
-dependencies: {  }
-id: ccr-traco-menu
-label: ccr-traco-menu
-description: 'ccr-traco (Menu)'
-locked: false
