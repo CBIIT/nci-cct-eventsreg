@@ -1,0 +1,8 @@
+uuid: 9934df65-9ccc-4e44-b5ca-8cf59497d3c0
+langcode: en
+status: true
+dependencies: {  }
+id: cct-smt-util
+label: cct-smt-util
+description: 'cct-smt (Util)'
+locked: false

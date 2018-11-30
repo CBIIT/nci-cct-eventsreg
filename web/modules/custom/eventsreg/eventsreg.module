@@ -47,7 +47,7 @@ function getAcronymFromWebformNode($nid) {
 function eventsreg_preprocess_page(&$variables) {
 
 	EventsRegPageMaker::setupPage($variables);
-	$variables['page']['#title'] = $variables['eventsreg']['title'];
+	//$variables['page']['#title'] = $variables['eventsreg']['title'];
 	//dump($variables);
 
 //$attachment = EventsRegPageMaker::setupPage($nid, \Drupal::routeMatch()->getRouteName());
