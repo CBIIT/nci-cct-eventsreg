@@ -1,0 +1,75 @@
+uuid:
+  -
+    value: 8399892b-c1c0-45bd-afe3-100132b98c6e
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: webform
+    target_type: node_type
+    target_uuid: 126e8cd7-951e-4541-bb64-779ff023c63a
+revision_timestamp:
+  -
+    value: '2018-11-30T19:13:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct-smt (Registration)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-11-30T19:13:19+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-30T19:14:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'cct-smt (Registration) | Events Registration'
+    canonical_url: 'http://localhost:8080/cct/smt/registration'
+path:
+  -
+    alias: /cct/smt/registration
+menu_link: {  }
+body: {  }
+webform:
+  -
+    target_id: contact
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_type: webform
+    target_uuid: 6156c4c1-1484-417e-8bc4-ca4f458b5a30
+    url: /form/contact
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

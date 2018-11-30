@@ -18,6 +18,7 @@ class EventsRegPageMaker {
 
     if($route_name == 'entity.node.canonical') {
       $node = \Drupal::routeMatch()->getParameter('node');
+      //dump($node);
       $nid = $node->id();
       //$bundle = $node->getType();
       //$variables['route_name'] = \Drupal::routeMatch()->getRouteName();
@@ -32,6 +33,8 @@ class EventsRegPageMaker {
 
       //drupal_set_message("OFFICIAL PATH: ".$path);
       $acronym = self::getAcronymFromPath($path);
+      $variables['eventsreg']['acronym'] = $acronym;
+      //$variables['eventsreg']['title'] = self::getEventTitle($acronym);
       //drupal_set_message("OFFICIAL ACRONYM: ".$acronym);
       if(self::isWebsite($acronym)) {
         //drupal_set_message("THIS IS AN OFFICIAL WEBSITE");
@@ -55,56 +58,10 @@ class EventsRegPageMaker {
 
     return;
   }
-
-  public function setupPage2($nid, $event_route) {
-
-    drupal_set_message('setupPage');
-    drupal_set_message($event_route);
-    
-    //drupal_set_title('Wow.  I got the title');
-
-    drupal_set_message($route);
-    dpm("setupPage: nid: ". $nid);
-
-    $node = Node::load($nid);
-    $bundle = $node->getType();
-    $path = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-
-    switch ($event_route) {
-      case 'entity.node.canonical':
-        // Get a node storage object.
-        $eventsreg['active_link'] = $path;
-        $eventsreg['home_link'] = self::formatHomeLink($path);
-
-        switch ($bundle) {
-          case 'page':
-            $acronym = self::decodeAlias($path); 
-            drupal_set_message("We got the PAGE Acronym: ".$acronym, 'status', FALSE);
-            break;
-          case 'webform':
-            dpm("We got a webform.  We got this from a different area?");
-            //Lookup name webform id in node__webform table
-            dpm("nid: ". $nid);
-            $acronym = self::getAcronymFromWebformNode($nid);
-            $path = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-            $variables['eventsreg']['active_link'] = $path;
-            dpm($nid."  ".$alias);
-            $menus = ["menu" => $acronym."-menu", "util" => $cronym."-util", "admin" => $acronym."-admin"];
-            break;
-        }
-        //$menus = ["menu" => $acronym."-menu", "util" => $acronym."-util", "admin" => $acronym."-admin"];
-      default:
-        $menus = ["menu" => "default-menu", "util" => "default-util", "admin" => "default-admin"];
-        break;
-    }
-
-    foreach($menus as $menu => $menu_name) {
-      if(isMenu($menu_name)) {
-        self::attachMenuTree($menu, $menu_name, $variables);
-      }
-    }
-
-      return;
+  
+  private static function getEventTitle($acronym) {
+    //This doesn't work here.  Need to do this at the html level not page level.  I couldn't find what route I was on at the preprocess html level.
+    return "Page Title";
   }
 /*
   private static function getAcronymFromWebformNode($nid) {

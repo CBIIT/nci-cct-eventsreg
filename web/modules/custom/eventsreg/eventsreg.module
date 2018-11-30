@@ -4,9 +4,10 @@ use Drupal\node\NodeInterface;
 use Drupal\eventsreg\Utility\EventsRegPageMaker;
 
 function eventsreg_preprocess_html(&$variables) {
-	//dump($variables);
-	//$something = "ccr-traco (Home)";
+
+  //$something = "We got this";
   //$variables['head_title']['title'] = $something;
+  //dump($variables);
 }
 
 function eventsreg_preprocess_block(&$variables) {
@@ -46,6 +47,7 @@ function getAcronymFromWebformNode($nid) {
 function eventsreg_preprocess_page(&$variables) {
 
 	EventsRegPageMaker::setupPage($variables);
+	$variables['page']['#title'] = $variables['eventsreg']['title'];
 	//dump($variables);
 
 //$attachment = EventsRegPageMaker::setupPage($nid, \Drupal::routeMatch()->getRouteName());
