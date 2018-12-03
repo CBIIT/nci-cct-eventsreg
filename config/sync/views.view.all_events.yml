@@ -13,7 +13,6 @@ dependencies:
     - link
     - node
     - text
-    - user
 id: all_events
 label: 'All Events'
 module: views
@@ -30,9 +29,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -579,7 +577,6 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_event_date_time'
@@ -591,7 +588,8 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        doc_serialization: {  }
       path: all-events
       menu:
         type: normal
@@ -606,7 +604,6 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_event_date_time'

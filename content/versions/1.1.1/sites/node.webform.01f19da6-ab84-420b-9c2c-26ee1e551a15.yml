@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-11-30T19:50:13+00:00'
+    value: '2018-12-03T16:20:27+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -52,11 +52,18 @@ metatag:
   value:
     title: 'cct-jhu (Registration) | Events Registration'
     canonical_url: 'http://localhost:8080/cct/jhu'
+    description: 'Johns Hopkins/NCI Molecular Target and Drug Discovery Fellowship'
 path:
   -
     alias: /cct/jhu
 menu_link: {  }
-body: {  }
+body:
+  -
+    value: "<h2 class=\"text-align-center nci-red\">Johns Hopkins/NCI Molecular Target and Drug Discovery Fellowship</h2>\r\n"
+    format: full_html
+    processed: "<h2 class=\"text-align-center nci-red\">Johns Hopkins/NCI Molecular Target and Drug Discovery Fellowship</h2>\n"
+    summary: ''
+    summary_processed: ''
 webform:
   -
     target_id: cct_jhu

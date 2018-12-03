@@ -1,0 +1,15 @@
+row:
+  '#type': container
+  '#attributes':
+    class:
+      - row
+  container:
+    '#type': container
+    '#attributes':
+      class:
+        - col-md-6
+  container_01:
+    '#type': container
+    '#attributes':
+      class:
+        - col-md-6

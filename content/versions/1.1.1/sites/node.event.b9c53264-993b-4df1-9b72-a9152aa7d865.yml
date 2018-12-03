@@ -11,7 +11,7 @@ type:
     target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
 revision_timestamp:
   -
-    value: '2018-11-30T18:44:06+00:00'
+    value: '2018-12-03T16:22:44+00:00'
     format: 'Y-m-d\TH:i:sP'
 revision_uid:
   -
@@ -34,7 +34,7 @@ created:
     format: 'Y-m-d\TH:i:sP'
 changed:
   -
-    value: '2018-11-30T18:44:06+00:00'
+    value: '2018-12-03T16:22:44+00:00'
     format: 'Y-m-d\TH:i:sP'
 promote:
   -
@@ -87,11 +87,7 @@ field_registration_open:
   -
     value: '2018-11-29'
     end_value: '2018-11-30'
-field_results:
-  -
-    uri: 'internal:/admin/structure/webform/manage/cct_wcga/results/submissions'
-    title: registrations
-    options: {  }
+field_results: {  }
 field_tags: {  }
 _content_sync:
   entity_type: node
