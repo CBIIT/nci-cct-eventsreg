@@ -1,0 +1,8 @@
+uuid: 7161d547-b45b-4a1c-b2f1-eccbab2cbfe3
+langcode: en
+status: true
+dependencies: {  }
+id: cct-cb-util
+label: cct-cb-util
+description: 'cct-cb (Util)'
+locked: false
