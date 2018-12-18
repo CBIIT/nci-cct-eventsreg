@@ -10,13 +10,13 @@
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
-web/sites/*/services.yml
+/web/sites/*/services.yml
 
 # Ignore Drupal's file directory
-/web/sites/*/files/
-/web/sites/default/files/php/*
-/web/sites/default/files/private
-/web/sites/default/files/webform
+/web/sites/default/files/*
+!/web/sites/default/assets/
+#!/web/sites/default/pictures/
+#!web/sites/default/inline-images/
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
@@ -30,14 +30,9 @@ web/sites/*/services.yml
 # Ignore .env files as they are personal
 /composer.lock
 
-#These are cache files
-/web/sites/default/files/css/*
-/web/sites/default/files/js/*
-
 #Remove content/sync files for now.  (i.e. Not being used)
 /content/sync/*
 
 #ignore settings.php and .htaccess #
-settings.php
 .htaccess
 

@@ -70,8 +70,13 @@
         {% endif %}       
         <a href="{{ home_link }}"><img src="https://www.cancer.gov/publishedcontent/images/images/design-elements/logos/nci-logo-full.__v1.svg" alt="National Cancer Institute" ></a>
       </div>
-      {% if is_admin %}
-        <div class="pull-right"><a href="/all-events">all-events</a></div>
+      {% if logged_in %}
+        <div class="pull-right">
+          {% if is_admin %}
+              <a href="/all-events">all-events</a>&nbsp;&nbsp;&nbsp;
+          {% endif %}
+          <a href="/user/logout">Log Out</a>
+        </div>
       {% endif %}
     </div>
   </div>
@@ -86,9 +91,9 @@
         {% for menu in eventsreg.menus.util %}
           {% set protocol = menu.alias|slice(0,4) %}
           {% if protocol == 'http' %}
-            <span><a href="{{ menu.alias }}" target="_blank">{{ menu.link_title }}</a></span>&nbsp;&nbsp;
+            <span><a href="{{ menu.alias }}" target="_blank">{{ menu.link_title }}</a></span>
           {% else %}
-            <span><a href="{{ menu.alias }}">{{ menu.link_title }}</a></span>&nbsp;&nbsp;
+            <span><a href="{{ menu.alias }}">{{ menu.link_title }}</a></span>
             {% endif %}
         {% endfor %}
       </div>
@@ -121,6 +126,15 @@
                   <li><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
                 {% endif %}
             {% endfor %}
+            {% if logged_in %}
+              {% for menu in eventsreg.menus.admin %}
+                  {% if eventsreg.active_link == menu.alias %}
+                    <li class="active"><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
+                  {% else %}
+                    <li><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
+                  {% endif %}
+              {% endfor %}
+            {% endif %}
             <!--
             <li class="active"><a href="/cct/dcdp">Overview</a></li>
             <li><a href="/cct/dcdp/application">Application </a></li>
@@ -206,7 +220,7 @@
         </li>
         <li>
           <span>|</span>
-          <a href="https://www.cancer.gov/contact" target="_blank">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </li>
         {% if logged_in %}
           <li>

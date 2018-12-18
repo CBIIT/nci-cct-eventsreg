@@ -1,0 +1,8 @@
+uuid: 2a5de4b0-64f0-421d-b8e6-d8606a695abf
+langcode: en
+status: true
+dependencies: {  }
+id: cct-sssc-retreat-menu
+label: cct-sssc-retreat-menu
+description: 'cct-sssc-retreat (Menu)'
+locked: false

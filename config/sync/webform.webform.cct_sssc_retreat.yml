@@ -1,0 +1,169 @@
+uuid: eb5d0192-ef75-41df-9768-e1a7c9296aee
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: cct_sssc_retreat
+title: cct-sssc-retreat
+description: 'SSSC Retreat'
+category: cct
+elements: "row:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-12 col-offset-1'\n    registration:\n      '#type': fieldset\n      '#title': Registration\n      '#attributes':\n        class:\n          - fieldset-title\n      name:\n        '#type': webform_flexbox\n        title:\n          '#type': select\n          '#title': Title\n          '#options':\n            Dr.: Dr.\n            Prof.: Prof.\n            Mr.: Mr.\n            Ms.: Ms.\n          '#required': true\n        first_name:\n          '#type': textfield\n          '#title': 'First Name'\n          '#required': true\n        last_name:\n          '#type': textfield\n          '#title': 'Last Name'\n          '#required': true\n      position:\n        '#type': webform_select_other\n        '#title': Position\n        '#options':\n          'Postdoctoral CRTA Fellow': 'Postdoctoral CRTA Fellow'\n          'Postdoctoral Visiting Fellow': 'Postdoctoral Visiting Fellow'\n          'Post-Baccalaureate Fellow': 'Post-Baccalaureate Fellow'\n          'Clinical Fellow': 'Clinical Fellow'\n          'Research Fellow': 'Research Fellow'\n          'Staff Scientist_Clinician': 'Staff Scientist/Clinician'\n          Trainee: Trainee\n          'Graduate Student': 'Graduate Student'\n        '#required': true\n      organization_details:\n        '#type': fieldset\n        '#title': 'Organization Details'\n        organization_type:\n          '#type': webform_select_other\n          '#title': 'Organization Type'\n          '#options':\n            HNC: 'NCI - National Cancer Institute'\n          '#required': true\n        division_office_center_:\n          '#type': select\n          '#title': Division/Office/Center\n          '#options':\n            HNC7: 'CCR - Center for Cancer Research'\n            HNCC: 'DCB - Division of Cancer Biology'\n            HNCD: 'DCCPS - Division of Cancer Control and Population Sciences'\n            HNC9: 'DCEG - Division of Cancer Epidemiology and Genetics'\n            HNC4: 'DCP - Division of Cancer Prevention'\n            HNCB: 'DCTD - Division of Cancer Treatment and Diagnosis'\n            HNC5: 'DEA - Division of Extramural Activities'\n            HNC1: 'OD - Office of the Director'\n          '#other__placeholder': 'please type affiliation'\n          '#required': true\n          '#required_error': Required\n          '#states':\n            invisible-slide:\n              ':input[name=\"organization_type[select]\"]':\n                '!value': HNC\n        branch_lab:\n          '#type': select\n          '#title': Branch/Lab/Program\n          '#options':\n            HNC7Z12: 'CDBL - Cancer & Developmental Biology Laboratory'\n            HNC7Z24: 'CGB - Cancer Genetics Branch'\n            HNC7Z42: 'CIP - Cancer & Inflammation Program'\n            HNC7Z29: 'CPSB - Cancer Prevention Studies Branch'\n            HNC7Z02: 'DTB - Developmental Therapeutics Branch'\n            HNC72: 'EIB - Experimental Immunology Branch'\n            HNC7Z52: 'EOB - Endocrine Oncology Branch'\n            HNC7Z23: 'ETIB - Experimental Transplantation & Immunology Branch'\n            HNC7Z55: 'GMB - Genitourinary Malignancies Branch'\n            HNC7Z27: 'HAMB - HIV & AIDS Malignancy Branch'\n            HNC7Z07: 'HIVDRP - HIV Dynamics & Replication Program'\n            HNC7Z073: 'HIVDRP HVIB - Host Virus Interaction Branch'\n            HNC7Z075: 'HIVDRP RRL - Retroviral Replication Laboratory'\n            HNC7Z04: 'LBMB - Laboratory of Biochemistry & Molecular Biology'\n            HNC79: 'LCB - Laboratory of Cell Biology'\n            HNC7Z43: 'LCBG - Laboratory of Cancer Biology & Genetics'\n            HNC7Q: 'LCCTP - Laboratory of Cellular Carcinogenesis and Tumor Promotion'\n            HNC7Z41: 'LCDS - Laboratory of Cell & Developmental Signaling'\n            HNC7J: 'LCMB - Laboratory of Cellular & Molecular Biology'\n            HNC78: 'LCO - Laboratory of Cellular Oncology'\n            HNC7R: 'LEC - Laboratory of Experimental Carcinogenesis'\n            HNC7Z25: 'LGCP - Laboratory of Genitourinary Cancer Pathogenesis'\n            HNC7L: 'LGD - Laboratory of Genomic Diversity'\n            HNC7Z50: 'LGI - Laboratory of Genome Integrity'\n            HNC7K: 'LHC - Laboratory of Human Carcinogenesis'\n            HNC7Y: 'LICB - Laboratory of Immune Cell Biology'\n            HNC7Z05: 'LM - Laboratory of Metabolism'\n            HNC7B: 'LMB - Laboratory of Molecular Biology'\n            HNC7Z18: 'LP - Laboratory of Pathology'\n            HNC7Z36: 'LPDS - Laboratory of Protein Dynamics & Signaling'\n            HNC7Z06: 'LRBGE - Laboratory of Receptor Biology & Gene Expression'\n            HNC74: 'LTIB - Laboratory of Tumor Immunology & Biology'\n            HNC7Z16: 'LYMB - Lymphoid Malignancies Branch'\n            HNC7Z11: 'MCGP - Mouse Cancer Genetics Program'\n            HNC7Z32: 'MCL - Macromolecular Crystallography Laboratory'\n            HNC7Z37: 'MIP - Molecular Imaging Program'\n            HNC7Z30: 'NOB - Neuro-oncology Branch'\n            HNC71: 'OD - Office of the Director'\n            HNC713: 'OD BRL - Basic Research Laboratory'\n            HNC718: 'OD CBL - Chemical Biology Laboratory'\n            HNC71B: 'OD CDSL - Cancer Data Science Laboratory'\n            HNC717: 'OD MTP - Molecular Targets Program'\n            HNC719: 'OD OCD - Office of the Clinical Director'\n            HNC71A: 'OD RNABL - RNA Biology Laboratory'\n            HNC716: 'OD SBL - Structural Biophysics Laboratory'\n            HNC7Z19: 'POB - Pediatric Oncology Branch'\n            HNC7Z26: 'RBB - Radiation Biology Branch'\n            HNC7Z20: 'ROB - Radiation Oncology Branch'\n            HNC7Z17: 'SB - Surgery Branch'\n            HNC7Z56: 'TGMB - Thoracic & Gi Malignancies Branch'\n            HNC7Z53: 'TOSB - Thoracic & Oncologic Surgery Branch'\n            HNC7Z28: 'UOB - Urologic Oncology Branch'\n            HNC7Z38: 'VB - Vaccine Branch'\n            HNC7Z54: 'WMB - Women''s Malignancies Branch'\n            HNCCB: 'CCBB - Cancer Cell Biology Branch'\n            HNCCD: 'CIHEB - Cancer Immunology, Hematology & Etiology Branch'\n            HNCC6: 'DCAB - DNA & Chromosome Aberrations Branch'\n            HNCC1: 'OD - Office of the Director'\n            HNCCC: 'SBMAB - Structural Biology & Molecular Applications Branch'\n            HNCCA: 'TBMB - Tumor Biology & Microenvironment Branch'\n            HNCCE: 'TMB - Tumor Metastasis Branch'\n            HNCD3: 'BRP - Behavioral Research Program'\n            HNCD3A: 'BRP BBPSB - Basic Biobehavioral & Psychological Sciences Branch'\n            HNCD39: 'BRP HBRB - Health Behaviors Research Branch'\n            HNCD38: 'BRP HCIRB - Health Communication & Informatics Research Branch'\n            HNCD3B: 'BRP SRTB - Science of Research & Technology Branch'\n            HNCD36: 'BRP TCRB - Tobacco Control Research Branch'\n            HNCD2: 'EGRP - Epidemiology & Genomics Research Program'\n            HNCD25: 'EGRP CTEB - Clinical & Translational Epidemiology Branch'\n            HNCD22: 'EGRP EEB - Environmental Epidemiology Branch'\n            HNCD23: 'EGRP GEB - Genomic Epidemiology Branch'\n            HNCD24: 'EGRP MTB - Methods & Technologies Branch'\n            HNCD26: 'EGRP RFAB - Risk Factor Assessment Branch'\n            HNCD5: 'HDRP - Healthcare Delivery Research Program'\n            HNCD52: 'HDRP HARB - Healthcare Assessment Research Branch'\n            HNCD55: 'HDRP HSIRB - Health Systems & Interventions Research Branch'\n            HNCD54: 'HDRP ORB - Outcomes Research Branch'\n            HNCD53: 'HDRP RFMMB - Risk Factor Monitoring & Methods Branch'\n            HNCD1: 'OD - Office of the Director'\n            HNCD4: 'SRP - Surveillance Research Program'\n            HNCD43: 'SRP CSB - Cancer Statistics Branch'\n            HNCD49: 'SRP DAB - Data Analytics Branch'\n            HNCD46: 'SRP DQAIB - Data Quality, Analysis, & Interpretation Branch'\n            HNCD45: 'SRP SIB - Surveillance Informatics Branch'\n            HNCD48: 'SRP SRAB - Statistical Research & Applications Branch'\n            HNC9C: 'EBP - Epidemiology & Biostatistics Program'\n            HNC9C3: 'EBP BB - Biostatistics Branch'\n            HNC9C7: 'EBP IIB - Infection & Immunoepidemiology Branch'\n            HNC9C2: 'EBP MEB - Metabolic Epidemiology Branch'\n            HNC9C6: 'EBP OEEB - Occupational & Environmental Epidemiology Branch'\n            HNC9C5: 'EBP REB - Radiation Epidemiology Branch'\n            HNC9B: 'HGP - Human Genetics Program'\n            HNC9B2: 'HGP CGB - Clinical Genetics Branch'\n            HNC9B4: 'HGP ITEB - Integrative Tumor Epidemiology Branch'\n            HNC9B5: 'HGP LTG - Laboratory of Translational Genomics'\n            HNC91: 'OD - Office of the Director'\n            HNC914: 'OD LGS - Laboratory of Genetic Susceptibility'\n            HNC912: 'OD ODOA - Office of Division Operations & Analysis'\n            HNC913: 'OD OE - Office of Education'\n            HNC42: 'BGCRG - Breast & Gynecologic Cancer Research Group'\n            HNC4J: 'BRG - Biometry Research Group'\n            HNC4B: 'CADRG - Chemopreventive Agent Development Research Group'\n            HNC4G: 'CBRG - Cancer Biomarkers Research Group'\n            HNC4C: 'COPTRG - Community Oncology & Prevention Trials Research Group'\n            HNC4H: 'EDRG - Early Detection Research Group'\n            HNC49: 'GOCRG - Gastrointestinal & Other Cancer Research Group'\n            HNC44: 'LUACRG - Lung & Upper Aerodigestive Cancer Research Group'\n            HNC4D: 'NSRG - Nutritional Science Research Group'\n            HNC41: 'OD - Office of the Director'\n            HNC414: 'OD CPFP - Cancer Prevention Fellowship Program'\n            HNC413: 'OD PIO - Protocol Information Office'\n            HNC43: 'PUCRG - Prostate & Urologic Cancer Research Group'\n            HNCBA: 'BRP - Biometric Research Program'\n            HNCBA2: 'BRP BB - Biostatistics Branch'\n            HNCBA3: 'BRP CSBB - Computational & Systems Biology Branch'\n            HNCB6: 'CDP - Cancer Diagnosis Program'\n            HNCB65: 'CDP BBRB - Biorepositories & Biospecimen Research Branch'\n            HNCB64: 'CDP DBTB - Diagnostic Biomarkers & Technology Branch'\n            HNCB62: 'CDP DEB - Diagnostics Evaluation Branch'\n            HNCB63: 'CDP PIRB - Pathology Investigation & Resources Branch'\n            HNCB8: 'CIP - Cancer Imaging Program'\n            HNCB83: 'CIP CTB - Clinical Trials Branch'\n            HNCB85: 'CIP IGIB - Image-guided Intervention Branch'\n            HNCB82: 'CIP ITDB - Imaging Technology Development Branch'\n            HNCB84: 'CIP MIB - Molecular Imaging Branch'\n            HNCB86: 'CIP NSDB - Nanodelivery Systems & Devices Branch'\n            HNCB3: 'CTEP - Cancer Therapy Evaluation Program'\n            HNCB38: 'CTEP CGCB - Clinical Grants & Contracts Branch'\n            HNCB36: 'CTEP CIB - Clinical Investigations Branch'\n            HNCB37: 'CTEP CTMB - Clinical Trials Monitoring Branch'\n            HNCB39: 'CTEP CTOIB - Clinical Trials Operations & Informatics Branch'\n            HNCB32: 'CTEP IDB - Investigational Drug Branch'\n            HNCB33: 'CTEP PMB - Pharmaceutical Management Branch'\n            HNCB35: 'CTEP RAB - Regulatory Affairs Branch'\n            HNCB4: 'DTP - Developmental Therapeutics Program'\n            HNCB4C: 'DTP BRB - Biological Resources Branch'\n            HNCB44: 'DTP BTB - Biological Testing Branch'\n            HNCB47: 'DTP DSCB - Drug Synthesis & Chemistry Branch'\n            HNCB42: 'DTP ITB - Information Technology Branch'\n            HNCB4E: 'DTP MPB - Molecular Pharmacology Branch'\n            HNCB45: 'DTP NPB - Natural Products Branch'\n            HNCB49: 'DTP PRB - Pharmaceutical Resources Branch'\n            HNCB46: 'DTP PTGB - Preclinical Therapeutics Grants Branch'\n            HNCB4D: 'DTP STB - Screening Technologies Branch'\n            HNCB48: 'DTP TPB - Toxicology & Pharmacology Branch'\n            HNCB1: 'OD - Office of the Director'\n            HNCB13: 'OD OCCAM - Office of Cancer Complementary & Alternative Medicine'\n            HNCB2: 'RRP - Radiation Research Program'\n            HNCB25: 'RRP CROB - Clinical Radiation Oncology Branch'\n            HNCB22: 'RRP RDB - Radiotherapy Development Branch'\n            HNCB9: 'TRP - Translational Research Program'\n            HNC51: 'OD - Office of the Director'\n            HNC51A: 'OD CMO - Committee Management Office'\n            HNC519: 'OD PRESTO - Program & Review Extramural Staff Training Office'\n            HNC52: 'OEA - Office of Extramural Applications'\n            HNC522: 'OEA AISB - Applied Information Systems Branch'\n            HNC523: 'OEA RAEB - Research Analysis & Evaluation Branch'\n            HNC53: 'ORRPC - Office of Referral, Review, & Program Coordination'\n            HNC535: 'ORRPC PCRB - Program Coordination & Referral Branch'\n            HNC537: 'ORRPC RPRB - Research Programs Review Branch'\n            HNC538: 'ORRPC RTB - Research & Technology Branch'\n            HNC536: 'ORRPC RTRB - Resources & Training Review Branch'\n            HNC539: 'ORRPC SRB - Special Review Branch'\n            HNC1D: 'CBIIT - Center for Biomedical Informatics & Information Technology'\n            HNC1D3: 'CBIIT BOB - Business Operations Branch'\n            HNC1D4: 'CBIIT CIB - Cancer Informatics Branch'\n            HNC1D5: 'CBIIT ESIB - Evaluation & Strategic Initiatives Branch'\n            HNC1D2: 'CBIIT IIOB - Infrastructure & IT Operations  Branch'\n            HNC1D6: 'CBIIT ODS - Office of Data Sharing'\n            HNC1P: 'CCG - Center for Cancer Genomics'\n            HNC1P2: 'CCG OCG - Office of Cancer Genomics'\n            HNC1P3: 'CCG TCGA - The Cancer Genome Atlas Program Office'\n            HNC1Q: 'CCT - Center for Cancer Training'\n            HNC1Q2: 'CCT CTB - Cancer Training Branch'\n            HNC1Q3: 'CCT IDWB - Intramural Diversity Workforce Branch'\n            HNC1Q4: 'CCT OTE - Office of Training & Education'\n            HNC1N: 'CGH - Center for Global Health'\n            HNC1E: 'CRCHD - Center to Reduce Cancer Health Disparities'\n            HNC1E4: 'CRCHD DTB - Diversity Training Branch'\n            HNC1E2: 'CRCHD INB - Integrated Networks Branch'\n            HNC1R: 'CRS - Center for Research Strategy'\n            HNC1L: 'CSSI - Center for Strategic Scientific Initiatives'\n            HNC1L6: 'CSSI OBBR - Office of Biorepositories & Biospecimen Research'\n            HNC1L4: 'CSSI OCCPR - Office of Cancer Clinical Proteomics Research'\n            HNC1L3: 'CSSI OCNR - Office of Cancer Nanotechnology Research'\n            HNC1L2: 'CSSI OPSO - Office of Physical Sciences-oncology'\n            HNC1H: 'NCIFOSO - NCI Frederick Office of Scientific Operations'\n            HNC1M: 'OCC - Office of Cancer Centers'\n            HNC14: 'OCPL - Office of Communications and Public Liaison'\n            HNC14T: 'OCPL OCC - Office of Cancer Content'\n            HNC141: 'OCPL OD - Office of the Director'\n            HNC14Q: 'OCPL ODDC - Office of Dissemination & Digital Communications'\n            HNC14P: 'OCPL OPA - Office of Public Affairs'\n            HNC1K: 'OHAM - Office of HIV & AIDS Malignancy'\n            HNC17: 'OM - Office of Management'\n            HNC17T: 'OM CCR - Admin Resource Ctr - Center for Cancer Research'\n            HNC17F: 'OM DCCPS - Admin Resource Ctr - Div of Cancer Control & Poplulation Science'\n            HNC17U: 'OM DCEG - Admin Resource Ctr - Division of Cancer Epidemiology & Genetics'\n            HNC17L: 'OM DCP - Admin Resource Ctr - Division of Cancer Prevention'\n            HNC17V: 'OM DCTD - Admin Resource Ctr - Division of Cancer Treatment & Diagnosis'\n            HNC17M: 'OM DEA - Admin Resource Ctr - Div of Cancer Biolgy & Div of Extrmrl Activ'\n            HNC17Q: 'OM EO - Ethics Office'\n            HNC17W: 'OM ITRC - Information Technology Resource Center'\n            HNC17B: 'OM OA - Office of Acquisitions'\n            HNC17G: 'OM OBF - Office of Budget & Finance'\n            HNC17S: 'OM OD - Admin Resource Ctr - Office of the Director'\n            HNC17H: 'OM OEFIA - Office of Extramural Finance & Information Analysis'\n            HNC17C: 'OM OGA - Office of Grants Administration'\n            HNC17J: 'OM OGCR - Office of Government & Congressional Relations'\n            HNC17K: 'OM OM - Admin Resource Ctr - Office of Management'\n            HNC177: 'OM OMPC - Office of Management Policy & Compliance'\n            HNC178: 'OM OSFM - Office of Space & Facility Management'\n            HNC17X: 'OM OWM - Office of Workforce Management'\n            HNC17N: 'OM OWPD - Office of Workforce Planning & Development'\n            HNC17Y: 'OM OWR - Office of Workforce Relations'\n            HNC17P: 'OM TTC - Technology Transfer Center'\n            HNC16: 'OSPA - Office of Science Planning & Assessment'\n            HNC1J: 'SBIR - Small Business Innovation Research (SBIR) Development Center'\n          '#required': true\n          '#states':\n            visible-slide:\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC7\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNCC\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNCD\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC9\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC4\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNCB\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC5\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1D\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1P\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1Q\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1E\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC1L\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC14\n              - or\n              - ':input[name=\"division_office_center_\"]':\n                  value: HNC17\n        campus_location:\n          '#type': select\n          '#title': 'Campus Location'\n          '#options':\n            Bethesda: Bethesda\n            Frederick: Frederick\n            'Shady Grove': 'Shady Grove'\n          '#required': true\n          '#states':\n            invisible-slide:\n              ':input[name=\"organization_type[select]\"]':\n                '!value': HNC\n          '#attributes':\n            display: none;\n          '#label_attributes':\n            style: hidden\n      confidential_disclosure_agreement_:\n        '#type': fieldset\n        '#title': 'Confidential Disclosure Agreement '\n        '#states':\n          visible-slide:\n            ':input[name=\"organization_type[select]\"]':\n              value: _other_\n        agreement_text:\n          '#type': processed_text\n          '#text': |\n            <p>As a&nbsp;non-NCI employee you must complete the&nbsp;<a href=\"/sites/default/files/2019ConfidentialDisclosureAgreement.pdf\" target=\"_blank\">Confidential Disclosure Agreement</a> and upload using the upload button below.&nbsp;&nbsp;</p>\n            \n          '#format': full_html\n        upload_confidential_disclosure_agreement:\n          '#type': managed_file\n          '#title': 'Upload Confidential Disclosure Agreement'\n          '#required': true\n          '#file_extensions': 'pdf doc docx '\n      addres:\n        '#type': webform_address\n        '#title': Address\n        '#required': true\n        '#address__required': true\n        '#city__required': true\n        '#state_province__required': true\n        '#postal_code__required': true\n        '#country__access': false\n      telephone:\n        '#type': webform_telephone\n        '#title': Telephone\n        '#title_display': before\n        '#required': true\n        '#type__access': false\n        '#phone__required': true\n        '#ext__access': false\n        '#phone__international': false\n      email:\n        '#type': webform_email_confirm\n        '#title': Email\n        '#required': true\n        '#confirm__title': 'Verify Email'\n      flexbox3:\n        '#type': webform_flexbox\n        '#align_items': flex-end\n        are_you_an_invited_speaker_:\n          '#type': select\n          '#title': 'Are you an invited speaker?'\n          '#options':\n            'Yes': 'Yes'\n            'No': 'No'\n          '#required': true\n        do_you_require_shuttle_service_from_the_frederick_campus_:\n          '#type': select\n          '#title': 'Do you require shuttle service from the Frederick Campus? '\n          '#options':\n            'Yes': 'Yes'\n            'No': 'No'\n          '#required': true\n      flexbox_04:\n        '#type': webform_flexbox\n        '#align_items': flex-end\n        which_workshop_would_you_prefer_to_attend_on_thursday_february_2:\n          '#type': select\n          '#title': 'Which workshop would you prefer to attend on Thursday February 28? '\n          '#options':\n            'Industry Panel': 'Industry Panel'\n            'Academia Panel': 'Academia Panel'\n            'Networking Workshop': 'Networking Workshop'\n          '#required': true\n        which_workshop_would_you_prefer_to_attend_on_friday_march_1_:\n          '#type': select\n          '#title': 'Which workshop would you prefer to attend on Friday March 1? '\n          '#options':\n            'Non-profit Panel': 'Non-profit Panel'\n            'Building a Biotechnology Startup Panel': 'Building a Biotechnology Startup Panel'\n            'Resume and Elevator Pitch Workshop': 'Resume and Elevator Pitch Workshop'\n          '#required': true\nhidden_container:\n  '#type': container\n  abstracts:\n    '#type': fieldset\n    '#title': Abstracts\n    '#title_display': invisible\n    are_you_submitting_an_abstract_:\n      '#type': select\n      '#title': 'Are you submitting an abstract? '\n      '#options':\n        'Yes': 'Yes'\n        'No': 'No'\n      '#wrapper_attributes':\n        style: 'width: 48%;'\n    abstract_instuctions:\n      '#type': webform_markup\n      '#markup': 'Note: Instructions for submitting abstract can be found under <a href=\"/cct/fyi-colloquium-2019/abstracts\" target=\"_blank\">Abstracts & Poster Info</a>.'\n    abstract_category_:\n      '#type': select\n      '#title': 'Abstract Category '\n      '#options':\n        'Bioinformatics, Epidemiology and Translational Research': 'Bioinformatics, Epidemiology and Translational Research'\n        'Biophysics, Chemistry, Pharmacology and Structural Biology': 'Biophysics, Chemistry, Pharmacology and Structural Biology'\n        'Molecular and Cellular Biology and Microbiology': 'Molecular and Cellular Biology and Microbiology'\n        'Cancer Models, Cancer Stem Cells, Carcinogenesis and Metastasis': 'Cancer Models, Cancer Stem Cells, Carcinogenesis and Metastasis'\n        'Genetics, Genomics, Chromatin, Signal Transduction and Transcription': 'Genetics, Genomics, Chromatin, Signal Transduction and Transcription'\n        'Immunology, Virology and Metabolism': 'Immunology, Virology and Metabolism'\n      '#required': true\n      '#states':\n        invisible:\n          ':input[name=\"are_you_submitting_an_abstract_\"]':\n            '!value': 'Yes'\n    abstract_title_:\n      '#type': textfield\n      '#title': 'Abstract Title: '\n      '#description': '<em><span style=\"font-size:10.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">(Title of the abstract should be in uppercase and lowercase letters. Do not use all capital letters)</span></span></span></em>'\n      '#description_display': before\n      '#required': true\n      '#states':\n        invisible:\n          ':input[name=\"are_you_submitting_an_abstract_\"]':\n            '!value': 'Yes'\n    authors_:\n      '#type': textarea\n      '#title': 'Authors: '\n      '#description': |\n        <span style=\"font-size:11pt\"><span style=\"line-height:107%\"><span style=\"font-family:Calibri,sans-serif\">List the authors&rsquo; full names (do not abbreviate first names) and their affiliations directly underneath the title, using uppercase and lower-case letters. List the presenting author first. Use the author format shown here:</span></span></span><br />\n        <span style=\"font-size:11pt\"><span style=\"line-height:107%\"><span style=\"font-family:Calibri,sans-serif\">Sally Rand1, Richard Hoffman2, Douglas Redmond3, Mark Shuster1, Philip Proteck3, Mark Shiller1 and Saundra Bently4.</span></span></span><br />\n        &nbsp;\n        \n      '#description_display': before\n      '#required': true\n      '#states':\n        invisible:\n          ':input[name=\"are_you_submitting_an_abstract_\"]':\n            '!value': 'Yes'\n    body_:\n      '#type': textarea\n      '#title': 'Body:'\n      '#rows': '8'\n      '#placeholder': 'No figures or tables.'\n      '#required': true\n      '#required_error': Required\n      '#counter_type': word\n      '#counter_maximum': '500'\n      '#counter_maximum_message': 'Cannot exceed 500 words total.'\n      '#states':\n        invisible:\n          ':input[name=\"are_you_submitting_an_abstract_\"]':\n            '!value': 'Yes'\n    acknowledgements_:\n      '#type': textarea\n      '#title': 'Acknowledgements: '\n      '#required': true\n      '#states':\n        invisible:\n          ':input[name=\"are_you_submitting_an_abstract_\"]':\n            '!value': 'Yes'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

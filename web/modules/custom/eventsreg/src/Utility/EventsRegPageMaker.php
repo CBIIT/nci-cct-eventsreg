@@ -15,7 +15,8 @@ class EventsRegPageMaker {
   public static function setupMenus(&$variables) {
 
     $route_name = \Drupal::routeMatch()->getRouteName();
-
+    //drupal_set_message($route_name);
+    //dump($variables);
     if($route_name == 'entity.node.canonical') {
       $node = \Drupal::routeMatch()->getParameter('node');
       //dump($node);

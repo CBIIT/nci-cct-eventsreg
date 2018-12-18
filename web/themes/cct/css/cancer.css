@@ -29,8 +29,11 @@ header {
 .utility span {
     /* padding: .2em 1em; */
     display: inline-block;
-    /* height: 30px; */
+   /*  height: 30px; */
     margin-top:3px;
+}
+.utility span:not(:last-child) {
+  margin-right:20px;
 }
 /* Turn off external link in utility bar */
 .utility > span > a > span.ext {
