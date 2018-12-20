@@ -91,7 +91,12 @@ class EventsRegPageMaker {
   private static function getAcronymFromPath($alias){
     //drupal_set_message("decodeAlias");
     $pieces = explode("/", substr($alias, 1));
-    return $pieces[0].'-'.$pieces[1];
+    $acronym = "unknown";
+    if(isset($pieces[1])){
+      $acronym =$pieces[0].'-'.$pieces[1]; 
+    }
+    
+    return $acronym;
     //return str_replace("/", "-", substr($alias, 1));
   }
 
@@ -185,7 +190,13 @@ class EventsRegPageMaker {
     //Home Link will always be the frist two varialbes of the $current_path
 
     $pieces = explode("/", $path);
-    $link = "/".$pieces[1]."/".$pieces[2];
+    $link = "/";
+    if(isset($pieces[1])) {
+      $link = "/".$pieces[1];
+    }
+    if(isset($pieces[2])) {
+      $link = "/".$pieces[1]."/".$pieces[2];
+    }
 
     return $link;
   }
