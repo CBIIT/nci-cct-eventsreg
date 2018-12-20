@@ -9,7 +9,6 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access toolbar'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'view own unpublished content'

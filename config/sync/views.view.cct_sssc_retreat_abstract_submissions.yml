@@ -5,7 +5,7 @@ dependencies:
   config:
     - user.role.administrator
     - user.role.content_editor
-    - webform.webform.cct_fyi_colloquium_2019_registra
+    - webform.webform.cct_sssc_retreat
   module:
     - csv_serialization
     - rest
@@ -215,113 +215,9 @@ display:
           absolute: false
           entity_type: webform_submission
           plugin_id: entity_link
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_abstract_category_
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Abstract Category'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: h4
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_first_name
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Submitted By'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: h4
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_last_name
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_cct_sssc_retreat_abstract_category_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -371,14 +267,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_email
+        webform_submission_value_24:
+          id: webform_submission_value_24
+          table: webform_submission_field_cct_sssc_retreat_first_name
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: 'First Name'
           exclude: false
           alter:
             alter_text: false
@@ -411,7 +307,111 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_25:
+          id: webform_submission_value_25
+          table: webform_submission_field_cct_sssc_retreat_last_name
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Last Name'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_23:
+          id: webform_submission_value_23
+          table: webform_submission_field_cct_sssc_retreat_email
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Email
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -423,14 +423,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_5:
-          id: webform_submission_value_5
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_abstract_title_
+        webform_submission_value_9:
+          id: webform_submission_value_9
+          table: webform_submission_field_cct_sssc_retreat_abstract_title_
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Abstract Title'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -461,9 +461,9 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -475,61 +475,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_7:
-          id: webform_submission_value_7
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_authors_
+        webform_submission_value_16:
+          id: webform_submission_value_16
+          table: webform_submission_field_cct_sssc_retreat_authors_
           field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Authors
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: h4
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_8:
-          id: webform_submission_value_8
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_body
+        webform_submission_value_18:
+          id: webform_submission_value_18
+          table: webform_submission_field_cct_sssc_retreat_body_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -565,7 +518,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -579,9 +532,170 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_6:
-          id: webform_submission_value_6
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_acknowledgements_
+        webform_submission_value_17:
+          id: webform_submission_value_17
+          table: webform_submission_field_cct_sssc_retreat_background_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Background and Hypotheses'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_31:
+          id: webform_submission_value_31
+          table: webform_submission_field_cct_sssc_retreat_study_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Study Design and Methods'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_30:
+          id: webform_submission_value_30
+          table: webform_submission_field_cct_sssc_retreat_results_
+          field: webform_submission_value
+          plugin_id: webform_submission_field
+        webform_submission_value_15:
+          id: webform_submission_value_15
+          table: webform_submission_field_cct_sssc_retreat_author_affil_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Author Affiliations'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_12:
+          id: webform_submission_value_12
+          table: webform_submission_field_cct_sssc_retreat_acknowledgements_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -617,7 +731,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -641,7 +755,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            cct_fyi_colloquium_2019_registra: cct_fyi_colloquium_2019_registra
+            cct_sssc_retreat: cct_sssc_retreat
           group: 1
           exposed: false
           expose:
@@ -672,9 +786,9 @@ display:
           entity_type: webform_submission
           entity_field: webform_id
           plugin_id: bundle
-        webform_submission_value:
-          id: webform_submission_value
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_are_you_submitting_an_abstract_
+        webform_submission_value_2:
+          id: webform_submission_value_2
+          table: webform_submission_field_cct_sssc_retreat_are_you_submitting_an_abstract_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -710,9 +824,9 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: webform_submission_select_filter
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_abstract_category_
+        webform_submission_value_3:
+          id: webform_submission_value_3
+          table: webform_submission_field_cct_sssc_retreat_abstract_category_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -722,12 +836,12 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: webform_submission_value_1_op
+            operator_id: webform_submission_value_3_op
             label: 'Abstract Category '
             description: ''
             use_operator: false
-            operator: webform_submission_value_1_op
-            identifier: webform_submission_value_1
+            operator: webform_submission_value_3_op
+            identifier: webform_submission_value_3
             required: false
             remember: false
             multiple: false
@@ -736,6 +850,7 @@ display:
               anonymous: '0'
               administrator: '0'
               content_editor: '0'
+              reports: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -759,7 +874,7 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: fyi-colloquium-2019-abstract-submission-header
+          admin_label: ''
           empty: false
           tokenize: false
           content: "<div class=\"abstract-submission-results-table\">\r\n\t<div class=\"pull-left site-color\"><h2>Abstract Submissions</h2></div>\r\n</div>\r\n<div class=\"clearfix\"></div>"
@@ -790,6 +905,10 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -1020,7 +1139,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Submitted By'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -1053,7 +1172,7 @@ display:
           element_class: ''
           element_label_type: h4
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true

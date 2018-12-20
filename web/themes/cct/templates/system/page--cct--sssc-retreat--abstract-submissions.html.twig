@@ -83,27 +83,18 @@
 </header>
 <!-- END HEADER -->
 <!-- UTILITY NAV -->
-{% if eventsreg.menus.util|length > 0 %}
 <div id="utility-bar">
   <div class="container">
     <div class="row">
       <div class="utility">
-        {% for menu in eventsreg.menus.util %}
-          {% set protocol = menu.alias|slice(0,4) %}
-          {% if protocol == 'http' %}
-            <span><a href="{{ menu.alias }}" target="_blank">{{ menu.link_title }}</a></span>
-          {% else %}
-            <span><a href="{{ menu.alias }}">{{ menu.link_title }}</a></span>
-            {% endif %}
-        {% endfor %}
-      </div>
+                                        <span><a href="https://www.cancer.gov/grants-training/training/about" target="_blank">Center for Cancer Training</a></span>
+                                                  <span><a href="/cct/sssc-retreat">SSSC Retreat</a></span>
+                          </div>
     </div>
   </div>
 </div>
-{% endif %}
 <!-- END UTILITY NAV -->
-<!-- NAV Bar - Collapsable -->
-{% if eventsreg.menus.menu|length > 0 %}
+<!-- Nav Bar - Collapsable -->
 <div id="eventsreg-nav-bar" class="utility-background">
   <div class="container">
     <nav class="navbar navbar-inverse">
@@ -119,23 +110,12 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            {% for menu in eventsreg.menus.menu %}
-                {% if eventsreg.active_link == menu.alias %}
-                  <li class="active"><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
-                {% else %}
-                  <li><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
-                {% endif %}
-            {% endfor %}
-            {% if logged_in %}
-              {% for menu in eventsreg.menus.admin %}
-                  {% if eventsreg.active_link == menu.alias %}
-                    <li class="active"><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
-                  {% else %}
-                    <li><a href="{{ menu.alias }}">{{ menu.link_title }}</a></li>
-                  {% endif %}
-              {% endfor %}
-            {% endif %}
-            <!--
+                                              <li><a href="/cct/sssc-retreat">Overview</a></li>
+                                                              <li><a href="/cct/sssc-retreat/abstracts">Abstracts &amp; Posters Info</a></li>
+                                                              <li class=""><a href="/cct/sssc-retreat/registration">Registration</a></li>
+                                                              <li><a href="/cct/sssc-retreat/venue">Venue &amp; Directions</a></li>
+                                                                                            <li class="active"><a href="/cct/sssc-retreat/abstract-submissions">Abstract Submissions</a></li>
+                                                        <!--
             <li class="active"><a href="/cct/dcdp">Overview</a></li>
             <li><a href="/cct/dcdp/application">Application </a></li>
             -->
@@ -145,9 +125,7 @@
     </nav>
   </div>
 </div>
-
-{% endif %}
-
+<!--End Nav Bar -->
 <div class="container">
   <div class="row general-page-body-container">
     <div id="cct-srk-body">
@@ -235,6 +213,10 @@
         <li>
           <span>|</span>
           <a href="http://www.cancer.gov/global/web/policies" target="_blank">Policies</a>
+        </li>
+        <li>
+          <span>|</span>
+          <a href="http://cancer.gov/global/viewing-files" target="_blank">Viewing Files</a>
         </li>
         <li>
           <span>|</span><a href="http://www.cancer.gov/policies/foia" target="_blank">FOIA</a>

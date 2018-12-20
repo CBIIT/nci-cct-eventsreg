@@ -181,9 +181,44 @@ handlers:
         - completed
       to_mail: '[webform_submission:values:e_mail_address:raw]'
       to_options: {  }
+      cc_mail: moodyt@mail.nih.gov
+      cc_options: {  }
+      bcc_mail: 'leidoswebteam@gmail.com, chamorroh@nih.gov, malonec@nih.gov'
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Statistical Analysis of Research Data'
+      subject: 'Statistical Analysis of Research Data - Registration'
+      body: "[webform_submission:values:name_last_first_middle_initial_],<br />\r\n<br />\r\nThank you for registering for &nbsp;<strong>Statistical Analysis of Research Data</strong>.<br /><br />\r\n**Notice: This email was sent from an unmonitored inbox. If you have any questions regarding your registration, please contact the event program staff at: <a href=\"mailto:NCICCT@mail.nih.gov\" title=\"NCICCT@mail.nih.gov\" alt=\"NCICCT@mail.nih.gov\">NCICCT@mail.nih.gov</a> **\r\n<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted by: [webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]<br />\r\n&nbsp;"
+      excluded_elements:
+        name_last_first_middle_initial_: name_last_first_middle_initial_
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: true
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+  cct_sssc_retreat:
+    id: email
+    label: 'Horacio Email'
+    handler_id: cct_sssc_retreat
+    status: false
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail_address:raw]'
+      to_options: {  }
       cc_mail: ''
       cc_options: {  }
-      bcc_mail: leidoswebteam@gmail.com
+      bcc_mail: chamorroh@nih.gov
       bcc_options: {  }
       from_mail: _default
       from_options: {  }

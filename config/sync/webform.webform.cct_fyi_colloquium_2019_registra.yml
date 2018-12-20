@@ -1,9 +1,9 @@
 uuid: 1b807c48-a7dc-46a3-b987-c79d38556703
 langcode: en
-status: scheduled
+status: open
 dependencies: {  }
 open: null
-close: '2019-02-01T23:59:59'
+close: null
 weight: 0
 uid: 1
 template: false
