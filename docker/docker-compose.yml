@@ -4,7 +4,10 @@ services:
         image: mariadb
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: my-secret-pw
+           MYSQL_USER: drupal
+           MYSQL_PASSWORD: drupal
+           MYSQL_ROOT_PASSWORD: my-secret-pw
+           MYSQL_DATABASE: eventsreg
         ports: 
             - "3306:3306"
         networks:
@@ -18,8 +21,9 @@ services:
         environment:
             MYSQL_DATABASE: eventsreg
             MYSQL_HOST: 172.16.238.10
-            MYSQL_USER: root
-            MYSQL_ROOT_PASSWORD: my-secret-pw        
+            MYSQL_USER: drupal
+            MYSQL_PASSWORD: drupal
+            MYSQL_ROOT_PASSWORD: drupal
         ports:
             - "8080:80"
         networks:

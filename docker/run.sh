@@ -22,7 +22,7 @@ else
   drush cr
 fi
 echo "Pulling latest code"
-cd /loca/drupal/events
+cd /local/drupal/events
 git pull
 echo "Starting apache"
 apache2-foreground
