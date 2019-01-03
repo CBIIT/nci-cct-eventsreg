@@ -5,14 +5,20 @@
       var event = "";
       var url_path = window.location.pathname;
       //console.log(url_path);  
-        
+      //alert(url_path);  
       if(url_path.substring(0, 46).toLowerCase() == '/webform/cct_fyi_colloquium_2019_registra/test'
       	&& url_path.substring(0, 50).toLowerCase() != '/cct/fyi-colloquium-2019/registration/confirmation') {
-	    $.setupDivisionChangeEventListener(); 
+         //console.log("setting up for colloquium");
+	       $.setupDivisionChangeEventListener(); 
       }
 
       if(url_path.substring(0, 37).toLowerCase() == '/cct/fyi-colloquium-2019/registration' && url_path.substring(0, 50).toLowerCase() != '/cct/fyi-colloquium-2019/registration/confirmation') {
-	    $.setupDivisionChangeEventListener();
+          //console.log("setting up for colloquium r");
+          $.setupDivisionChangeEventListener();
+      }
+      if(url_path.substring(0, 30).toLowerCase() == '/cct/sssc-retreat/registration' && url_path.substring(0, 50).toLowerCase() != '/cct/sssc-retreat/registration/confirmation') {
+          //console.log("sssc-retreat");
+          $.setupDivisionChangeEventListener();
       }
       if(url_path.substring(0, 45).toLowerCase() == '/cct/fyi-colloquium-2019/registration' && url_path.substring(0, 50).toLowerCase() != '/cct/fyi-colloquium-2019/abstract-submissions') {
 	    //$.setupAbstractCategoryChangeEventListener();
@@ -46,7 +52,7 @@ http://localhost:8080/cct/fyi-colloquium-2019/abstract-submissions-csv?webform_s
   	
      var events = $._data(document.getElementById('edit-division-office-center-'), "events");
      var hasEvents = (events != null);
-     //console.log(hasEvents);
+     console.log(hasEvents);
      if(!hasEvents) {
      	//console.log("Adding Division EVENT Listener");
      	$("#edit-division-office-center-").change(function(){

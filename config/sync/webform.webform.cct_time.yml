@@ -21,8 +21,8 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
-  form_submit_once: false
+  form_title: source_entity_webform
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
@@ -41,7 +41,7 @@ settings:
   form_disable_inline_errors: false
   form_required: false
   form_unsaved: false
-  form_disable_back: false
+  form_disable_back: true
   form_submit_back: false
   form_autofocus: false
   form_details_toggle: false

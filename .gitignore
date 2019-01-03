@@ -39,3 +39,5 @@
 #ignore settings.php and .htaccess #
 .htaccess
 
+#Remove MAC files
+.DS_Store

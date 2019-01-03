@@ -60,7 +60,6 @@ module:
   redirect_after_login: 0
   rest: 0
   search: 0
-  select2: 0
   serialization: 0
   shortcut: 0
   system: 0

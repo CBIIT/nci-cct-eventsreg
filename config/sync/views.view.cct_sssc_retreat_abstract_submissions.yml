@@ -222,7 +222,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: 'Abstract Category'
           exclude: false
           alter:
             alter_text: false
@@ -253,9 +253,9 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: ''
+          element_label_type: h4
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -274,8 +274,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'First Name'
-          exclude: false
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -303,11 +303,11 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: span
           element_class: ''
-          element_label_type: ''
+          element_label_type: h4
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -326,8 +326,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Last Name'
-          exclude: false
+          label: ''
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -355,11 +355,11 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: span
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -378,60 +378,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Email
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: link
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_9:
-          id: webform_submission_value_9
-          table: webform_submission_field_cct_sssc_retreat_abstract_title_
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -471,6 +419,107 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
+          webform_element_format: link
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Submitted By'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ webform_submission_value_24 }} {{ webform_submission_value_25 }} ({{ webform_submission_value_23 }})'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: h4
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+        webform_submission_value_9:
+          id: webform_submission_value_9
+          table: webform_submission_field_cct_sssc_retreat_abstract_title_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Abstract Title'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: h4
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
           webform_element_format: value
           webform_multiple_value: true
           webform_multiple_delta: 0
@@ -479,6 +528,53 @@ display:
           id: webform_submission_value_16
           table: webform_submission_field_cct_sssc_retreat_authors_
           field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Authors
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: h4
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
           plugin_id: webform_submission_field
         webform_submission_value_18:
           id: webform_submission_value_18
@@ -518,7 +614,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: ''
+          element_label_type: h4
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -570,7 +666,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: ''
+          element_label_type: h4
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -622,7 +718,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: ''
+          element_label_type: h4
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -640,6 +736,53 @@ display:
           id: webform_submission_value_30
           table: webform_submission_field_cct_sssc_retreat_results_
           field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Results and Conclusions'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: h4
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
           plugin_id: webform_submission_field
         webform_submission_value_15:
           id: webform_submission_value_15
@@ -1080,9 +1223,9 @@ display:
           absolute: false
           entity_type: webform_submission
           plugin_id: entity_link
-        webform_submission_value_4:
-          id: webform_submission_value_4
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_abstract_category_
+        webform_submission_value:
+          id: webform_submission_value
+          table: webform_submission_field_cct_sssc_retreat_abstract_category_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1118,7 +1261,7 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: true
           element_wrapper_type: ''
@@ -1132,67 +1275,15 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_2:
-          id: webform_submission_value_2
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_first_name
+        webform_submission_value_13:
+          id: webform_submission_value_13
+          table: webform_submission_field_cct_sssc_retreat_first_name
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: '0'
-          element_class: ''
-          element_label_type: h4
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          webform_element_format: value
-          webform_multiple_value: true
-          webform_multiple_delta: 0
-          plugin_id: webform_submission_field
-        webform_submission_value_3:
-          id: webform_submission_value_3
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_last_name
-          field: webform_submission_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1236,14 +1327,115 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_1:
-          id: webform_submission_value_1
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_email
+        webform_submission_value_14:
+          id: webform_submission_value_14
+          table: webform_submission_field_cct_sssc_retreat_last_name
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Submitted By'
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ webform_submission_value_13 }} {{ webform_submission_value_14 }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+        webform_submission_value_12:
+          id: webform_submission_value_12
+          table: webform_submission_field_cct_sssc_retreat_email
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Email
           exclude: false
           alter:
             alter_text: false
@@ -1288,9 +1480,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_5:
-          id: webform_submission_value_5
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_abstract_title_
+        webform_submission_value_17:
+          id: webform_submission_value_17
+          table: webform_submission_field_cct_sssc_retreat_title
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1326,9 +1518,9 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -1340,9 +1532,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_7:
-          id: webform_submission_value_7
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_authors_
+        webform_submission_value_9:
+          id: webform_submission_value_9
+          table: webform_submission_field_cct_sssc_retreat_authors_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1378,9 +1570,9 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -1392,9 +1584,9 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_8:
-          id: webform_submission_value_8
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_body
+        webform_submission_value_11:
+          id: webform_submission_value_11
+          table: webform_submission_field_cct_sssc_retreat_body_
           field: webform_submission_value
           relationship: none
           group_type: group
@@ -1430,9 +1622,9 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -1444,14 +1636,14 @@ display:
           webform_multiple_value: true
           webform_multiple_delta: 0
           plugin_id: webform_submission_field
-        webform_submission_value_6:
-          id: webform_submission_value_6
-          table: webform_submission_field_cct_fyi_colloquium_2019_registra_acknowledgements_
+        webform_submission_value_10:
+          id: webform_submission_value_10
+          table: webform_submission_field_cct_sssc_retreat_background_
           field: webform_submission_value
           relationship: none
           group_type: group
           admin_label: ''
-          label: Acknowledgements
+          label: ' Background and Hypotheses'
           exclude: false
           alter:
             alter_text: false
@@ -1482,9 +1674,113 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: h4
+          element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_16:
+          id: webform_submission_value_16
+          table: webform_submission_field_cct_sssc_retreat_study_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Study Design and Methods'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          webform_element_format: value
+          webform_multiple_value: true
+          webform_multiple_delta: 0
+          plugin_id: webform_submission_field
+        webform_submission_value_15:
+          id: webform_submission_value_15
+          table: webform_submission_field_cct_sssc_retreat_results_
+          field: webform_submission_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Results and Conclusions'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true

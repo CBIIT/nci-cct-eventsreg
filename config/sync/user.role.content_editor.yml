@@ -11,5 +11,7 @@ permissions:
   - 'access content overview'
   - 'use text format basic_html'
   - 'use text format full_html'
+  - 'view any webform submission'
   - 'view own unpublished content'
   - 'view the administration theme'
+  - 'view webform submissions any node'
