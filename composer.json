@@ -24,7 +24,7 @@
         "drupal/bootstrap": "^3.12",
         "drupal/cache_control_override": "^1.0@alpha",
         "drupal/console": "^1.0.2",
-        "drupal/content_sync": "^2.0",
+        "drupal/content_sync": "2.x-dev",
         "drupal/core": "^8.6.0",
         "drupal/default_content_deploy": "1.x-dev",
         "drupal/doc_serialization": "^2.0@beta",
@@ -96,6 +96,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/content_sync": {
+                "Content Sync #2959944 getLogger error": "https://www.drupal.org/files/issues/2018-12-18/content_sync-2959944-3.patch"     
+            }
         }
     }
 }
+
