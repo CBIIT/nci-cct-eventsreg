@@ -5,8 +5,9 @@ echo ""
 echo "Setting up cache"
 scripts/cache_prod.sh
 echo ""
-echo "Setting up ldap"
+echo "Remove devel module"
 echo ""
+drush pm-uninstall devel -y
 echo "Clearing Cache"
 
 drush cr
