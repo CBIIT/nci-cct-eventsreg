@@ -1,9 +1,9 @@
 uuid: eb5d0192-ef75-41df-9768-e1a7c9296aee
 langcode: en
-status: open
+status: scheduled
 dependencies: {  }
 open: null
-close: null
+close: '2019-02-23T23:59:59'
 weight: 0
 uid: 1
 template: false
@@ -21,7 +21,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''

@@ -1,8 +1,0 @@
-uuid: eadc7867-f627-408a-b8f1-f9bc4d829ef4
-langcode: en
-status: true
-dependencies: {  }
-id: cct-psnc-menu
-label: cct-psnc-menu
-description: 'cct-psnc (Menu)'
-locked: false

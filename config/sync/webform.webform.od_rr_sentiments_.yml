@@ -1,5 +1,6 @@
+uuid: e449430a-c02e-4c41-bfb9-fc146f741222
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
@@ -20,7 +21,7 @@ settings:
   page: true
   page_submit_path: /od/rabson-remembered/sentiments
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -216,4 +217,3 @@ handlers:
       sender_name: ''
       theme: ''
       theme_name: ''
-uuid: e449430a-c02e-4c41-bfb9-fc146f741222

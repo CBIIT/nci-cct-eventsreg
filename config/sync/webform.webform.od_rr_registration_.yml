@@ -1,5 +1,6 @@
+uuid: a596ac53-e39a-4e1c-9392-bf5fba99c6ac
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
@@ -20,7 +21,7 @@ settings:
   page: true
   page_submit_path: /od/rabson-remembered/registration
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -210,4 +211,3 @@ handlers:
       sender_name: ''
       theme: ''
       theme_name: ''
-uuid: a596ac53-e39a-4e1c-9392-bf5fba99c6ac
