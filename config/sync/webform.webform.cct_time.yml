@@ -12,7 +12,7 @@ id: cct_time
 title: cct-time
 description: ''
 category: cct
-elements: "teaching_in_medical_education:\n  '#type': fieldset\n  '#title': 'Teaching in Medical Education'\n  attendance_site_choose_one_:\n    '#type': radios\n    '#title': 'Attendance Site (choose one)'\n    '#options':\n      FNL: 'FNL - Frederick - January 26th 3-5pm (Bldg. 549, Rm. A)'\n      NIH: 'NIH - Bethesda - February 1st 1-5pm (Bldg. 10, FAES Rms. 1,2)'\n    '#required': true\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    your_information:\n      '#type': fieldset\n      '#title': 'Your Information'\n      name_last_first_middle_initial_:\n        '#type': textfield\n        '#title': 'Name (Last, First, Middle Initial)'\n        '#description': 'Input your name (ex. Doe, John T.).'\n        '#required': true\n      e_mail_address:\n        '#type': email\n        '#title': 'E-mail Address'\n        '#required': true\n      work_telephone_number:\n        '#type': textfield\n        '#title': 'Work Telephone Number'\n        '#description': 'Input a phone number (including area code) where you can be reached during work hours.'\n        '#required': true\n      highest_degree_s_:\n        '#type': textfield\n        '#title': 'Highest Degree(s)'\n      mailing_address_work_:\n        '#type': textarea\n        '#title': 'Mailing Address (Work)'\n        '#rows': '5'\n      institute:\n        '#type': textfield\n        '#title': Institute\n      laboratory_branch_or_program:\n        '#type': select\n        '#title': 'Laboratory, Branch or Program'\n        '#options':\n          rbLbrl: 'Basic Research Laboratory'\n          rbLcdbl: 'Cancer and Developmental Biology Laboratory'\n          rbPcip: 'Cancer and Inflammation Program'\n          rbLcbl: 'Chemical Biology Laboratory'\n          rbBdb: 'Dermatology Branch'\n          rbBdtb: 'Developmental Therapeutics Branch'\n          rbBeob: 'Endocrine Oncology Branch'\n          rbBeib: 'Experimental Immunology Branch'\n          rbBetiob: 'Experimental Transplantation and Immunology Branch'\n          rbLgrcbl: 'Gene Regulation and Chromosome Biology Laboratory'\n          rbBgb: 'Genetics Branch'\n          rbBgmb: 'Genitourinary Malignancies Branch'\n          rbBhivaidsmb: 'HIV and AIDS Malignancy Branch'\n          rbBhivdrp: 'HIV DRP Host-Virus Interaction Branch'\n          rbPhivdrp: 'HIV Drug Resistance Program'\n          rbLhivdrprrl: 'HIV DRP Retroviral Replication Laboratory'\n          rbLbmb: 'Laboratory of Biochemistry and Molecular Biology'\n          rbLcbg: 'Laboratory of Cancer Biology and Genetics'\n          rbLcds: 'Laboratory of Cell and Developmental Signaling'\n          rbLcb: 'Laboratory of Cell Biology'\n          rbLcmb: 'Laboratory of Cellular and Molecular Biology'\n          rbLco: 'Laboratory of Cellular Oncology'\n          rbLec: 'Laboratory of Experimental Carcinogenesis'\n          rbLei: 'Laboratory of Experimental Immunology'\n          rbLgcp: 'Laboratory of Genitourinary Cancer Pathogenesis'\n          rbLgi: 'Laboratory of Genome Integrity'\n          rbLhc: 'Laboratory of Human Carcinogenesis'\n          rbLicb: 'Laboratory of Immune Cell Biology'\n          rbLm: 'Laboratory of Metabolism'\n          rbLmb: 'Laboratory of Molecular Biology'\n          rbLmi: 'Laboratory of Molecular Immunoregulation'\n          rbLp: 'Laboratory of Pathology'\n          rbLpds: 'Laboratory of Protein Dynamics and Signaling'\n          rbLrbge: 'Laboratory of Receptor Biology and Gene Expression'\n          rbLtib: 'Laboratory of Tumor Immunology and Biology'\n          rbBlmb: 'Lymphoid Malignancies Branch'\n          rbLmcl: 'Macromolecular Crystallography Laboratory'\n          rbPmip: 'Molecular Imaging Program'\n          rbLmtl: 'Molecular Targets Laboratory'\n          rbPmcgp: 'Mouse Cancer Genetics Program'\n          rbBnob: 'Neuro-Oncology Branch'\n          rbBpob: 'Pediatric Oncology Branch'\n          rbBrbb: 'Radiation Biology Branch'\n          rbBrob: 'Radiation Oncology Branch'\n          rbLsb: 'Structural Biophysics Laboratory'\n          rbBsb: 'Surgery Branch'\n          rbBtgob: 'Thoracic and Gastrointestinal Oncology Branch'\n          rbBuob: 'Urologic Oncology Branch'\n          rbBvb: 'Vaccine Branch'\n          rbBwmb: 'Women''s Malignancies Branch'\n  container_01:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    supervisor_information:\n      '#type': fieldset\n      '#title': 'Supervisor Information'\n      advisor_lab_branch_chief_or_pi:\n        '#type': textfield\n        '#title': 'Advisor, Lab/Branch Chief, or PI'\n        '#required': true\n      supervisor_s_work_telephone_number:\n        '#type': textfield\n        '#title': 'Supervisor''s Work Telephone Number'\n        '#required': true\n      supervisor_s_e_mail_address:\n        '#type': email\n        '#title': 'Supervisor''s E-mail Address'\n        '#required': true\n      supervisor_s_mailing_address:\n        '#type': textarea\n        '#title': 'Supervisor''s Mailing Address'\n        '#rows': '5'"
+elements: "teaching_in_medical_education:\n  '#type': fieldset\n  '#title': 'Teaching in Medical Education'\n  attendance_site_choose_one_:\n    '#type': radios\n    '#title': 'Attendance Site (choose one)'\n    '#options':\n      FNL: 'Jan. 30, 2019 3-5 p.m., Bldg. 549, Room B, Frederick'\n      NIH: 'Feb. 7, 2019, 2-4 p.m., Bldg. 10, FAES room 6, Bethesda'\n    '#required': true\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    your_information:\n      '#type': fieldset\n      '#title': 'Your Information'\n      name_last_first_middle_initial_:\n        '#type': textfield\n        '#title': 'Name (Last, First, Middle Initial)'\n        '#description': 'Input your name (ex. Doe, John T.).'\n        '#required': true\n      e_mail_address:\n        '#type': email\n        '#title': 'E-mail Address'\n        '#required': true\n      work_telephone_number:\n        '#type': textfield\n        '#title': 'Work Telephone Number'\n        '#description': 'Input a phone number (including area code) where you can be reached during work hours.'\n        '#required': true\n      highest_degree_s_:\n        '#type': textfield\n        '#title': 'Highest Degree(s)'\n      mailing_address_work_:\n        '#type': textarea\n        '#title': 'Mailing Address (Work)'\n        '#rows': '5'\n      institute:\n        '#type': textfield\n        '#title': Institute\n      laboratory_branch_or_program:\n        '#type': webform_select_other\n        '#title': 'Laboratory, Branch or Program'\n        '#options':\n          rbLbrl: 'Basic Research Laboratory'\n          rbLcdbl: 'Cancer and Developmental Biology Laboratory'\n          rbPcip: 'Cancer and Inflammation Program'\n          rbLcbl: 'Chemical Biology Laboratory'\n          rbBdb: 'Dermatology Branch'\n          rbBdtb: 'Developmental Therapeutics Branch'\n          rbBeob: 'Endocrine Oncology Branch'\n          rbBeib: 'Experimental Immunology Branch'\n          rbBetiob: 'Experimental Transplantation and Immunology Branch'\n          rbLgrcbl: 'Gene Regulation and Chromosome Biology Laboratory'\n          rbBgb: 'Genetics Branch'\n          rbBgmb: 'Genitourinary Malignancies Branch'\n          rbBhivaidsmb: 'HIV and AIDS Malignancy Branch'\n          rbBhivdrp: 'HIV DRP Host-Virus Interaction Branch'\n          rbPhivdrp: 'HIV Drug Resistance Program'\n          rbLhivdrprrl: 'HIV DRP Retroviral Replication Laboratory'\n          rbLbmb: 'Laboratory of Biochemistry and Molecular Biology'\n          rbLcbg: 'Laboratory of Cancer Biology and Genetics'\n          rbLcds: 'Laboratory of Cell and Developmental Signaling'\n          rbLcb: 'Laboratory of Cell Biology'\n          rbLcmb: 'Laboratory of Cellular and Molecular Biology'\n          rbLco: 'Laboratory of Cellular Oncology'\n          rbLec: 'Laboratory of Experimental Carcinogenesis'\n          rbLei: 'Laboratory of Experimental Immunology'\n          rbLgcp: 'Laboratory of Genitourinary Cancer Pathogenesis'\n          rbLgi: 'Laboratory of Genome Integrity'\n          rbLhc: 'Laboratory of Human Carcinogenesis'\n          rbLicb: 'Laboratory of Immune Cell Biology'\n          rbLm: 'Laboratory of Metabolism'\n          rbLmb: 'Laboratory of Molecular Biology'\n          rbLmi: 'Laboratory of Molecular Immunoregulation'\n          rbLp: 'Laboratory of Pathology'\n          rbLpds: 'Laboratory of Protein Dynamics and Signaling'\n          rbLrbge: 'Laboratory of Receptor Biology and Gene Expression'\n          rbLtib: 'Laboratory of Tumor Immunology and Biology'\n          rbBlmb: 'Lymphoid Malignancies Branch'\n          rbLmcl: 'Macromolecular Crystallography Laboratory'\n          rbPmip: 'Molecular Imaging Program'\n          rbLmtl: 'Molecular Targets Laboratory'\n          rbPmcgp: 'Mouse Cancer Genetics Program'\n          rbBnob: 'Neuro-Oncology Branch'\n          rbBpob: 'Pediatric Oncology Branch'\n          rbBrbb: 'Radiation Biology Branch'\n          rbBrob: 'Radiation Oncology Branch'\n          rbLsb: 'Structural Biophysics Laboratory'\n          rbBsb: 'Surgery Branch'\n          rbBtgob: 'Thoracic and Gastrointestinal Oncology Branch'\n          rbBuob: 'Urologic Oncology Branch'\n          rbBvb: 'Vaccine Branch'\n          rbBwmb: 'Women''s Malignancies Branch'\n  container_01:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    supervisor_information:\n      '#type': fieldset\n      '#title': 'Supervisor Information'\n      advisor_lab_branch_chief_or_pi:\n        '#type': textfield\n        '#title': 'Advisor, Lab/Branch Chief, or PI'\n        '#required': true\n      supervisor_s_work_telephone_number:\n        '#type': textfield\n        '#title': 'Supervisor''s Work Telephone Number'\n        '#required': true\n      supervisor_s_e_mail_address:\n        '#type': email\n        '#title': 'Supervisor''s E-mail Address'\n        '#required': true\n      supervisor_s_mailing_address:\n        '#type': textarea\n        '#title': 'Supervisor''s Mailing Address'\n        '#rows': '5'"
 css: ''
 javascript: ''
 settings:
@@ -96,10 +96,10 @@ settings:
   draft_loaded_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: "Thank you for registering for&nbsp;<strong>Teaching in Medical Education (TIME)&nbsp;</strong>workshop.&nbsp; You will receive a confirmation email shortly.<br />\r\n<br />\r\n<a href=\"/cct/time\">Back to </a><a href=\"/cct/time\">registration</a><a href=\"/cct/time\"> form</a>."
   confirmation_url: ''
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -168,4 +168,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: 'TIME Workshop Registration Confirmation'
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail_address:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: moodyt@mail.nih.gov
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Teaching in Medical Education (TIME)'
+      subject: _default
+      body: "<p>Thank you for registering for <strong>Teaching in Medical Education (TIME)</strong> workshop.</p>\r\n\r\n<p>Your registration information is as follows:</p>\r\n\r\n<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

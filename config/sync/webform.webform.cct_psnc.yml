@@ -12,7 +12,7 @@ id: cct_psnc
 title: cct-psnc
 description: ''
 category: cct
-elements: "your_information:\n  '#type': fieldset\n  '#title': 'Your Information'\n  name_last_first_middle_initial_:\n    '#type': textfield\n    '#title': 'Name (Last, First, Middle Initial)'\n    '#required': true\n  e_mail_address:\n    '#type': email\n    '#title': 'E-mail Address'\n    '#required': true\n  work_telephone_number:\n    '#type': textfield\n    '#title': 'Work Telephone Number'\n    '#required': true\n  highest_degree_s_:\n    '#type': textfield\n    '#title': 'Highest Degree(s)'\n  mailing_address_work_:\n    '#type': textarea\n    '#title': 'Mailing Address (Work)'\n    '#rows': '2'\n  institute:\n    '#type': textfield\n    '#title': Institute\n  laboratory_branch_or_program:\n    '#type': select\n    '#title': 'Laboratory, Branch or Program'\n    '#options':\n      rbLbrl: 'Basic Research Laboratory'\n      rbLcdbl: 'Cancer and Developmental Biology Laboratory'\n      rbPcip: 'Cancer and Inflammation Program'\n      rbLcbl: 'Chemical Biology Laboratory'\n      rbBdb: 'Dermatology Branch'\n      rbBdtb: 'Developmental Therapeutics Branch'\n      rbBeob: 'Endocrine Oncology Branch'\n      rbBeib: 'Experimental Immunology Branch'\n      rbBetiob: 'Experimental Transplantation and Immunology Branch'\n      rbLgrcbl: 'Gene Regulation and Chromosome Biology Laboratory'\n      rbBgb: 'Genetics Branch'\n      rbBgmb: 'Genitourinary Malignancies Branch'\n      rbBhivaidsmb: 'HIV and AIDS Malignancy Branch'\n      rbBhivdrp: 'HIV DRP Host-Virus Interaction Branch'\n      rbPhivdrp: 'HIV Drug Resistance Program'\n      rbLhivdrprrl: 'HIV DRP Retroviral Replication Laboratory'\n      rbLbmb: 'Laboratory of Biochemistry and Molecular Biology'\n      rbLcbg: 'Laboratory of Cancer Biology and Genetics'\n      rbLcds: 'Laboratory of Cell and Developmental Signaling'\n      rbLcb: 'Laboratory of Cell Biology'\n      rbLcmb: 'Laboratory of Cellular and Molecular Biology'\n      rbLco: 'Laboratory of Cellular Oncology'\n      rbLec: 'Laboratory of Experimental Carcinogenesis'\n      rbLei: 'Laboratory of Experimental Immunology'\n      rbLgcp: 'Laboratory of Genitourinary Cancer Pathogenesis'\n      rbLgi: 'Laboratory of Genome Integrity'\n      rbLhc: 'Laboratory of Human Carcinogenesis'\n      rbLicb: 'Laboratory of Immune Cell Biology'\n      rbLm: 'Laboratory of Metabolism'\n      rbLmb: 'Laboratory of Molecular Biology'\n      rbLmi: 'Laboratory of Molecular Immunoregulation'\n      rbLp: 'Laboratory of Pathology'\n      rbLpds: 'Laboratory of Protein Dynamics and Signaling'\n      rbLrbge: 'Laboratory of Receptor Biology and Gene Expression'\n      rbLtib: 'Laboratory of Tumor Immunology and Biology'\n      rbBlmb: 'Lymphoid Malignancies Branch'\n      rbLmcl: 'Macromolecular Crystallography Laboratory'\n      rbPmip: 'Molecular Imaging Program'\n      rbLmtl: 'Molecular Targets Laboratory'\n      rbPmcgp: 'Mouse Cancer Genetics Program'\n      rbBnob: 'Neuro-Oncology Branch'\n      rbBpob: 'Pediatric Oncology Branch'\n      rbBrbb: 'Radiation Biology Branch'\n      rbBrob: 'Radiation Oncology Branch'\n      rbLsb: 'Structural Biophysics Laboratory'\n      rbBsb: 'Surgery Branch'\n      rbBtgob: 'Thoracic and Gastrointestinal Oncology Branch'\n      rbBuob: 'Urologic Oncology Branch'\n      rbBvb: 'Vaccine Branch'\n      rbBwmb: 'Women''s Malignancies Branch'"
+elements: "your_information:\n  '#type': fieldset\n  '#title': 'Your Information'\n  name_last_first_middle_initial_:\n    '#type': textfield\n    '#title': 'Name (Last, First, Middle Initial)'\n    '#required': true\n  e_mail_address:\n    '#type': email\n    '#title': 'E-mail Address'\n    '#required': true\n  work_telephone_number:\n    '#type': textfield\n    '#title': 'Work Telephone Number'\n    '#required': true\n  highest_degree_s_:\n    '#type': textfield\n    '#title': 'Highest Degree(s)'\n  mailing_address_work_:\n    '#type': textarea\n    '#title': 'Mailing Address (Work)'\n    '#rows': '2'\n  institute:\n    '#type': textfield\n    '#title': Institute\n  laboratory_branch_or_program:\n    '#type': webform_select_other\n    '#title': 'Laboratory, Branch or Program'\n    '#options':\n      rbLbrl: 'Basic Research Laboratory'\n      rbLcdbl: 'Cancer and Developmental Biology Laboratory'\n      rbPcip: 'Cancer and Inflammation Program'\n      rbLcbl: 'Chemical Biology Laboratory'\n      rbBdb: 'Dermatology Branch'\n      rbBdtb: 'Developmental Therapeutics Branch'\n      rbBeob: 'Endocrine Oncology Branch'\n      rbBeib: 'Experimental Immunology Branch'\n      rbBetiob: 'Experimental Transplantation and Immunology Branch'\n      rbLgrcbl: 'Gene Regulation and Chromosome Biology Laboratory'\n      rbBgb: 'Genetics Branch'\n      rbBgmb: 'Genitourinary Malignancies Branch'\n      rbBhivaidsmb: 'HIV and AIDS Malignancy Branch'\n      rbBhivdrp: 'HIV DRP Host-Virus Interaction Branch'\n      rbPhivdrp: 'HIV Drug Resistance Program'\n      rbLhivdrprrl: 'HIV DRP Retroviral Replication Laboratory'\n      rbLbmb: 'Laboratory of Biochemistry and Molecular Biology'\n      rbLcbg: 'Laboratory of Cancer Biology and Genetics'\n      rbLcds: 'Laboratory of Cell and Developmental Signaling'\n      rbLcb: 'Laboratory of Cell Biology'\n      rbLcmb: 'Laboratory of Cellular and Molecular Biology'\n      rbLco: 'Laboratory of Cellular Oncology'\n      rbLec: 'Laboratory of Experimental Carcinogenesis'\n      rbLei: 'Laboratory of Experimental Immunology'\n      rbLgcp: 'Laboratory of Genitourinary Cancer Pathogenesis'\n      rbLgi: 'Laboratory of Genome Integrity'\n      rbLhc: 'Laboratory of Human Carcinogenesis'\n      rbLicb: 'Laboratory of Immune Cell Biology'\n      rbLm: 'Laboratory of Metabolism'\n      rbLmb: 'Laboratory of Molecular Biology'\n      rbLmi: 'Laboratory of Molecular Immunoregulation'\n      rbLp: 'Laboratory of Pathology'\n      rbLpds: 'Laboratory of Protein Dynamics and Signaling'\n      rbLrbge: 'Laboratory of Receptor Biology and Gene Expression'\n      rbLtib: 'Laboratory of Tumor Immunology and Biology'\n      rbBlmb: 'Lymphoid Malignancies Branch'\n      rbLmcl: 'Macromolecular Crystallography Laboratory'\n      rbPmip: 'Molecular Imaging Program'\n      rbLmtl: 'Molecular Targets Laboratory'\n      rbPmcgp: 'Mouse Cancer Genetics Program'\n      rbBnob: 'Neuro-Oncology Branch'\n      rbBpob: 'Pediatric Oncology Branch'\n      rbBrbb: 'Radiation Biology Branch'\n      rbBrob: 'Radiation Oncology Branch'\n      rbLsb: 'Structural Biophysics Laboratory'\n      rbBsb: 'Surgery Branch'\n      rbBtgob: 'Thoracic and Gastrointestinal Oncology Branch'\n      rbBuob: 'Urologic Oncology Branch'\n      rbBvb: 'Vaccine Branch'\n      rbBwmb: 'Women''s Malignancies Branch'"
 css: ''
 javascript: ''
 settings:
@@ -96,7 +96,7 @@ settings:
   draft_loaded_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: "Thank you for registering for Preparing for Science-Based Non-Traditional Careers workshop.&nbsp; A confirmation email will be sent to you.<br />\r\n<br />\r\n<a href=\"/cct/psnc\">Back to </a><a href=\"/cct/psnc\">registration</a><a href=\"/cct/psnc\"> form</a>."
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -168,4 +168,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: cct-psnc-2019-registration
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail_address:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: dharr@mail.nih.gov
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: 'PSNC Workshop Registration Confirmation'
+      body: "<p>Thank you for registering for&nbsp;<span style=\"font-size:11pt\"><span style=\"line-height:107%\"><span style=\"font-family:Calibri,sans-serif\"><strong>Preparing for Science-Based Non-Traditional Careers (PSNC).</strong><br />\r\n<br />\r\nYour registration information is as follows:</span></span></span><br />\r\n<br />\r\nSubmitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

@@ -1,8 +1,12 @@
+uuid: b6b2afc5-056e-4b8a-b7d1-059c7df6cc33
 langcode: en
-status: open
+status: closed
 dependencies:
   module:
     - honeypot
+third_party_settings:
+  honeypot:
+    time_restriction: true
 open: null
 close: null
 weight: 0
@@ -17,12 +21,12 @@ elements: "title_text:\n  '#type': processed_text\n  '#text': |\n    <h2>Chemica
 css: ".center-block {\r\n    float: none !important\r\n}"
 javascript: ''
 settings:
-  ajax: true
+  ajax: false
   ajax_scroll_top: form
   page: true
   page_submit_path: next/chemical-biology-consortium-symposium
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -207,8 +211,3 @@ handlers:
       sender_name: ''
       theme: ''
       theme_name: ''
-uuid: b6b2afc5-056e-4b8a-b7d1-059c7df6cc33
-third_party_settings:
-  honeypot:
-    honeypot: true
-    time_restriction: true

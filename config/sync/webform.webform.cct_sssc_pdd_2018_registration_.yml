@@ -1,5 +1,6 @@
+uuid: 5608867c-1db8-40e5-8442-e4fb7f6ed4bc
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
@@ -20,7 +21,7 @@ settings:
   page: true
   page_submit_path: /cct/sssc-pdd-2018/registration
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -201,4 +202,3 @@ handlers:
       sender_name: ''
       theme: ''
       theme_name: ''
-uuid: 5608867c-1db8-40e5-8442-e4fb7f6ed4bc

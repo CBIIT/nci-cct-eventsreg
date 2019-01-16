@@ -3,7 +3,7 @@ langcode: en
 status: scheduled
 dependencies: {  }
 open: null
-close: '2019-02-23T23:59:59'
+close: '2019-03-03T23:59:59'
 weight: 0
 uid: 1
 template: false
@@ -186,8 +186,8 @@ handlers:
       from_mail: _default
       from_options: {  }
       from_name: '15th Annual CCR and DCEG Staff Scientist and Staff Clinician Retreat'
-      subject: _default
-      body: "[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\r\n<br />\r\nThank you for registering for the&nbsp;15th Annual CCR and DCEG Staff Scientist and Staff Clinician Retreat.<br />\r\n<br />\r\n<strong>Event Location:</strong><br />\r\nNCI-Shady Grove<br />\r\nTE-406/408/410<br />\r\nRockville, MD. 20850<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted by: [webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]"
+      subject: '15th Annual CCR and DCEG Staff Scientist and Staff Clinician Retreat (Registration)'
+      body: "&nbsp;<br />\r\n[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\r\n<br />\r\nThank you for registering for the&nbsp;15th Annual CCR and DCEG Staff Scientist and Staff Clinician Retreat being on Friday, April 26, 2019.<br />\r\n<br />\r\n<strong>Event Location:</strong><br />\r\nNCI-Shady Grove<br />\r\nTE-406/408/410<br />\r\nRockville, MD. 20850<br />\r\n<br />\r\nSubmitted on [webform_submission:created]<br />\r\nSubmitted by: [webform_submission:user]<br />\r\nSubmitted values are:<br />\r\n[webform_submission:values]<br />\r\n&nbsp;"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
