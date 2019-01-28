@@ -1,0 +1,17 @@
+uuid: 78b9ffd6-764d-4dec-bf5a-ed1c641631ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.workspace.deploy
+  module:
+    - workspaces
+_core:
+  default_config_hash: y_XXBDxxmhgsWMxWsyUrGX2giUDI6aS-cxP_5BK0WZM
+id: workspace.workspace.deploy
+targetEntityType: workspace
+bundle: workspace
+mode: deploy
+content: {  }
+hidden:
+  uid: true
