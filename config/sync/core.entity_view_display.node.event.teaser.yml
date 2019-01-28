@@ -5,10 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
-    - field.field.node.event.field_acronym
+    - field.field.node.event.field_event_banner_logo
+    - field.field.node.event.field_event_date_time
     - field.field.node.event.field_event_home_link
-    - field.field.node.event.field_event_published
-    - field.field.node.event.field_registration_open
     - field.field.node.event.field_results
     - node.type.event
   module:
@@ -33,8 +32,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_acronym: true
+  field_event_banner_logo: true
+  field_event_date_time: true
   field_event_home_link: true
-  field_event_published: true
-  field_registration_open: true
   field_results: true
