@@ -91,6 +91,10 @@ function getCurrentEventsSites() {
 	$query .= "FROM node_field_data nfd, node__body nb, node__field_event_home_link nfehl, node__field_event_date_time nfedt ";
 	$query .= "where nfd.nid = nb.entity_id and nfd.nid = nfehl.entity_id and nfd.nid = nfedt.entity_id and nfd.status = 1 and nfd.type = 'event' "; 
 	$query .= "order by nfedt.field_event_date_time_value desc;";
+$query = "SELECT nfd.nid, nfd.title, nb.body_summary, nb.body_value, nfehl.field_event_home_link_uri, nfedt.field_event_date_time_value, nfea.field_event_active_value ";
+$query .= "FROM node_field_data nfd, node__body nb, node__field_event_home_link nfehl, node__field_event_date_time nfedt, node__field_event_active nfea ";
+$query .= "where nfd.nid = nb.entity_id and nfd.nid = nfehl.entity_id and nfd.nid = nfedt.entity_id and nfd.nid = nfea.entity_id and nfea.field_event_active_value = 1 and nfd.type = 'event' ";
+$query .= "order by nfedt.field_event_date_time_value desc; ";
 
 	//drupal_set_message($query);
 
