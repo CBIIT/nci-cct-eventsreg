@@ -16,10 +16,10 @@
 div[role="main"] h1 {
     display:none;
 }
-
 .nav-tabs > li {
 	display:none;
 }
+
 .nav-tabs {
     border-bottom: 0px;
 }
@@ -106,5 +106,10 @@ table.table-eventsreg > thead > tr  {
 
 /* Webform as a Node show author by default.  Let's remove it. */
 .author {
+  display:none;
+}
+
+/* Remove delete option from the quick-edit menu */
+.entitynodedelete-form {
   display:none;
 }

@@ -13,7 +13,7 @@ drush sql-query "update users_field_data set name='admin' where uid=1;"
 echo ""
 echo "*Sanitize Database"
 echo "drush sql-sanitize -y"
-#drush sql-sanitize -y
+drush sql-sanitize -y
 
 echo ""
 echo "*Remove webform submissions"

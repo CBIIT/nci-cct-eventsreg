@@ -6,5 +6,5 @@ id: organization
 label: Organization
 description: 'An organization that can create events'
 creator_membership: true
-creator_wizard: false
+creator_wizard: true
 creator_roles: {  }
