@@ -560,7 +560,17 @@ display:
             value: '<h2 class="eventsreg-red">Events Registration Websites</h2>'
             format: full_html
           plugin_id: text
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          content: 'Displaying @start - @end of @total'
+          plugin_id: result
       empty: {  }
       relationships: {  }
       arguments: {  }

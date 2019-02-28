@@ -1,32 +1,27 @@
-uuid: b6b2afc5-056e-4b8a-b7d1-059c7df6cc33
+uuid: ddc9c4de-0e07-4466-a72f-1828ee2aa602
 langcode: en
 status: open
-dependencies:
-  module:
-    - honeypot
-third_party_settings:
-  honeypot:
-    time_restriction: true
+dependencies: {  }
 open: null
 close: null
 weight: 0
 uid: 1
 template: false
 archive: false
-id: webform_next_chemical_biology_co
-title: 'Registration - Chemical Biology Consortium'
-description: "Chemical Biology Consortium<br />\r\nRegistration"
-category: next
-elements: "title_text:\n  '#type': processed_text\n  '#text': \"<h2 class=\\\"nci-red\\\">Chemical Biology Consortium&nbsp;Symposium: Summer 2019 - Registration</h2>\\r\\n\\r\\n<div>\\r\\n<h3><strong>Opening Door to Cancer Drug Discovery</strong></h3>\\r\\n\\r\\n<p><strong>Vanderbilt University</strong>,<strong> Nashville, TN, July 10, 2019</strong></p>\\r\\n</div>\\r\\n\"\n  '#format': full_html\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-6 col-offset-1'\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#required': true\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#required': true\n    institution_company:\n      '#type': textfield\n      '#title': Institution/Company\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#unique': true\n      '#unique_error': 'This email has already been registered for this event.'\n    telephone:\n      '#type': webform_telephone\n      '#title': Telephone\n      '#title_display': invisible\n      '#required': true\n      '#type__access': false\n      '#phone__required': true\n      '#ext__access': false\n      '#phone__international_initial_country': US\n    attending_poster_session_:\n      '#type': select\n      '#title': 'Attending poster session?'\n      '#options': yes_no\n    presenting_a_poster_:\n      '#type': select\n      '#title': 'Presenting a poster?'\n      '#options': yes_no\n      '#required': true\n    if_presenting_a_poster_would_you_like_to_present_a_poster_talk_:\n      '#type': select\n      '#title': 'If presenting a poster, would you like to present a poster talk? '\n      '#options': yes_no\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n    title_of_poster:\n      '#type': textfield\n      '#title': 'Title of Poster'\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\n    abstract_of_poster:\n      '#type': textarea\n      '#title': 'Abstract of Poster'\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
-css: ".center-block {\r\n    float: none !important\r\n}"
+id: ocg_cd2_abstracts
+title: 'ocg-ctd2-f2f-meeting (Abstract)'
+description: 'Cancer Target Discovery and Development (CTD2) Network Annual Face-to-Face Meeting'
+category: ocg
+elements: "abstract_submission:\n  '#type': fieldset\n  '#title': 'Abstract Submission for Poster Presentation'\n  '#description': \"<p>\\r\\n<strong>Poster size should not exceed 4 ft (high) by 6 ft (width)</strong></p>\\r\\n<p><strong>NOTE: Full abstracts will be distributed at the meeting. <em>Abstracts will not be edited.</em> Be sure&nbsp;NOT&nbsp;to use special characters. (ex. dashes, single quotes, double quotes and Greek characters/symbols)</strong></p>\"\n  '#description_display': before\n  abstract_title:\n    '#type': textfield\n    '#title': 'Abstract Title'\n    '#required': true\n  upload_abstract:\n    '#type': webform_document_file\n    '#title': 'Upload Abstract'\n    '#description': \"Please upload a document with no more than 250 words.<br />\\r\\nFiles must be less than 2 MB.<br />\\r\\nAllowed file types: txt doc docx&nbsp;pdf<br />\\r\\n&nbsp;\"\n    '#description_display': after\n    '#file_help': none\n    '#max_filesize': '2'\n    '#required': true\n  author:\n    '#type': webform_custom_composite\n    '#title': Author\n    '#title_display': invisible\n    '#description_display': invisible\n    '#required': true\n    '#multiple__sorting': false\n    '#multiple__add_more_button_label': 'Add Another Author'\n    '#wrapper_attributes':\n      style: 'margin-bottom: 20px; margin-top: -15px;'\n    '#label_attributes':\n      style: 'margin-left: -10px;'\n    '#element':\n      author:\n        '#type': textfield\n        '#title': Author\n        '#placeholder': 'Last Name, First Name Middle Initial  '\n  presenting_author:\n    '#type': textfield\n    '#title': 'Presenting Author'\n    '#required': true\n  institution:\n    '#type': textfield\n    '#title': Institution\n    '#required': true\n  email:\n    '#type': webform_email_confirm\n    '#title': Email\n    '#required': true\n"
+css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: next/chemical-biology-consortium-symposium
+  page_submit_path: ''
   page_confirm_path: ''
-  form_title: source_entity_webform
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -58,9 +53,7 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace:
-    webform_routes: {  }
-    node_routes: {  }
+  submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -100,11 +93,11 @@ settings:
   draft_saved_message: ''
   draft_loaded_message: ''
   confirmation_type: inline
-  confirmation_title: 'Registration Submitted'
-  confirmation_message: "<p><br />\r\n<br />\r\nThank you for registering for the <strong>Chemical Biology Consortium Summer Symposium 2019</strong>.</p>"
+  confirmation_title: ''
+  confirmation_message: "<p>Thank you for submitting your abstract for the <strong>CTD<sup><sub>2</sub></sup> Network Annual F2F Meeting</strong>. An email confirmation will be sent to you with the details of your submission.</p>\r\n\r\n<p>For questions about submitting the abstracts and posters, please contact Subhashini Jagu at <a href=\"mailto:Subhashini.jagu@nih.gov\">Subhashini.jagu@nih.gov</a> or at 240.781.3325.</p>"
   confirmation_url: ''
   confirmation_attributes: {  }
-  confirmation_back: false
+  confirmation_back: true
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -126,10 +119,6 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
-  form_login: false
-  form_login_message: ''
-  submission_login: false
-  submission_login_message: ''
 access:
   create:
     roles:
@@ -178,10 +167,10 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  registrant_s_email:
+  email:
     id: email
-    label: 'Registrant''s Email'
-    handler_id: registrant_s_email
+    label: 'ocg-ctd2-f2f Abstract Email'
+    handler_id: email
     status: true
     conditions: {  }
     weight: 0
@@ -196,9 +185,9 @@ handlers:
       bcc_options: {  }
       from_mail: _default
       from_options: {  }
-      from_name: 'Chemical Biology Consortium Summer Symposium 2019'
-      subject: 'Chemical Biology Consortium Summer Symposium 2019 - Registration'
-      body: "[webform_submission:values:first_name] [webform_submission:values:last_name],<br />\r\n<br />\r\nThank you for registering for the <strong>Chemical Biology Consortium Summer Symposium 2019.</strong><br />\r\n<br />\r\nEvent Location:<br />\r\nVanderbilt&nbsp;University<br />\r\nTBA<br />\r\nNashville, TN<br />\r\n<br />\r\nEvent Date: July 10, 2019"
+      from_name: 'CTD2 Network Annual Face-to-Face Meeting'
+      subject: 'CTD2 Network Annual Face-to-Face Meeting- Abstract Submission'
+      body: "<p>Greetings,</p>\r\n\r\n<p>Thank you for submitting your abstract for the CTD<sup>2 </sup>Network Annual F2F meeting. For questions about submitting the abstracts and posters, please contact Subhashini Jagu at <a href=\"mailto:Subhashini.jagu@nih.gov\">Subhashini.jagu@nih.gov</a> or at 240.781.3325. Your submission details are as follows:</p>\r\n&nbsp;<br />\r\nSubmitted on [webform_submission:created]\r\n<p>&nbsp;</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -211,5 +200,4 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      theme: ''
       theme_name: ''

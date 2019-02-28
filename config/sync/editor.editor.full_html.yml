@@ -50,6 +50,8 @@ settings:
             - DrupalImage
             - Table
             - HorizontalRule
+            - DrupalFontAwesome
+            - SpecialChar
         -
           name: 'Block Formatting'
           items:
@@ -60,6 +62,12 @@ settings:
           items:
             - ShowBlocks
             - Source
+        -
+          name: 'Paste/Paste Text/Word'
+          items:
+            - Paste
+            - PasteText
+            - PasteFromWord
   plugins:
     language:
       language_list: un

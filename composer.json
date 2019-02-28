@@ -20,6 +20,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "^1.24",
+        "drupal/asset_injector": "^2.4",
         "drupal/autologout": "^1.0",
         "drupal/bootstrap": "^3.12",
         "drupal/cache_control_override": "^1.0@alpha",
@@ -104,4 +105,3 @@
         }
     }
 }
-

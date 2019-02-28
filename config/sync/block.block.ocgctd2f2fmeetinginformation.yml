@@ -1,0 +1,31 @@
+uuid: 8f74b4c6-1aa9-469f-8592-20c6d33deec6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:89b7193a-12b8-4c59-852f-2841094722e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - cct
+id: ocgctd2f2fmeetinginformation
+theme: cct
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:89b7193a-12b8-4c59-852f-2841094722e5'
+settings:
+  id: 'block_content:89b7193a-12b8-4c59-852f-2841094722e5'
+  label: 'ocg-ctd2-f2f-meeting (Information)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/ocg/ctd2-f2f-meeting\r\n/ocg/ctd2-f2f-meeting/agenda\r\n/ocg/ctd2-f2f-meeting/registration\r\n/ocg/ctd2-f2f-meeting/venue\r\n/ocg/ctd2-f2f-meeting/abstracts\r\n/ocg/ctd2-f2f-meeting/abstract-submission"
+    negate: false
+    context_mapping: {  }

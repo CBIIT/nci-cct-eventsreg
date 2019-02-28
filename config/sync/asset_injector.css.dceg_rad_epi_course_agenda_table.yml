@@ -1,0 +1,17 @@
+uuid: 03bf4f69-3cef-411c-b07b-230626f7cb5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: dceg_rad_epi_course_agenda_table
+label: 'dceg-rad-epi-course Agenda Table'
+code: ".table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{\r\n  padding: 4px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /dceg/rad-epi-course/agenda
+    negate: false
+conditions_require_all: true

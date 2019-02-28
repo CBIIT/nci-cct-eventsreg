@@ -1,0 +1,203 @@
+uuid: 9a5ed8bb-5466-4646-a065-fec596568459
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: dctd_lung_spore_dinner_
+title: 'dctd-lung-spore-dinner '
+description: 'Lung Spore (Dinner)&nbsp;'
+category: dctd
+elements: "dinner_order:\n  '#type': webform_wizard_page\n  '#title': 'Dinner Program'\n  '#next_button_label': 'Preview Order'\n  processed_text:\n    '#type': processed_text\n    '#text': \"<h2 class=\\\"nci-red text-align-center\\\">Dinner Program</h2>\\r\\n\\r\\n<p class=\\\"text-align-center\\\">The SPORE Workshop will continue the meeting with a dinner program beginning at 6:30pm on June 13th. &nbsp;The dinner keynote speakers will be confirmed soon. &nbsp;</p>\\r\\n\\r\\n<p class=\\\"text-align-center\\\">The dinner will cost $70 (including tax). &nbsp;<strong>Dinner reservations are due by May 11, 2019</strong>. &nbsp;To reserve your space, please submit the credit card authorization form below to xxx or Fax it to: xxx-xxx-xxxx. &nbsp;Keep a copy for records. &nbsp;A separate dinner receipt will be issued the day after the event.&nbsp;</p>\\r\\n\\r\\n<p class=\\\"text-align-center\\\">Attn Vegetarians: &nbsp;Please indicate your preference on the credit card authorization form.&nbsp;</p>\\r\\n\\r\\n<p class=\\\"text-align-center\\\">A separate meal will be made available for you. &nbsp;</p>\\r\\n\\r\\n<p>&nbsp;</p>\\r\\n\"\n    '#format': full_html\n  container:\n    '#type': container\n    dinner_program:\n      '#type': fieldset\n      '#title': 'Dinner Selection'\n      name_last_first_middle_:\n        '#type': textfield\n        '#title': 'Your Name (Last, First Middle )'\n        '#required': true\n      flexbox_start:\n        '#type': webform_flexbox\n        email:\n          '#type': email\n          '#title': Email\n          '#required': true\n        phone:\n          '#type': tel\n          '#title': Phone\n          '#required': true\n      flexbox_end:\n        '#type': webform_flexbox\n        '#align_items': flex-end\n      orders_fieldset:\n        '#type': fieldset\n        '#title': 'Entree Orders'\n        '#description': \"Please enter a name and select an Entree for each person.&nbsp; Click the Plus button if ordering for other people.<br />\\r\\n<br />\\r\\nAll entrees will include beverages, salad choices, and tasty desserts.\"\n        orders:\n          '#type': webform_custom_composite\n          '#title': '<none>'\n          '#multiple__min_items': '1'\n          '#multiple__empty_items': '0'\n          '#multiple__sorting': false\n          '#multiple__add_more': false\n          '#multiple__add_more_input_label': 'Add another person'\n          '#element':\n            name:\n              '#type': textfield\n              '#title': 'Name (Last, First)'\n              '#placeholder': 'Last name, First name'\n              '#description': 'Enter the name off the person.'\n            meal:\n              '#type': select\n              '#options':\n                'Garlic Chicken Cutlet': 'Garlic Chicken Cutlet'\n                'Sliced Beef Sirloin': 'Sliced Beef Sirloin'\n                'Grilled Salmon': 'Grilled Salmon'\n                'Vegetarian Dinner': 'Vegetarian Dinner'\n              '#required': true\n              '#title': Entree\n              '#placeholder': 'Select a meal for this person'\n              '#description': 'Select a meal for this person'\npreview:\n  '#type': webform_wizard_page\n  '#title': 'Order Preview'\n  '#next_button_label': 'Submit Order'\n  order_preview:\n    '#type': webform_computed_twig\n    '#title': '<none>'\n    '#template': \"{% set entree_price = 70 %}\\r\\n{% set counter = 0 %}\\r\\n{% for order in data.orders %}\\r\\n  {% if order.meal|length > 0 %}\\r\\n    {% set counter = counter + 1 %}\\r\\n  {% endif %}\\r\\n{% endfor %}\\r\\n<span style=\\\"display:none;\\\" id=\\\"entrees\\\">{{ counter }}</span>\\r\\n\\r\\n<h2 class=\\\"nci-red\\\">Dinner Order</h2>\\r\\n<table class=\\\"table table-bordered\\\">\\r\\n<tr>\\r\\n<td><b>Ordered By:</b></td>\\r\\n<td>\\r\\n{{ data.name_last_first_middle_ }}<br>\\r\\n{{ data.email }}<br>\\r\\n{{ data.phone }}<br>\\r\\n</td>\\r\\n</tr>\\r\\n<tr>\\r\\n<td><b>Orders:</b></td>\\r\\n<td>\\r\\n    {% if counter > 0 %}\\r\\n    <table class=\\\"table table-bordered\\\">\\r\\n      <tr  style=\\\"background-color:lightgrey;\\\">\\r\\n        <th style=\\\"text-align:center;\\\">Name</th>\\r\\n        <th style=\\\"text-align:center;\\\">Entree</th>\\r\\n        <th style=\\\"text-align:center;\\\">Price</th>\\r\\n      </tr>\\r\\n  \\r\\n    {% for order in data.orders %}\\r\\n      {% if order.meal|length > 0 %}\\r\\n        <tr>\\r\\n          <td>{{ order.name }}</td>\\r\\n          <td>{{ order.meal }}</td>\\r\\n          <td style=\\\"text-align:right;\\\">${{ entree_price|number_format(2, '.', '') }}</td>\\r\\n        </tr>\\r\\n      {% endif %}\\r\\n    {% endfor %}\\r\\n      <tr>\\r\\n        <td colspan=\\\"2\\\" style=\\\"text-align:right;font-weight:bold;\\\">Total:</td>\\r\\n        <td align=\\\"right\\\" style=\\\"font-weight:bold;\\\">${{ (entree_price|number_format(2, '.', '') * counter|number_format(2, '.', ''))|number_format(2, '.', ',') }}</td>\\r\\n      </tr>    \\r\\n    </table>\\r\\n    Total number of Entrees: <b>{{ counter }}</b><br><br>\\r\\n    <i>All entrees will include beverages, salad choices, and tasty desserts.<i></b>\\r\\n    {% else %}\\r\\n    Total number of Entrees: <b>{{ counter }}</b><br><br>\\r\\n    Please return to previous order page and select at least one entree.\\r\\n    {% endif %}\\r\\n</td>\\r\\n</tr>\\r\\n</table>\"\n  grilled_salmon:\n    '#type': webform_computed_twig\n    '#title': 'Grilled Salmon'\n    '#display_on': view\n    '#template': \"{% set counter = 0 %}\\r\\n{% for order in data.orders %}\\r\\n  {% if order.meal == 'Grilled Salmon' %}\\r\\n    {% set counter = counter + 1 %}\\r\\n  {% endif %}\\r\\n{% endfor %}\\r\\n{{ counter }}\"\n    '#store': true\n  garlic_chicken_cutlet:\n    '#type': webform_computed_twig\n    '#title': 'Garlic Chicken Cutlet'\n    '#display_on': view\n    '#template': \"{% set counter = 0 %}\\r\\n{% for order in data.orders %}\\r\\n  {% if order.meal == 'Garlic Chicken Cutlet' %}\\r\\n    {% set counter = counter + 1 %}\\r\\n  {% endif %}\\r\\n{% endfor %}\\r\\n{{ counter }}\"\n    '#store': true\n  sliced_beef_sirloin:\n    '#type': webform_computed_twig\n    '#title': 'Sliced Beef Sirloin'\n    '#display_on': view\n    '#template': \"{% set counter = 0 %}\\r\\n{% for order in data.orders %}\\r\\n  {% if order.meal == 'Sliced Beef Sirloin' %}\\r\\n    {% set counter = counter + 1 %}\\r\\n  {% endif %}\\r\\n{% endfor %}\\r\\n{{ counter }}\"\n    '#store': true\n  vegetarian_dinner:\n    '#type': webform_computed_twig\n    '#title': 'Vegetarian Dinner'\n    '#display_on': view\n    '#template': \"{% set counter = 0 %}\\r\\n{% for order in data.orders %}\\r\\n  {% if order.meal == 'Vegetarian Dinner' %}\\r\\n    {% set counter = counter + 1 %}\\r\\n  {% endif %}\\r\\n{% endfor %}\\r\\n{{ counter }}\"\n    '#store': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Confirm Order'\n"
+css: ".webform-progress {\r\n  display:none;\r\n}"
+javascript: "var number=document.getElementById(\"entrees\").innerText;\r\nif(number == 0 ) {\r\n   document.getElementById(\"edit-actions-submit\").disabled = true;\r\n alert(\"Disable Confirmation\");\r\n}"
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: false
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: true
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: "<h2 class=\"text-align-center nci-red\">Dinner Order - Confirmation</h2>\r\n\r\n<p class=\"text-align-center\">Your order for the <strong>Lung Spore Dinner Program</strong> has been received.&nbsp; You should receive a confirmation email shortly.</p>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: dctd-lung-spore-dinner
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Lung Cancer SPORE Workshop'
+      subject: 'Lung Cancer SPORE Dinner Confirmation'
+      body: "Hello,<br />\r\n<br />\r\nThank you for attending the<strong> Lung Cancer SPORE Workshop Dinner</strong>.&nbsp; The following is a <strong>confirmation</strong> of your <strong>Dinner Order</strong>:<br />\r\n<br />\r\n[webform_submission:values:order_preview]<br />\r\n<br />\r\nWe look forward to see you at this special Dinner.<br />\r\n<br />\r\n&nbsp;"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

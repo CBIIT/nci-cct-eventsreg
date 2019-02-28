@@ -1,0 +1,8 @@
+uuid: 536958ab-e188-4f6c-b625-c0c72f450228
+langcode: en
+status: true
+dependencies: {  }
+id: dceg-rad-epi-course-util
+label: dceg-rad-epi-course-util
+description: 'dceg-rad-epi-course (Utility)'
+locked: false
