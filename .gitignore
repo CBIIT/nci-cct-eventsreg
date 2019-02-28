@@ -13,10 +13,16 @@
 /web/sites/*/services.yml
 
 # Ignore Drupal's file directory
-/web/sites/default/files/*
-!/web/sites/default/assets/
+#/web/sites/default/files/*
+/web/sites/default/files/css/*
+/web/sites/default/files/js/*
+/web/sites/default/files/php/*
+/web/sites/default/files/private/*
+/web/sites/default/files/asset_injector/*
+##!/web/sites/default/assets/
 #!/web/sites/default/pictures/
-#!web/sites/default/inline-images/
+##!web/sites/default/inline-images/
+##!web/sites/default/asset_injector/
 
 #Docker, ignore settings.php
 /docker/settings.php
