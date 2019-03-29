@@ -6,3 +6,12 @@ services:
     build: ./
     ports:
      - "8080:80"
+    environment:
+      hash_salt: $hash_salt
+      database: $database
+      username: $username
+      password: $password
+      host: $host
+      port: $port
+      namespace: $namespace
+      driver: $driver

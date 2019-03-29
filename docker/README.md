@@ -1,4 +1,47 @@
+# Docker documentation for drupal builds
 
-Docker Stuff
+There are two options to build and run docker from the command line
 
+ 1. Using docker-compose
+ 2. Using docker run
 
+# Using docker-compose
+
+ The following environment variables need to be set in the docker-compose file or in your profile. They can also be passed in when executing docker-compose up. They are all using default values via the .env file. 
+ 1. hash_salt
+ 2. database
+ 3. username
+ 4. password
+ 5. host
+ 6. port
+ 7. namespace
+ 8. driver
+
+##  To pass these values in during docker-compose up
+*Not all environment variables have to be set but pass in as many as possible
+1. Run **hash_salt=value database=value username=value password=value host=value port=value namespace=value driver=value docker-compose up**
+##  To let docker-compose up read preset values
+
+ 1. Set above environment variables in your profile or set them in the docker-compose.yml file
+ 2. Run **docker-compose up**
+
+ ## To shut down server
+ 1. Run **docker-compose down**
+
+# Using docker run
+
+ ## If image does not exist on machine
+ 
+
+ 1. Run docker build -t cbiit/drupal .
+ ## To build using .env file
+ 2.  Change .env file to reflect real values
+ 3. Run **docker run --env-file=.env -p 8080:80 --name drupal-server cbiit/drupal**
+ ## To stop the server
+ 1. Run **docker stop drupal-server**
+ ## To remove the server
+ 1. Run **docker rm drupal-server**
+
+# To remove image
+1. Make sure all containers are stopped and removed referencing image
+2. Run **docker rmi cbiit/drupal**

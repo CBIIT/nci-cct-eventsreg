@@ -24,9 +24,6 @@
 ##!web/sites/default/inline-images/
 ##!web/sites/default/asset_injector/
 
-#Docker, ignore settings.php
-/docker/settings.php
-
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 
