@@ -800,7 +800,7 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => getenv('host'),
   'port' => getenv('port'),
-  'namespace' => getenv('namespace'),
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => getenv('driver')
 );
 $settings['install_profile'] = 'standard';
