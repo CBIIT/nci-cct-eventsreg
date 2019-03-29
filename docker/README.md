@@ -38,7 +38,7 @@ There are two options to build and run docker from the command line
  1.  Change .env file to reflect real values
  2. Run **docker run --env-file=.env -p 8080:80 --name drupal-server cbiit/drupal**
   ## To build by passing in environment variables
-  1. Run **docker run -e hash_salt=value -e database=value -e username=value -e password=value -e host=value -e port=value -e namespace=value -e driver=value --name drupal-server cbiit/drupal**
+  1. Run **docker run -e hash_salt=value -e database=value -e username=value -e password=value -e host=value -e port=value -e namespace=value -e driver=value -p 8080:80 --name drupal-server cbiit/drupal**
  ## To stop the server
  1. Run **docker stop drupal-server**
  ## To remove the server
