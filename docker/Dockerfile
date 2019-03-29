@@ -25,6 +25,8 @@ WORKDIR /local/drupal
 COPY resources/run.sh /usr/bin
 COPY resources/000-default.conf /etc/httpd/conf.d
 COPY resources/httpd.conf /etc/httpd/conf
+COPY resources/settings.php /tmp
+COPY resources/.htaccess /tmp
 
 EXPOSE 80
 WORKDIR /local/drupal

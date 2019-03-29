@@ -39,8 +39,5 @@
 #Remove content/sync files for now.  (i.e. Not being used)
 /content/sync/*
 
-#ignore settings.php and .htaccess #
-.htaccess
-
 #Remove MAC files
 .DS_Store
