@@ -1,0 +1,8 @@
+version: '2'
+services:
+  drupal-server:
+    container_name: drupal-server
+    image: cbiit-drupal
+    build: ./
+    ports:
+     - "8080:80"
