@@ -12,14 +12,14 @@ RUN yum -y update \
        php-xml php-pear php-bcmath php-json composer which vi 
 
 # Install drush using composer/cgr #
-RUN composer global require consolidation/cgr 
-ENV PATH="/root/.composer/vendor/bin:$PATH"
-RUN cgr drush/drush:8.x
+#RUN composer global require consolidation/cgr 
+ENV PATH="/local/drupal/site/vendor/drush/drush:$PATH"
+#RUN cgr drush/drush:8.x
 
 # Get Drupal #
 RUN mkdir -p /local/drupal
 WORKDIR /local/drupal
-RUN drush dl drupal-$DRUPAL_VERSION --drupal-project-rename="site"
+#RUN drush dl drupal-$DRUPAL_VERSION --drupal-project-rename="site"
 
 # COPY main resouces over #
 COPY resources/run.sh /usr/bin
@@ -27,5 +27,5 @@ COPY resources/000-default.conf /etc/httpd/conf.d
 COPY resources/httpd.conf /etc/httpd/conf
 
 EXPOSE 80
-WORKDIR /local/drupal/site
+WORKDIR /local/drupal
 ENTRYPOINT run.sh
