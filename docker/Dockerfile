@@ -27,7 +27,7 @@ COPY resources/000-default.conf /etc/httpd/conf.d
 COPY resources/httpd.conf /etc/httpd/conf
 COPY resources/settings.php /tmp
 COPY resources/.htaccess /tmp
-
+RUN chmod 700 /usr/bin/run.sh
 EXPOSE 80
 WORKDIR /local/drupal
 ENTRYPOINT run.sh
