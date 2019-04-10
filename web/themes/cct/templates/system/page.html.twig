@@ -67,7 +67,10 @@
         {% set home_link = "/" %}
         {% if eventsreg.home_link is defined %} 
           {% set home_link = eventsreg.home_link %}
-        {% endif %}       
+        {% endif %}
+        {% if logged_in %}       
+          {% set home_link = "/events" %}
+        {% endif %}
         <a href="{{ home_link }}"><img src="https://www.cancer.gov/publishedcontent/images/images/design-elements/logos/nci-logo-full.__v1.svg" alt="National Cancer Institute" ></a>
       </div>
       {% if logged_in %}
@@ -75,6 +78,7 @@
           {% if is_admin %}
               <a href="/all-events">all-events</a>&nbsp;&nbsp;&nbsp;
           {% endif %}
+          <a href="/events">events</a>&nbsp;&nbsp;&nbsp;
           <a href="/user/logout">Log Out</a>
         </div>
       {% endif %}

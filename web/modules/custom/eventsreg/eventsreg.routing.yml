@@ -87,3 +87,12 @@ eventsreg.current_events:
     _controller: '\Drupal\eventsreg\Controller\EventsRegController::getCurrentEvents'
   requirements:
     _permission: 'access content'
+
+eventsreg.events:
+  path: '/events'
+  defaults:
+    _controller: '\Drupal\eventsreg\Controller\EventsRegController::getUserEvents'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+  options:
+    no_cache: 'TRUE'
