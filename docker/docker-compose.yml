@@ -2,8 +2,7 @@ version: '2'
 services:
   drupal-server:
     container_name: drupal-server
-    image: cbiit-drupal
-    build: ./
+    image: ncidockerhub.nci.nih.gov/webteam/drupal
     ports:
      - "8080:80"
     environment:
