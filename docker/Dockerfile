@@ -30,4 +30,5 @@ COPY resources/.htaccess /tmp
 RUN chmod 700 /usr/bin/run.sh
 EXPOSE 80
 WORKDIR /local/drupal
+ADD VERSION
 ENTRYPOINT run.sh
