@@ -11,7 +11,7 @@
       }
       if(url_path.substring(0, 15).toLowerCase() == '/nob/nciconnect') {
         event = "nob-nciconnect";
-        $.updateAssets(event);
+        //$.updateAssets(event);
       }
       if(url_path.substring(0, 24).toLowerCase() == '/cct/sallie-rosen-kaplan') {
         event = "cct-srk";
