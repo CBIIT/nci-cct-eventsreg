@@ -8,44 +8,71 @@ use Drupal\node\Entity\Node;
  */
 class EventsRegPageMaker {
 
+  public const LAST_NID_FOR_SHORT_URL = '520';  //Look up in node table in production
+  //public const LAST_NID_FOR_SHORT_URL = '452';  //Look up in node table
+
   public static function setupPage(&$variables) {
     self::setupMenus($variables); 
+    //dump($variables['eventsreg']['menus']);
   }
   
   public static function setupMenus(&$variables) {
 
     $route_name = \Drupal::routeMatch()->getRouteName();
-    //drupal_set_message($route_name);
+    dump("Route Name: ".$route_name);
+    $menus = ["menu" => "default-menu", "util" => "default-util", "admin" => "default-admin"];
     //dump($variables);
     if($route_name == 'entity.node.canonical') {
       $node = \Drupal::routeMatch()->getParameter('node');
-      //dump($node);
       $nid = $node->id();
-      //$bundle = $node->getType();
-      //$variables['route_name'] = \Drupal::routeMatch()->getRouteName();
-      //drupal_set_title('Wow.  I got the title');
-      //drupal_set_message($route);
-      //dpm("setupPage: nid: ". $nid);
-      //$node = Node::load($nid);
-      //$bundle = $node->getType();
-      $path = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
-      $variables['eventsreg']['active_link'] = $path;
-      $variables['eventsreg']['home_link'] = self::formatHomeLink($path);
+      $bundle = $node->getType();
+      dump("nid=$nid");
+      dump("bundle=$bundle");
+      if($bundle == "page") {
 
-      //drupal_set_message("OFFICIAL PATH: ".$path);
-      $acronym = self::getAcronymFromPath($path);
-      $variables['eventsreg']['acronym'] = $acronym;
-      //$variables['eventsreg']['title'] = self::getEventTitle($acronym);
-      //drupal_set_message("OFFICIAL ACRONYM: ".$acronym);
-      if(self::isWebsite($acronym)) {
-        //drupal_set_message("THIS IS AN OFFICIAL WEBSITE");
-        $menus = ["menu" => $acronym."-menu", "util" => $acronym."-util", "admin" => $acronym."-admin"];
-      } else {
-        //drupal_set_message("THIS IS AN Not a website!");
-        #$menus = ["menu" => "default-menu", "util" => "ccr-traco-menu", "admin" => "default-admin"];
-        $menus = ["menu" => "default-menu", "util" => "default-util", "admin" => "default-admin"];
+        //$variables['route_name'] = \Drupal::routeMatch()->getRouteName();
+        //drupal_set_title('Wow.  I got the title');
+        //drupal_set_message($route);
+        //dpm("setupPage: nid: ". $nid);
+        //$node = Node::load($nid);
+        //$bundle = $node->getType();
+
+        $path = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$nid);
+        $event_path = self::formatHomeLink($path);
+        dump("event_path = ".$event_path);
+        $event_nid = self::getEventNid($event_path);  //One simple SQL
+        dump("event_nid = ".$event_nid);
+        $acronym = self::getAcronymFromPath($path);
+        dump("acronym = ".$acronym);
+
+        $variables['eventsreg']['active_link'] = $path;
+        $variables['eventsreg']['home_link'] = $event_path;
+        $variables['eventsreg']['event_nid'] = $event_nid;
+        $variables['eventsreg']['acronym'] = $acronym;
+        //dump($variables['eventsreg']);
+
+        //drupal_set_message("OFFICIAL PATH: ".$path);
+
+        //$event_path = self::getEventPath($path);
+
+        //drupal_set_message("OFFICIAL PATH: ".$path);
+        $event_nid = self::getEventNodeIdFromPath($path);
+
+        if($event_nid > 0) {
+          drupal_set_message("THIS IS AN OFFICIAL WEBSITE");
+          if($event_nid > self::LAST_NID_FOR_SHORT_URL) {
+            $menus = ["menu" => $event_nid."-menu", "util" => $event_nid."-util", "admin" => $event_nid."-admin"];
+          } else {
+            $menus = ["menu" => $acronym."-menu", "util" => $acronym."-util", "admin" => $acronym."-admin"];
+          }
+        } else {
+          drupal_set_message("THIS IS AN Not a website!");
+          #$menus = ["menu" => "default-menu", "util" => "ccr-traco-menu", "admin" => "default-admin"];
+          $menus = ["menu" => "default-menu", "util" => "default-util", "admin" => "default-admin"];
+        }
+        //dump("Here are the menus");
+        //dump($menus);
       }
-
     } else {
       // Set Default menus
       $menus = ["menu" => "default-menu", "util" => "default-util", "admin" => "default-admin"];
@@ -60,10 +87,6 @@ class EventsRegPageMaker {
     return;
   }
   
-  private static function getEventTitle($acronym) {
-    //This doesn't work here.  Need to do this at the html level not page level.  I couldn't find what route I was on at the preprocess html level.
-    return "Page Title";
-  }
 /*
   private static function getAcronymFromWebformNode($nid) {
     $acronym = "";
@@ -78,21 +101,46 @@ class EventsRegPageMaker {
     return $acronym;
   }
 */
+/*
   private static function isWebsite($acronym) {
     $query = "SELECT count(*) as isWebsite FROM node_field_data ";
     $query .= "where type = 'event' and title='{$acronym}'; ";
+    dump($query);
     $result = db_query($query);
     $row = $result->fetchObject();
     //$webform_id = $row->webform_target_id;
 
     return $row->isWebsite;
   }
+*/
+
+  private static function getEventNid($event_path) {
+
+    $query = "SELECT entity_id as nid FROM node__field_event_home_link ";
+    $query .= "where field_event_home_link_uri = 'internal:{$event_path}'; ";
+    dump($query);
+    $result = db_query($query);
+    $row = $result->fetchObject();
+    //$webform_id = $row->webform_target_id;
+
+    return $row->nid;
+  }
+  
+  private static function getEventPath($path){
+    $pieces = explode("/", substr($path, 1));
+    $event_path = "unknown";
+    if(isset($pieces[1])){
+      $event_path =$pieces[0].'/'.$pieces[1]; 
+    }
+    return $event_path;
+    //return str_replace("/", "-", substr($alias, 1));
+  }
 
   private static function getAcronymFromPath($alias){
-    //drupal_set_message("decodeAlias");
     $pieces = explode("/", substr($alias, 1));
     $acronym = "unknown";
     if(isset($pieces[1])){
+      //dump("decodeAlias: alias is ".$alias." retrived from path");
       $acronym =$pieces[0].'-'.$pieces[1]; 
     }
     
@@ -100,10 +148,40 @@ class EventsRegPageMaker {
     //return str_replace("/", "-", substr($alias, 1));
   }
 
+  private static function getEventNodeIdFromPath($path){
+    
+    // Let's Look up this path in the node table to see where it is going.
+
+    $pieces = explode("/", substr($path, 1));
+    $nid = "unknown";
+    if(isset($pieces[1])){
+      //dump("path is ".$path);
+
+      //$event_path equals the first two pieces of the path.
+      $event_path =$pieces[0].'/'.$pieces[1]; 
+      //dump("event_path: is ".$event_path." the first two pieces of the path");
+
+      $query = "SELECT nid FROM node_field_data nfd, node__field_event_home_link nfehl ";
+      $query .= "where nfd.type='event' ";
+      $query .= "and nfehl.entity_id = nfd.nid ";
+      $query .= "and nfehl.field_event_home_link_uri = 'internal:/{$event_path}';";
+      //dump($query);
+      $result = db_query($query);
+      $row = $result->fetchObject();
+      //$webform_id = $row->webform_target_id;
+      $event_nid = $row->nid;
+      //dump("event_nid: ".$event_nid);
+    }
+
+    return $event_nid;
+ 
+  }
+
   private static function attachMenuTree($menu, $menu_name, &$variables) {
-    //dpm($menu." : ">$menu_name);
+    //dump($menu." : ">$menu_name);
     $variables['eventsreg']['menus'][$menu] = self::menuLoadLinks($menu_name);
     //dump($variables);
+    //ksm($variables);
     return;
   }
 
@@ -111,7 +189,7 @@ class EventsRegPageMaker {
     $links = [];
     $storage = \Drupal::entityManager()->getStorage('menu_link_content');
     $menu_links = $storage->loadByProperties(['menu_name' => $menu_name]);
-    //dump($menu_links);
+    //kint($menu_links);
     if (empty($menu_links)) return $links;
     foreach ($menu_links as $mlid => $menu_link) {
       //dpm("link_enabled".$menu_link->enabled);
@@ -197,7 +275,7 @@ class EventsRegPageMaker {
     if(isset($pieces[2])) {
       $link = "/".$pieces[1]."/".$pieces[2];
     }
-
+    //dump("link: $link");
     return $link;
   }
 

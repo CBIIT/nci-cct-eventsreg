@@ -34,7 +34,7 @@
 /.env
 
 # Ignore .env files as they are personal
-#/composer.lock
+/composer.lock
 
 #Remove content/sync files for now.  (i.e. Not being used)
 /content/sync/*
