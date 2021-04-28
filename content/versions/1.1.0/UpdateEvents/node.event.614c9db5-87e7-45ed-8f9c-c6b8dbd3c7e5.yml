@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: 614c9db5-87e7-45ed-8f9c-c6b8dbd3c7e5
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-16T00:06:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: next-cbcs
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-06-25T19:25:30+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-16T00:06:36+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'next-cbcs | Events Registration'
+    canonical_url: 'http://localhost:8080/node/2'
+    description: 'Chemical Biology Consortium Symposium'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p><span>The National Cancer Institute Experimental Therapeutics (NExT) Program is proud to introduce the Inaugural Chemical Biology Consortium Symposium. This symposium, freely accessible to the public, brings together scientific leaders spanning industry, academia, government, and the nonprofit sectors to present novel and emerging ideas in drug discovery and development that could significantly change the standard of care for cancer patients.</span></p>\r\n"
+    format: basic_html
+    processed: '<p><span>The National Cancer Institute Experimental Therapeutics (NExT) Program is proud to introduce the Inaugural Chemical Biology Consortium Symposium. This symposium, freely accessible to the public, brings together scientific leaders spanning industry, academia, government, and the nonprofit sectors to present novel and emerging ideas in drug discovery and development that could significantly change the standard of care for cancer patients.</span></p>'
+    summary: 'Chemical Biology Consortium Symposium'
+    summary_processed: 'Chemical Biology Consortium Symposium'
+field_acronym:
+  -
+    value: next-cbcs
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-11-16T15:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/next/chemical-biology-consortium-symposium'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-06-25'
+    end_value: '2019-01-01'
+field_registration_open:
+  -
+    value: '2018-06-24'
+    end_value: '2019-01-01'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/webform_next_chemical_biology_co/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

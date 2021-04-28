@@ -1,0 +1,50 @@
+uuid:
+  -
+    value: dcf930a7-ec4e-47c9-a1a2-e94ac3d703bf
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+enabled:
+  -
+    value: true
+title:
+  -
+    value: 'Center for Cancer Training'
+description: {  }
+menu_name:
+  -
+    value: cct-st-util
+link:
+  -
+    uri: 'https://www.cancer.gov/grants-training/training/about/'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: false
+weight:
+  -
+    value: 0
+expanded:
+  -
+    value: false
+parent: {  }
+changed:
+  -
+    value: '2018-11-30T20:03:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+metatag:
+  value:
+    title: '| Events Registration'
+    canonical_url: 'http://localhost:8080/batch'
+_content_sync:
+  entity_type: menu_link_content

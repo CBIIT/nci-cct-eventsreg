@@ -1,0 +1,8 @@
+uuid: f1f66723-52fc-44ff-a0c4-678ed724db75
+langcode: en
+status: true
+dependencies: {  }
+id: cct-cb-menu
+label: cct-cb-menu
+description: 'cct-cb (Menu)'
+locked: false

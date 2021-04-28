@@ -1,0 +1,10 @@
+Instructions.txt
+
+select * from node;
+
+To view nodes.  Match up UUID in table.  Import content in the same order.
+
+Node Match Up
+
+21 - node.page.3d6c7dc3-b61f-45fb-a406-d9dd162f0eed (presto - stewardhip (home))
+22 - node.event.dc9e05ee-d748-4b9c-ae5f-b3616670854a (Stewardship - events)

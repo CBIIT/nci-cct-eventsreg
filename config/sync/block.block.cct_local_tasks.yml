@@ -1,0 +1,22 @@
+uuid: d9a1b006-fc5f-498e-a453-a12985a38b01
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cct
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: cct_local_tasks
+theme: cct
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

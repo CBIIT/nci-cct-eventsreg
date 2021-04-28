@@ -1,0 +1,8 @@
+uuid: 67f4fc7e-7ffd-4c14-b5f8-49da0fca2b8d
+langcode: en
+status: true
+dependencies: {  }
+id: cct-traco-menu
+label: cct-traco-menu
+description: 'cct-traco (Menu)'
+locked: false

@@ -1,0 +1,31 @@
+uuid: 4586a2e4-8eab-4a6e-a277-5e075976169b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0dbf49f3-78ad-4d44-bb33-f65f0bc9d716'
+  module:
+    - block_content
+    - system
+  theme:
+    - cct
+id: dcegradepicourseinformation
+theme: cct
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:0dbf49f3-78ad-4d44-bb33-f65f0bc9d716'
+settings:
+  id: 'block_content:0dbf49f3-78ad-4d44-bb33-f65f0bc9d716'
+  label: 'dceg-rad-epi-course (Information)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/dceg/rad-epi-course\r\n/dceg/rad-epi-course/*"
+    negate: false
+    context_mapping: {  }

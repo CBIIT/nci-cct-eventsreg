@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: 60265d2d-5fc2-4994-bdc6-396e7e4ca680
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-11-05T20:42:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct -fyi-colloquium-2019 (Abstracts)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-10-03T13:46:56+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-05T20:42:54+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /cct/fyi-colloquium-2019/abstracts
+menu_link: {  }
+body:
+  -
+    value: "<h2>Abstracts &amp; Posters Info</h2>\r\n\r\n<p>The organizing committee encourages everyone to submit an abstract! There will be six sections this year:</p>\r\n\r\n<ul>\r\n\t<li><strong>Bioinformatics, Epidemiology and Translational Research</strong></li>\r\n\t<li><strong>Biophysics, Chemistry, Pharmacology and Structural Biology</strong></li>\r\n\t<li><strong>Molecular and Cellular Biology and Microbiology</strong></li>\r\n\t<li><strong>Cancer Models, Cancer Stem Cells, Carcinogenesis and Metastasis</strong></li>\r\n\t<li><strong>Genetics, Genomics, Chromatin, Signal Transduction and Transcription</strong></li>\r\n\t<li><strong>Immunology, Virology and Metabolism</strong></li>\r\n</ul>\r\n\r\n<p>The abstract may have a maximum length of 500 words (no tables or figures) and should be divided into the following parts:</p>\r\n\r\n<ul>\r\n\t<li>Background and Hypotheses</li>\r\n\t<li>Study Design and Methods</li>\r\n\t<li>Results and Conclusions</li>\r\n\t<li>Relevance and Importance</li>\r\n</ul>\r\n\r\n<p>Poster boards are to be&nbsp;<strong><em>4' wide x 6' high.</em></strong></p>\r\n\r\n<p><em>There is one poster session on each day. Additionally, poster session presentation times are divided into groups by even and odd poster numbers. You will be expected to be at your poster during the designated time based on your poster number.&nbsp;<br />\r\n<br />\r\nAll posters should be 4 feet wide and 6 feet high (see diag.)</em></p>\r\n\r\n<p><em><img alt=\"4 by 6 poster\" data-entity-type=\"file\" data-entity-uuid=\"64fd2cdd-e542-42af-b70f-01a2a53c057d\" height=\"273\" src=\"/sites/default/files/inline-images/poster_0.png\" width=\"226\" /></em></p>\r\n\r\n<p>** Full abstracts will be published in the Colloquium book, which will be distributed at the meeting. **&nbsp;<br />\r\n<br />\r\n<strong><em>***&nbsp;NOTE:&nbsp; Abstracts will not be edited. Be sure&nbsp;NOT&nbsp;to use special characters. (ex. dashes, single quotes, double quotes and Greek characters/symbols) ***</em></strong></p>\r\n\r\n<p><br />\r\n<strong>BEST POSTER AND ORAL PRESENTATION AWARD</strong>&nbsp;<br />\r\nBoth abstracts and posters will be judged, and best presentations will be recognized.&nbsp;Oral presentations will be judged at the time of the talk.</p>\r\n\r\n<p><strong><em>** Please note: You need to be available during your poster session to be considered for an award. **</em></strong></p>\r\n\r\n<p>CCR FYI Committee members will not be eligible for a travel award but can be selected for an oral presentation.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3><strong>Abstract/Presentation Judging</strong></h3>\r\n\r\n<p>Using a scale of 1 - 5 (5 = best) abstracts/presentations will be evaluated in the following categories:</p>\r\n\r\n<p><strong>Scientific merit (Significance/Impact)</strong></p>\r\n\r\n<p>To what degree was the goal/purpose of the study made clear?<br />\r\nIs the importance apparent?</p>\r\n\r\n<p><br />\r\n<strong>Methodology</strong></p>\r\n\r\n<p>To what degree was the design, procedures, and data analysis made clear?<br />\r\nWere the methods appropriate/complete?</p>\r\n\r\n<p><br />\r\n<strong>Presentation</strong></p>\r\n\r\n<p>Was the presentation well organized and clearly communicated? Did the individual display familiarity and understanding of the work presented by handling questions and/or indicating future directions? Was the talk given in the allotted time?</p>\r\n\r\n<p><br />\r\n<strong>Visual Presentation</strong></p>\r\n\r\n<p>What was the overall quality of the presentation in terms of visibility and design?<br />\r\nDid the graphic/tabular display enhance the presentation?</p>\r\n\r\n<p><br />\r\n<strong>Creativity and Originality</strong></p>\r\n\r\n<p>To what degree did the presentation demonstrate novel, creative, original or insightful approaches?</p>\r\n"
+    format: full_html
+    processed: "<h2>Abstracts &amp; Posters Info</h2>\n\n<p>The organizing committee encourages everyone to submit an abstract! There will be six sections this year:</p>\n\n<ul><li><strong>Bioinformatics, Epidemiology and Translational Research</strong></li>\n\t<li><strong>Biophysics, Chemistry, Pharmacology and Structural Biology</strong></li>\n\t<li><strong>Molecular and Cellular Biology and Microbiology</strong></li>\n\t<li><strong>Cancer Models, Cancer Stem Cells, Carcinogenesis and Metastasis</strong></li>\n\t<li><strong>Genetics, Genomics, Chromatin, Signal Transduction and Transcription</strong></li>\n\t<li><strong>Immunology, Virology and Metabolism</strong></li>\n</ul><p>The abstract may have a maximum length of 500 words (no tables or figures) and should be divided into the following parts:</p>\n\n<ul><li>Background and Hypotheses</li>\n\t<li>Study Design and Methods</li>\n\t<li>Results and Conclusions</li>\n\t<li>Relevance and Importance</li>\n</ul><p>Poster boards are to be\_<strong><em>4' wide x 6' high.</em></strong></p>\n\n<p><em>There is one poster session on each day. Additionally, poster session presentation times are divided into groups by even and odd poster numbers. You will be expected to be at your poster during the designated time based on your poster number.\_<br /><br />\nAll posters should be 4 feet wide and 6 feet high (see diag.)</em></p>\n\n<p><em><img alt=\"4 by 6 poster\" data-entity-type=\"file\" data-entity-uuid=\"64fd2cdd-e542-42af-b70f-01a2a53c057d\" height=\"273\" src=\"/sites/default/files/inline-images/poster_0.png\" width=\"226\" /></em></p>\n\n<p>** Full abstracts will be published in the Colloquium book, which will be distributed at the meeting. **\_<br /><br /><strong><em>***\_NOTE:\_ Abstracts will not be edited. Be sure\_NOT\_to use special characters. (ex. dashes, single quotes, double quotes and Greek characters/symbols) ***</em></strong></p>\n\n<p><br /><strong>BEST POSTER AND ORAL PRESENTATION AWARD</strong>\_<br />\nBoth abstracts and posters will be judged, and best presentations will be recognized.\_Oral presentations will be judged at the time of the talk.</p>\n\n<p><strong><em>** Please note: You need to be available during your poster session to be considered for an award. **</em></strong></p>\n\n<p>CCR FYI Committee members will not be eligible for a travel award but can be selected for an oral presentation.</p>\n\n<p>\_</p>\n\n<h3><strong>Abstract/Presentation Judging</strong></h3>\n\n<p>Using a scale of 1 - 5 (5 = best) abstracts/presentations will be evaluated in the following categories:</p>\n\n<p><strong>Scientific merit (Significance/Impact)</strong></p>\n\n<p>To what degree was the goal/purpose of the study made clear?<br />\nIs the importance apparent?</p>\n\n<p><br /><strong>Methodology</strong></p>\n\n<p>To what degree was the design, procedures, and data analysis made clear?<br />\nWere the methods appropriate/complete?</p>\n\n<p><br /><strong>Presentation</strong></p>\n\n<p>Was the presentation well organized and clearly communicated? Did the individual display familiarity and understanding of the work presented by handling questions and/or indicating future directions? Was the talk given in the allotted time?</p>\n\n<p><br /><strong>Visual Presentation</strong></p>\n\n<p>What was the overall quality of the presentation in terms of visibility and design?<br />\nDid the graphic/tabular display enhance the presentation?</p>\n\n<p><br /><strong>Creativity and Originality</strong></p>\n\n<p>To what degree did the presentation demonstrate novel, creative, original or insightful approaches?</p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

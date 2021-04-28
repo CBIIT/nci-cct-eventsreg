@@ -1,0 +1,52 @@
+FileMapping.txt
+
+1. Director's Colloquium View - Data Export
+2. Director's Colloquium NIH select
+
+Finish Division = 10 Minutes
+Finish Subranches = 1 hour
+
+3. Landing Page
+4. Rebrand all sites with page.html.twig
+
+CCR WEBSITES:
+https://tracker.nci.nih.gov/browse/EVENTSREG-82?filter=23005
+Ticket:EVENTSREG-82
+Traco Site
+url: /ccr/traco
+cc-traco (home) (29) "node.page.5a544..."
+ccr-traco (30) "node.event.3e4490..."
+ccr-traco (Registration) (31) "node.webform.8e107..."
+ccr-traco (Faculty) (32) "node.page.a7969..."
+ccr-traco (Agenda) (33) "node.page.85ae..."
+
+New Links in the menu_link directory
+Home (17) e24ba
+National Cancer Institute (19) b45d
+Center for Cancer Research (20) 01a37
+Agenda (22) b43d
+
+cp -vp *.b45d* ../content/versions/1.1.0/traco/menu_link/
+cp -vp *.bf3d* ../content/versions/1.1.0/traco/menu_link/
+cp -vp *.e24b* ../content/versions/1.1.0/traco/menu_link/
+cp -vp *.f5d8* ../content/versions/1.1.0/traco/menu_link/
+
+
+UPDATE EVENTS:
+In UpdateEvents Directory.
+Update the Event content of Events Nodes to make sure the /current-evnets page works with current info.  Title is acroynm, Summary is Title, Body is Description.
+Store all Content Sync items under the events directory. 
+Node 28: CCR WEBSITES:
+
+nid	title	body_value
+28	cct-dcdp "Diversity Career Development Program (DCDP)</p>"
+24	cct-fyi-colloquium-2019 "19th Annual CCR Fellows and Young Investigators Colloquium</p>"
+22	presto-stewardship "Clinical Trial Stewardship</p>"
+16	cct-sssc-pdd-2018 "SSSC Professional Development Day</p>"
+13	od-rr "Rabson Remembered</p>"
+12	cct-srk "Sallie Rosen Kaplan Postdoctoral Fellowship for Women Scientists in Cancer Research</p>"
+5	nob-nciconnect "NCI Connect"
+2	next-cbcs "Chemical Biology Consortium Symposium	"<p>The real description - Chemical Biology Consortium ymposium"
+
+Node to HASH:
+28:

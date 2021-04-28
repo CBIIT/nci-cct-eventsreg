@@ -1,0 +1,25 @@
+uuid: d653d487-6dd0-44f9-ab39-f0d005106d06
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e45afbc7-2b16-4379-af3c-5476edc99de6'
+  module:
+    - block_content
+  theme:
+    - cct
+id: nihsitefootertext
+theme: cct
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:e45afbc7-2b16-4379-af3c-5476edc99de6'
+settings:
+  id: 'block_content:e45afbc7-2b16-4379-af3c-5476edc99de6'
+  label: 'NIH Site Footer Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

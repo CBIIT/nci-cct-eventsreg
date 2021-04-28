@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: 1303d19e-8560-44b3-8dd9-2c0aea96627c
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-15T20:23:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: cct-dcdp
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-10-09T15:27:09+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-15T20:23:05+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'cct-dcdp | Events Registration'
+    canonical_url: 'http://localhost:8080/node/28'
+    description: 'Diversity Career Development Program (DCDP)'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>NCI is committed to excellence in science and to fostering a diverse and inclusive workforce. The DCDP seeks to empower talented intramural postdoctoral trainees, including but not limited to those from underrepresented and disadvantaged groups, to achieve their full potential at NCI.</p>\r\n"
+    format: basic_html
+    processed: '<p>NCI is committed to excellence in science and to fostering a diverse and inclusive workforce. The DCDP seeks to empower talented intramural postdoctoral trainees, including but not limited to those from underrepresented and disadvantaged groups, to achieve their full potential at NCI.</p>'
+    summary: 'Diversity Career Development Program (DCDP)'
+    summary_processed: 'Diversity Career Development Program (DCDP)'
+field_acronym:
+  -
+    value: cct-dcdp
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-11-24T04:59:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/cct/dcdp'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-10-09'
+    end_value: '2018-12-17'
+field_registration_open:
+  -
+    value: '2018-10-08'
+    end_value: '2018-12-10'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/cct_dcdp_application_/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

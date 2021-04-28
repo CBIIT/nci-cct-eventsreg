@@ -1,0 +1,110 @@
+project_sponsor_information:
+  '#type': fieldset
+  '#title': 'Project Sponsor Information'
+  sponsor_mentor_name:
+    '#type': textfield
+    '#title': 'Sponsor/Mentor Name'
+    '#required': true
+  title:
+    '#type': select
+    '#title': Title
+    '#options':
+      'Principal Investigator': 'Principal Investigator'
+      'Lab/Branch Chief': 'Lab/Branch Chief'
+      'Staff Clinician': 'Staff Clinician'
+      'Staff Scientist': 'Staff Scientist'
+    '#required': true
+    '#wrapper_attributes':
+      style: 'max-width: 225px;'
+  year:
+    '#type': number
+    '#title': Year
+    '#placeholder': '2019'
+    '#disabled': true
+    '#default_value': '2019'
+  address:
+    '#type': textarea
+    '#title': Address
+    '#rows': '2'
+    '#required': true
+  phone_:
+    '#type': textfield
+    '#title': 'Phone:'
+    '#required': true
+  fax:
+    '#type': textfield
+    '#title': Fax
+  email_address:
+    '#type': email
+    '#title': 'Email Address'
+    '#required': true
+  sponsoring_laboratory_branch:
+    '#type': select
+    '#title': 'Sponsoring Laboratory/Branch'
+    '#options':
+      positionsLbrl: 'Basic Research Laboratory'
+      positionsLcdbl: 'Cancer and Developmental Biology Laboratory'
+      positionsPcip: 'Cancer and Inflammation Program'
+      positionsLcbl: 'Chemical Biology Laboratory'
+      positionsBdb: 'Dermatology Branch'
+      positionsBdtb: 'Developmental Therapeutics Branch'
+      positionsBeob: 'Endocrine Oncology Branch'
+      positionsBeib: 'Experimental Immunology Branch'
+      positionsBetiob: 'Experimental Transplantation and Immunology Branch'
+      positionsLgrcbl: 'Gene Regulation and Chromosome Biology Laboratory'
+      positionsBgb: 'Genetics Branch'
+      positionsBgmb: 'Genitourinary Malignancies Branch'
+      positionsBhivaidsmb: 'HIV and AIDS Malignancy Branch'
+      positionsBhivdrp: 'HIV DRP Host-Virus Interaction Branch'
+      positionsPhivdrp: 'HIV Drug Resistance Program'
+      positionsLhivdrprrl: 'HIV DRP Retroviral Replication Laboratory'
+      positionsLbmb: 'Laboratory of Biochemistry and Molecular Biology'
+      positionsLcbg: 'Laboratory of Cancer Biology and Genetics'
+      positionsLcds: 'Laboratory of Cell and Developmental Signaling'
+      positionsLcb: 'Laboratory of Cell Biology'
+      positionsLcmb: 'Laboratory of Cellular and Molecular Biology'
+      positionsLco: 'Laboratory of Cellular Oncology'
+      positionsLec: 'Laboratory of Experimental Carcinogenesis'
+      positionsLei: 'Laboratory of Experimental Immunology'
+      positionsLgcp: 'Laboratory of Genitourinary Cancer Pathogenesis'
+      positionsLgi: 'Laboratory of Genome Integrity'
+      positionsLhc: 'Laboratory of Human Carcinogenesis'
+      positionsLicb: 'Laboratory of Immune Cell Biology'
+      positionsLm: 'Laboratory of Metabolism'
+      positionsLmb: 'Laboratory of Molecular Biology'
+      positionsLmi: 'Laboratory of Molecular Immunoregulation'
+      positionsLp: 'Laboratory of Pathology'
+      positionsLpds: 'Laboratory of Protein Dynamics and Signaling'
+      positionsLrbge: 'Laboratory of Receptor Biology and Gene Expression'
+      positionsLtib: 'Laboratory of Tumor Immunology and Biology'
+      positionsBlmb: 'Lymphoid Malignancies Branch'
+      positionsLmcl: 'Macromolecular Crystallography Laboratory'
+      positionsPmip: 'Molecular Imaging Program'
+      positionsLmtl: 'Molecular Targets Laboratory'
+      positionsPmcgp: 'Mouse Cancer Genetics Program'
+      positionsBnob: 'Neuro-Oncology Branch'
+      positionsBpob: 'Pediatric Oncology Branch'
+      positionsBrbb: 'Radiation Biology Branch'
+      positionsBrob: 'Radiation Oncology Branch'
+      positionsLsb: 'Structural Biophysics Laboratory'
+      positionsBsb: 'Surgery Branch'
+      positionsBtgob: 'Thoracic and Gastrointestinal Oncology Branch'
+      positionsBuob: 'Urologic Oncology Branch'
+      positionsBvb: 'Vaccine Branch'
+      positionsBwmb: 'Women''s Malignancies Branch'
+the_project:
+  '#type': fieldset
+  '#title': 'The Project'
+  project_title:
+    '#type': textfield
+    '#title': 'Project Title'
+    '#required': true
+  target_s_of_interest:
+    '#type': textfield
+    '#title': 'Target(s) of Interest'
+    '#required': true
+  1_application_to_the_molecular_targets_initiative:
+    '#type': textarea
+    '#title': '1.  Application to the Molecular Targets Initiative'
+    '#rows': '3'
+    '#required': true

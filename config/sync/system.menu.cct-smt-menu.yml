@@ -1,0 +1,8 @@
+uuid: 5d4880f9-debe-447b-9e8c-bb354925ed37
+langcode: en
+status: true
+dependencies: {  }
+id: cct-smt-menu
+label: cct-smt-menu
+description: 'cct-smt (Menu)'
+locked: false

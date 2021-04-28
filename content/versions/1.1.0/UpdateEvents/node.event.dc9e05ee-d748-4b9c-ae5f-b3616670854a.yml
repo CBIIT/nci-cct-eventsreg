@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: dc9e05ee-d748-4b9c-ae5f-b3616670854a
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-16T00:58:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: presto-stew
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-24T17:51:59+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-16T00:58:23+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'presto-stew | Events Registration'
+    canonical_url: 'http://localhost:8080/node/22'
+    description: 'NCI Clinical Trial Stewardship Training'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>Enhancing Clinical Trial Stewardship Through Standard Risk Assessments and Clinical Trial Management Plans.</p>\r\n"
+    format: basic_html
+    processed: '<p>Enhancing Clinical Trial Stewardship Through Standard Risk Assessments and Clinical Trial Management Plans.</p>'
+    summary: 'NCI Clinical Trial Stewardship Training'
+    summary_processed: 'NCI Clinical Trial Stewardship Training'
+field_acronym:
+  -
+    value: presto-stewardship
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-10-15T14:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/presto/stewardship'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-09-24'
+    end_value: '2020-01-01'
+field_registration_open:
+  -
+    value: '2018-09-23'
+    end_value: '2019-01-01'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/presto_stewardship_registration_/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

@@ -1,0 +1,94 @@
+uuid:
+  -
+    value: 207bfbd5-d89e-4717-af59-7c1a676b6fe6
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-09-18T19:13:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'od - Rabson Remembered'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-09T15:20:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-18T19:13:24+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>Rabson Remembered</p>\r\n"
+    format: basic_html
+    processed: '<p>Rabson Remembered</p>'
+    summary: ''
+    summary_processed: ''
+field_acronym:
+  -
+    value: od-rr
+field_event_home_link:
+  -
+    uri: 'internal:/od/rabson-remembered'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-09-09'
+    end_value: '2019-01-01'
+field_registration_open:
+  -
+    value: '2018-09-08'
+    end_value: '2019-01-01'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/od_rr_registration_/results/submissions'
+    title: Registrations
+    options: {  }
+  -
+    uri: 'internal:/admin/structure/webform/manage/od_rr_sentiments_/results/submissions'
+    title: Sentiments
+    options: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

@@ -1,0 +1,36 @@
+uuid: 728104b1-2b60-4cdd-b827-92915fae0fb8
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+    - system
+    - user
+  theme:
+    - cct
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: cct_search
+theme: cct
+region: sidebar_second
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

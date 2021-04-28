@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: 3d6c7dc3-b61f-45fb-a406-d9dd162f0eed
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-09-26T20:02:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'presto - stewardship (Home)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-24T17:43:43+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-26T20:02:16+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /presto/stewardship
+menu_link: {  }
+body:
+  -
+    value: "<div class=\"container nci-body\">\r\n<h2 class=\"text-align-center nci-red\">Module 2: NCI Clinical Trials Stewardship Training</h2>\r\n\r\n<h4 class=\"text-align-center\"><em>Enhancing Clinical Trial Stewardship Through Standard Risk Assessments and Clinical Trial Management Plans</em></h4>\r\n\r\n<div class=\"container\">\r\n<p class=\"row\">&nbsp;</p>\r\n\r\n<div class=\"col-md-offset-4 col-sm-offset-3 col-xs-offset-3\">\r\n<p class=\"well well-sm\" style=\"width:250px;\"><strong>Monday, October 15, 2018</strong><br />\r\n10:00 a.m. – 2:00 p.m.<br />\r\nShady Grove, Room TE 406</p>\r\n</div>\r\n\r\n\r\n</div>\r\n<p>&nbsp;</p>\r\n<div class=\"row\">\r\n<div class=\"col-sm-12\"><strong>Meeting Goal:</strong>&nbsp; Launch the <em>NCI’s Responsible Stewardship Management Framework</em> for clinical trials funded through grants and cooperative agreements.</div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n<div class=\"col-sm-12\"><strong>Training Objectives: </strong>At the end of this module, NCI program officials should be able to:</div>\r\n</div>\r\n\r\n<ol>\r\n\t<li>Identify the major elements of resource risks to consider for risk classification</li>\r\n\t<li>Demonstrate understanding of the new administrative requirements by successfully completing the Greensheet Checklist</li>\r\n</ol>\r\n\r\n<div class=\"row\">\r\n<table class=\"table table-condensed table-bordered\" name=\"agenda\" style=\"margin:auto;width:75%;\">\r\n\t<caption>\r\n\t<p class=\"text-align-center\" style=\"color:black;\"><strong>Agenda</strong></p>\r\n\t</caption>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\" style=\"white-space: nowrap;\">10:00 - 10:45</td>\r\n\t\t\t<td><strong>Session 1: </strong>Introduction to NCI’s new Standard Operating Procedures and Ancillary Tools</td>\r\n\t\t</tr>\r\n\t\t<tr style=\"background-color:Gainsboro;\">\r\n\t\t\t<td class=\"text-align-center\">10:45 - 11:00</td>\r\n\t\t\t<td>Break</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">11:00 - 11:30</td>\r\n\t\t\t<td><strong>Session 2: </strong>Overview of Grants Award Process Changes and Strategies to Address Common Resource Risk Concerns</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">11:30 - 12:00</td>\r\n\t\t\t<td><strong>Session 3: </strong>Two Case Studies to Illustrate Resource Risk Assessment and Clinical Trial Management Plans</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">12:00 - 12:15</td>\r\n\t\t\t<td><strong>Session 4: </strong>Panel Q&amp;A</td>\r\n\t\t</tr>\r\n\t\t<tr style=\"background-color:Gainsboro;\">\r\n\t\t\t<td class=\"text-align-center\">12:15 - 1:00</td>\r\n\t\t\t<td>Lunch on your own</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">1:00 - 2:00</td>\r\n\t\t\t<td><strong>Session 5: </strong>Group exercise exploring clinical trial examples targeting different interventions and resource risk elements</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<div class=\"container\">\r\n<div class=\"row\">\r\n<div class=\"col-lg-12\">\r\n<p class=\"text-align-center\" style=\"font-size:20px;\">Please <a href=\"/presto/stewardhip/registration\">register</a> for this event.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+    format: full_html
+    processed: "<div class=\"container nci-body\">\n<h2 class=\"text-align-center nci-red\">Module 2: NCI Clinical Trials Stewardship Training</h2>\n\n<h4 class=\"text-align-center\"><em>Enhancing Clinical Trial Stewardship Through Standard Risk Assessments and Clinical Trial Management Plans</em></h4>\n\n<div class=\"container\">\n<p class=\"row\">\_</p>\n\n<div class=\"col-md-offset-4 col-sm-offset-3 col-xs-offset-3\">\n<p class=\"well well-sm\" style=\"width:250px;\"><strong>Monday, October 15, 2018</strong><br />\n10:00 a.m. – 2:00 p.m.<br />\nShady Grove, Room TE 406</p>\n</div>\n\n\n</div>\n<p>\_</p>\n<div class=\"row\">\n<div class=\"col-sm-12\"><strong>Meeting Goal:</strong>\_ Launch the <em>NCI’s Responsible Stewardship Management Framework</em> for clinical trials funded through grants and cooperative agreements.</div>\n</div>\n\n<div class=\"row\">\n<div class=\"col-sm-12\"><strong>Training Objectives: </strong>At the end of this module, NCI program officials should be able to:</div>\n</div>\n\n<ol><li>Identify the major elements of resource risks to consider for risk classification</li>\n\t<li>Demonstrate understanding of the new administrative requirements by successfully completing the Greensheet Checklist</li>\n</ol><div class=\"row\">\n<table class=\"table table-condensed table-bordered\" name=\"agenda\" style=\"margin:auto;width:75%;\"><caption>\n\t<p class=\"text-align-center\" style=\"color:black;\"><strong>Agenda</strong></p>\n\t</caption>\n\t<tbody><tr><td class=\"text-align-center\" style=\"white-space: nowrap;\">10:00 - 10:45</td>\n\t\t\t<td><strong>Session 1: </strong>Introduction to NCI’s new Standard Operating Procedures and Ancillary Tools</td>\n\t\t</tr><tr style=\"background-color:Gainsboro;\"><td class=\"text-align-center\">10:45 - 11:00</td>\n\t\t\t<td>Break</td>\n\t\t</tr><tr><td class=\"text-align-center\">11:00 - 11:30</td>\n\t\t\t<td><strong>Session 2: </strong>Overview of Grants Award Process Changes and Strategies to Address Common Resource Risk Concerns</td>\n\t\t</tr><tr><td class=\"text-align-center\">11:30 - 12:00</td>\n\t\t\t<td><strong>Session 3: </strong>Two Case Studies to Illustrate Resource Risk Assessment and Clinical Trial Management Plans</td>\n\t\t</tr><tr><td class=\"text-align-center\">12:00 - 12:15</td>\n\t\t\t<td><strong>Session 4: </strong>Panel Q&amp;A</td>\n\t\t</tr><tr style=\"background-color:Gainsboro;\"><td class=\"text-align-center\">12:15 - 1:00</td>\n\t\t\t<td>Lunch on your own</td>\n\t\t</tr><tr><td class=\"text-align-center\">1:00 - 2:00</td>\n\t\t\t<td><strong>Session 5: </strong>Group exercise exploring clinical trial examples targeting different interventions and resource risk elements</td>\n\t\t</tr></tbody></table></div>\n\n<p>\_</p>\n\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<p class=\"text-align-center\" style=\"font-size:20px;\">Please <a href=\"/presto/stewardhip/registration\">register</a> for this event.</p>\n</div>\n</div>\n</div>\n</div>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

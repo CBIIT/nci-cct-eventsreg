@@ -1,0 +1,29 @@
+uuid: f948388d-2f9a-40fe-9c51-938963e1cfc1
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.nav-nci-connect
+  module:
+    - system
+  theme:
+    - cct
+id: navnciconnect
+theme: cct
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:nav-nci-connect'
+settings:
+  id: 'system_menu_block:nav-nci-connect'
+  label: 'Nav NCI Connect'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /nob/nciconnect
+    negate: false
+    context_mapping: {  }

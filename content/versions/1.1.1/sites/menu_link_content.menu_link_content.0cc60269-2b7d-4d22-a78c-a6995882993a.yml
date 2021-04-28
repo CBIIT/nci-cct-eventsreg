@@ -1,0 +1,50 @@
+uuid:
+  -
+    value: 0cc60269-2b7d-4d22-a78c-a6995882993a
+langcode:
+  -
+    value: en
+bundle:
+  -
+    value: menu_link_content
+enabled:
+  -
+    value: true
+title:
+  -
+    value: Home
+description: {  }
+menu_name:
+  -
+    value: cct-st-menu
+link:
+  -
+    uri: 'internal:/cct/st'
+    title: ''
+    options: {  }
+external:
+  -
+    value: false
+rediscover:
+  -
+    value: true
+weight:
+  -
+    value: 0
+expanded:
+  -
+    value: false
+parent: {  }
+changed:
+  -
+    value: '2018-11-30T19:37:20+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+metatag:
+  value:
+    title: '| Events Registration'
+    canonical_url: 'http://localhost:8080/batch'
+_content_sync:
+  entity_type: menu_link_content

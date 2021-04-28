@@ -1,0 +1,43 @@
+uuid:
+  -
+    value: c97c20db-f1c0-4b0e-85e3-409ddbcb7773
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: basic
+    target_type: block_content_type
+    target_uuid: 3e4a0c36-55fd-487c-9c7b-7cea71fe5f3f
+revision_created:
+  -
+    value: '2018-10-02T17:15:03+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_user: {  }
+revision_log: {  }
+status:
+  -
+    value: true
+info:
+  -
+    value: 'General Information'
+changed:
+  -
+    value: '2018-10-15T18:21:44+00:00'
+    format: 'Y-m-d\TH:i:sP'
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+body:
+  -
+    value: "<p><strong>General Information</strong></p>\r\n\r\n<p>For conference related questions please contact:&nbsp;<br />\r\n<a href=\"mailto:garnernn@mail.nih.gov\">Nicole Garner</a></p>\r\n\r\n<p><strong>Location</strong></p>\r\n\r\n<p>NCI-Shady Grove<br />\r\nTE-406/408/410<br />\r\nRockville, MD. 20850</p>\r\n\r\n<p><a href=\"https://www.google.com/maps/preview?ll=39.103592,-77.197468&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=16955272049506099530&amp;source=newuser-ws\" taret=\"_blank\"><img alt=\"9609 Medical Center Dr, Rockville, MD 20850\" data-entity-type=\"file\" data-entity-uuid=\"5fc1de60-727d-4cfe-9c24-19cd3f449c02\" src=\"/sites/default/files/inline-images/map.png\" width=\"184px\" /></a></p>\r\n\r\n<p><strong>Forms</strong></p>\r\n\r\n<p><a href=\"/sites/default/files/2019ConfidentialDisclosureAgreement.pdf\" target=\"_blank\">Confidential Disclosure Agreement</a><br />\r\nRequired: For all Non-NCI attendees</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    format: full_html
+    processed: "<p><strong>General Information</strong></p>\n\n<p>For conference related questions please contact:\_<br /><a href=\"mailto:garnernn@mail.nih.gov\">Nicole Garner</a></p>\n\n<p><strong>Location</strong></p>\n\n<p>NCI-Shady Grove<br />\nTE-406/408/410<br />\nRockville, MD. 20850</p>\n\n<p><a href=\"https://www.google.com/maps/preview?ll=39.103592,-77.197468&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=16955272049506099530&amp;source=newuser-ws\" taret=\"_blank\"><img alt=\"9609 Medical Center Dr, Rockville, MD 20850\" data-entity-type=\"file\" data-entity-uuid=\"5fc1de60-727d-4cfe-9c24-19cd3f449c02\" src=\"/sites/default/files/inline-images/map.png\" width=\"184px\" /></a></p>\n\n<p><strong>Forms</strong></p>\n\n<p><a href=\"/sites/default/files/2019ConfidentialDisclosureAgreement.pdf\" target=\"_blank\">Confidential Disclosure Agreement</a><br />\nRequired: For all Non-NCI attendees</p>\n\n<p>\_</p>\n"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: block_content
+  entity_dependencies: {  }

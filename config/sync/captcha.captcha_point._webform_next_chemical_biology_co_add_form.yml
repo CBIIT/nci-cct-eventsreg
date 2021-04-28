@@ -1,0 +1,7 @@
+uuid: 4a2b5f7c-0e9c-4c52-80b6-ff8d23f60656
+langcode: en
+status: false
+dependencies: {  }
+formId: _webform_next_chemical_biology_co_add_form
+captchaType: recaptcha/reCAPTCHA
+label: ' webform_next_chemical_biology_co_add_form'

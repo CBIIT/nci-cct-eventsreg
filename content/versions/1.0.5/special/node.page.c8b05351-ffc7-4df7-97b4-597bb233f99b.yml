@@ -1,0 +1,67 @@
+uuid:
+  -
+    value: c8b05351-ffc7-4df7-97b4-597bb233f99b
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: page
+    target_type: node_type
+    target_uuid: 208e6a81-3c6f-4e9c-bb59-16e7a27fca92
+revision_timestamp:
+  -
+    value: '2018-09-19T13:28:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct - sssc-pdd-2018 (Home)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-19T00:34:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-09-19T13:28:49+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+path:
+  -
+    alias: /cct/sssc-pdd-2018
+menu_link: {  }
+body:
+  -
+    value: "<h2>Annual NCI SSSC Professional Development Day</h2>\r\n\r\n<h3><strong>November 16, 2018</strong></h3>\r\n\r\n<p><strong><em><a href=\"/cct/sssc-pdd-2018/venue\">Porter Neuroscience Center</a></em><br />\r\nBuilding 35, Room 610, NIH Bethesda Campus</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong><em>OVERVIEW&nbsp;</em></strong></p>\r\n\r\n<p>This year the Professional Development Day is covering topics from the Quad Review Process to Science and Innovation. The CCR Director, Dr. Tom Misteli will open the meeting and join us for Session 1 on the Quad Review Process. Session 2 will cover the different types of details that are available and the possibilities to new career paths. In Session 3 we have a diverse panel that will discuss Science and Innovation from the perspective of industry with Dr. Herren Wu (MedImmune), and translational innovation with Dr. Christopher Austin (NCATS). Session 4 is a hands-on Workshop on Managing Innovation. Please join us for another exciting and informative Professional Development Day.</p>\r\n"
+    format: basic_html
+    processed: "<h2>Annual NCI SSSC Professional Development Day</h2>\n\n<h3><strong>November 16, 2018</strong></h3>\n\n<p><strong><em><a href=\"/cct/sssc-pdd-2018/venue\">Porter Neuroscience Center</a></em><br />\nBuilding 35, Room 610, NIH Bethesda Campus</strong></p>\n\n<p>\_</p>\n\n<p><strong><em>OVERVIEW\_</em></strong></p>\n\n<p>This year the Professional Development Day is covering topics from the Quad Review Process to Science and Innovation. The CCR Director, Dr. Tom Misteli will open the meeting and join us for Session 1 on the Quad Review Process. Session 2 will cover the different types of details that are available and the possibilities to new career paths. In Session 3 we have a diverse panel that will discuss Science and Innovation from the perspective of industry with Dr. Herren Wu (MedImmune), and translational innovation with Dr. Christopher Austin (NCATS). Session 4 is a hands-on Workshop on Managing Innovation. Please join us for another exciting and informative Professional Development Day.</p>"
+    summary: ''
+    summary_processed: ''
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

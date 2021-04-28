@@ -1,0 +1,204 @@
+uuid: 5608867c-1db8-40e5-8442-e4fb7f6ed4bc
+langcode: en
+status: closed
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: cct_sssc_pdd_2018_registration_
+title: 'cct-sssc-pdd-2018 (registration)'
+description: 'SSSC Profressional Development Day 2018 - Registration'
+category: cct
+elements: "title_text:\n  '#type': processed_text\n  '#text': |\n    <p>&nbsp;</p>\n    \n    <p><span style=\"font-size:11pt\"><span style=\"line-height:107%\"><span style=\"font-family:Calibri,sans-serif\">Thank you for your interest in the 5th Biennial NCI SSSC Professional Development Day (November 16, 2018).<br />\n    <br />\n    If you have any questions, please contact <span class=\"MsoHyperlink\" style=\"color:#0563c1\"><span style=\"text-decoration:underline\"><b><i><a href=\"mailto:nicole.garner@nih.gov\" style=\"color:#0563c1; text-decoration:underline\">Nicole Garner</a></i></b></span></span>. </span></span></span></p>\n    \n    <div>\n    <p><b><i><span style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Registration is free; however, pre-registration is required. The registration deadline is November 2, 2018.</span></span></span></i></b></p>\n    \n    <h2>Annual NCI SSSC Professional Development Day Registration</h2>\n    \n    <p><b><i><span style=\"font-size:11.0pt\"><span style=\"line-height:107%\"><span style=\"font-family:&quot;Calibri&quot;,sans-serif\">Please use correct capitalization when filling out your name/address. Do not use all capital or lower case letters. Your name will be printed on conference materials exactly as you type it.</span></span></span></i></b></p>\n    </div>\n    \n  '#format': full_html\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-6 col-offset-1'\n    title:\n      '#type': textfield\n      '#title': Title\n      '#description_display': before\n      '#placeholder': '(Dr., Mr., Ms.)'\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#required': true\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#required': true\n    position:\n      '#type': webform_select_other\n      '#title': Position\n      '#options':\n        'Staff Scientist': 'Staff Scientist'\n        'Staff Clinician': 'Staff Clinician'\n        'Principal Investigator': 'Principal Investigator'\n        FTE: FTE\n      '#required': true\n    division_office_center_:\n      '#type': webform_select_other\n      '#title': Division/Office/Center\n      '#options':\n        NCI/CCR: NCI/CCR\n        NCI/DCEG: NCI/DCEG\n        Leidos: Leidos\n      '#other__placeholder': 'please type affiliation'\n      '#required': true\n      '#required_error': Required\n    branch_lab:\n      '#type': webform_select_other\n      '#title': Branch/Lab\n      '#options':\n        'Basic Research Laboratory ': 'Basic Research Laboratory '\n        'Cancer and Developmental Biology Laboratory ': 'Cancer and Developmental Biology Laboratory '\n        'Cancer and Inflammation Program ': 'Cancer and Inflammation Program '\n        'Chemical Biology Laboratory ': 'Chemical Biology Laboratory '\n        'Dermatology Branch ': 'Dermatology Branch '\n        'Developmental Therapeutics Branch': 'Developmental Therapeutics Branch'\n        'Endocrine Oncology Branch': 'Endocrine Oncology Branch'\n        'Experimental Immunology Branch': 'Experimental Immunology Branch'\n        'Experimental Transplantation and Immunology Branch': 'Experimental Transplantation and Immunology Branch'\n        'Gene Regulation and Chromosome Biology Laboratory': 'Gene Regulation and Chromosome Biology Laboratory'\n        'Genetics Branch': 'Genetics Branch'\n        'Genitourinary Malignancies Branch': 'Genitourinary Malignancies Branch'\n        'HIV and AIDS Malignancy Branch': 'HIV and AIDS Malignancy Branch'\n        'HIV Dynamics and Replication Program': 'HIV Dynamics and Replication Program'\n        'Host-Virus Interaction Branch': 'Host-Virus Interaction Branch'\n        'Laboratory of Biochemistry and Molecular Biology': 'Laboratory of Biochemistry and Molecular Biology'\n        'Laboratory of Cancer Biology and Genetics ': 'Laboratory of Cancer Biology and Genetics '\n        'Laboratory of Cell and Developmental Signaling': 'Laboratory of Cell and Developmental Signaling'\n        'Laboratory of Cell Biology': 'Laboratory of Cell Biology'\n        'Laboratory of Cellular and Molecular Biology ': 'Laboratory of Cellular and Molecular Biology '\n        'Laboratory of Cellular Oncology ': 'Laboratory of Cellular Oncology '\n        'Laboratory of Genitourinary Cancer Pathogenesis ': 'Laboratory of Genitourinary Cancer Pathogenesis '\n        'Laboratory of Genome Integrity ': 'Laboratory of Genome Integrity '\n        'Laboratory of Human Carcinogenesis ': 'Laboratory of Human Carcinogenesis '\n        'Laboratory of Immune Cell Biology ': 'Laboratory of Immune Cell Biology '\n        'Laboratory of Metabolism': 'Laboratory of Metabolism'\n        'Laboratory of Molecular Biology': 'Laboratory of Molecular Biology'\n        'Laboratory of Pathology ': 'Laboratory of Pathology '\n        'Laboratory of Protein Dynamics and Signaling': 'Laboratory of Protein Dynamics and Signaling'\n        'Laboratory of Receptor Biology and Gene Expression': 'Laboratory of Receptor Biology and Gene Expression'\n        'Laboratory of Tumor Immunology and Biology': 'Laboratory of Tumor Immunology and Biology'\n        'Lymphoid Malignancies Branch ': 'Lymphoid Malignancies Branch '\n        'Macromolecular Crystallography Laboratory': 'Macromolecular Crystallography Laboratory'\n        'Molecular Imaging Program': 'Molecular Imaging Program'\n        'Molecular Targets Laboratory': 'Molecular Targets Laboratory'\n        'Mouse Cancer Genetics Program': 'Mouse Cancer Genetics Program'\n        'Neuro-Oncology Branch': 'Neuro-Oncology Branch'\n        'Pediatric Oncology Branch': 'Pediatric Oncology Branch'\n        'Radiation Biology Branch': 'Radiation Biology Branch'\n        'Radiation Oncology Branch': 'Radiation Oncology Branch'\n        'Retroviral Replication Laboratory': 'Retroviral Replication Laboratory'\n        'Structural Biophysics Laboratory ': 'Structural Biophysics Laboratory '\n        'Surgery Branch ': 'Surgery Branch '\n        'Thoracic and Gastrointestinal Oncology Branch': 'Thoracic and Gastrointestinal Oncology Branch'\n        'Urologic Oncology Branch ': 'Urologic Oncology Branch '\n        'Vaccine Branch ': 'Vaccine Branch '\n      '#other__placeholder': ''\n      '#required': true\n      '#states':\n        visible-slide:\n          ':input[name=\"division_office_center_[select]\"]':\n            value: NCI/CCR\n    dceg_branch_lab:\n      '#type': webform_select_other\n      '#title': 'DCEG Branch/Lab'\n      '#options':\n        Biostatistics: Biostatistics\n        'Cancer Genomics Research Laboratory ': 'Cancer Genomics Research Laboratory '\n        'Clinical Genetics': 'Clinical Genetics'\n        'Infections and Immunoepidemiology ': 'Infections and Immunoepidemiology '\n        'Integrative Tumor Epidemiology Branch': 'Integrative Tumor Epidemiology Branch'\n        'Laboratory of Translational Genomics': 'Laboratory of Translational Genomics'\n        'Metabolic Epidemiology': 'Metabolic Epidemiology'\n        'Occupational and Environmental Epidemiology': 'Occupational and Environmental Epidemiology'\n        'Radiation Epidemiology': 'Radiation Epidemiology'\n      '#other__placeholder': ''\n      '#required': true\n      '#states':\n        visible-slide:\n          ':input[name=\"division_office_center_[select]\"]':\n            value: NCI/DCEG\n    campus_location:\n      '#type': select\n      '#title': 'Campus Location'\n      '#options':\n        Bethesda: Bethesda\n        Frederick: Frederick\n        'Shady Grove': 'Shady Grove'\n      '#states':\n        visible-slide:\n          - ':input[name=\"division_office_center_[select]\"]':\n              value: NCI/CCR\n          - or\n          - ':input[name=\"division_office_center_[select]\"]':\n              value: NCI/DCEG\n      '#attributes':\n        display: none;\n      '#label_attributes':\n        style: hidden\n      '#required': true\n    addres:\n      '#type': webform_address\n      '#title': Addres\n      '#required': true\n      '#states':\n        invisible:\n          - ':input[name=\"division_office_center_[select]\"]':\n              '!value': _other_\n          - or\n          - ':input[name=\"division_office_center_[select]\"]':\n              empty: true\n      '#address__required': true\n      '#city__required': true\n      '#state_province__required': true\n      '#postal_code__required': true\n      '#country__access': false\n    telephone:\n      '#type': webform_telephone\n      '#title': Telephone\n      '#title_display': before\n      '#required': true\n      '#type__access': false\n      '#phone__required': true\n      '#ext__access': false\n      '#phone__international': false\n    email:\n      '#type': webform_email_confirm\n      '#title': Email\n      '#required': true\n      '#confirm__title': 'Verify Email'\ncontainer_01:\n  '#type': container\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: /cct/sssc-pdd-2018/registration
+  page_confirm_path: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: 'Registration Confirmation'
+  confirmation_message: "Thank you for registering for the&nbsp;<strong>SSSC Professional Development Day</strong> on November 16, 2018 at the&nbsp;<em><a href=\"http://localhost:8080/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a>,&nbsp;</em>Building 35, Room 610, NIH Bethesda Campus.<br />\r\n<br />\r\nYou should receive an email confirmation.&nbsp;&nbsp;"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  cct_sssc_pdd_2018_registration:
+    id: email
+    label: cct-sssc-pdd-2018-registration
+    handler_id: cct_sssc_pdd_2018_registration
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'SSSC Professional Development Day 2018'
+      subject: 'SSSC Professional Development Day Registration Confirmation'
+      body: "[webform_submission:values:title] [webform_submission:values:first_name] [webform_submission:values:last_name],<br />\n<br />\nThank you for registering for the&nbsp;<strong>SSSC Professional Development Day.</strong><br />\n<br />\n<strong>Event Location:</strong><br />\n<em><a href=\"https://events.cancer.gov/cct/sssc-pdd-2018/venue\" tabindex=\"-1\">Porter Neuroscience Center</a></em><br />\nBuilding 35, Room 610, NIH Bethesda Campus<br />\n<br />\n<strong>Event Date:</strong> November 16, 2018"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme: ''
+      theme_name: ''

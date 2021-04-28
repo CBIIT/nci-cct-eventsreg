@@ -1,0 +1,21 @@
+uuid: 577597db-086a-4419-90b0-d65358097fd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date_time
+    - node.type.event
+id: node.event.field_event_date_time
+field_name: field_event_date_time
+entity_type: node
+bundle: event
+label: 'Event Date Time'
+description: 'Enter the Date and time of this Events.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1542210394
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

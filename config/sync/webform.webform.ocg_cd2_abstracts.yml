@@ -1,0 +1,203 @@
+uuid: ddc9c4de-0e07-4466-a72f-1828ee2aa602
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: ocg_cd2_abstracts
+title: 'ocg-ctd2-f2f-meeting (Abstract)'
+description: 'Cancer Target Discovery and Development (CTD2) Network Annual Face-to-Face Meeting'
+category: ocg
+elements: "abstract_submission:\n  '#type': fieldset\n  '#title': 'Abstract Submission for Poster Presentation'\n  '#description': \"<p>\\r\\n<strong>Poster size should not exceed 4 ft (high) by 6 ft (width)</strong></p>\\r\\n<p><strong>NOTE: Full abstracts will be distributed at the meeting. <em>Abstracts will not be edited.</em> Be sure&nbsp;NOT&nbsp;to use special characters. (ex. dashes, single quotes, double quotes and Greek characters/symbols)</strong></p>\"\n  '#description_display': before\n  abstract_title:\n    '#type': textfield\n    '#title': 'Abstract Title'\n    '#required': true\n  upload_abstract:\n    '#type': webform_document_file\n    '#title': 'Upload Abstract'\n    '#description': \"Please upload a document with no more than 250 words.<br />\\r\\nFiles must be less than 2 MB.<br />\\r\\nAllowed file types: txt doc docx&nbsp;pdf<br />\\r\\n&nbsp;\"\n    '#description_display': after\n    '#file_help': none\n    '#max_filesize': '2'\n    '#required': true\n  author:\n    '#type': webform_custom_composite\n    '#title': Author\n    '#title_display': invisible\n    '#description_display': invisible\n    '#required': true\n    '#multiple__sorting': false\n    '#multiple__add_more_button_label': 'Add Another Author'\n    '#wrapper_attributes':\n      style: 'margin-bottom: 20px; margin-top: -15px;'\n    '#label_attributes':\n      style: 'margin-left: -10px;'\n    '#element':\n      author:\n        '#type': textfield\n        '#title': Author\n        '#placeholder': 'Last Name, First Name Middle Initial  '\n  presenting_author:\n    '#type': textfield\n    '#title': 'Presenting Author'\n    '#required': true\n  institution:\n    '#type': textfield\n    '#title': Institution\n    '#required': true\n  email:\n    '#type': webform_email_confirm\n    '#title': Email\n    '#required': true\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: "<p>Thank you for submitting your abstract for the <strong>CTD<sup><sub>2</sub></sup> Network Annual F2F Meeting</strong>. An email confirmation will be sent to you with the details of your submission.</p>\r\n\r\n<p>For questions about submitting the abstracts and posters, please contact Subhashini Jagu at <a href=\"mailto:Subhashini.jagu@nih.gov\">Subhashini.jagu@nih.gov</a> or at 240.781.3325.</p>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: 'ocg-ctd2-f2f Abstract Email'
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'CTD2 Network Annual Face-to-Face Meeting'
+      subject: 'CTD2 Network Annual Face-to-Face Meeting- Abstract Submission'
+      body: "<p>Greetings,</p>\r\n\r\n<p>Thank you for submitting your abstract for the CTD<sup>2 </sup>Network Annual F2F meeting. For questions about submitting the abstracts and posters, please contact Subhashini Jagu at <a href=\"mailto:Subhashini.jagu@nih.gov\">Subhashini.jagu@nih.gov</a> or at 240.781.3325. Your submission details are as follows:</p>\r\n&nbsp;<br />\r\nSubmitted on [webform_submission:created]\r\n<p>&nbsp;</p>\r\n\r\n<p>Submitted by: [webform_submission:user]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

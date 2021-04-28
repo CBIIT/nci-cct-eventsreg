@@ -1,0 +1,215 @@
+uuid: b6b2afc5-056e-4b8a-b7d1-059c7df6cc33
+langcode: en
+status: open
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    time_restriction: true
+open: null
+close: null
+weight: 0
+uid: 1
+template: false
+archive: false
+id: webform_next_chemical_biology_co
+title: 'Registration - Chemical Biology Consortium'
+description: "Chemical Biology Consortium<br />\r\nRegistration"
+category: next
+elements: "title_text:\n  '#type': processed_text\n  '#text': \"<h2 class=\\\"nci-red\\\">Chemical Biology Consortium&nbsp;Symposium: Summer 2019 - Registration</h2>\\r\\n\\r\\n<div>\\r\\n<h3><strong>Opening Door to Cancer Drug Discovery</strong></h3>\\r\\n\\r\\n<p><strong>Vanderbilt University</strong>,<strong> Nashville, TN, July 10, 2019</strong></p>\\r\\n</div>\\r\\n\"\n  '#format': full_html\nrow:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - 'col-md-6 col-offset-1'\n    first_name:\n      '#type': textfield\n      '#title': 'First Name'\n      '#required': true\n    last_name:\n      '#type': textfield\n      '#title': 'Last Name'\n      '#required': true\n    institution_company:\n      '#type': textfield\n      '#title': Institution/Company\n    email:\n      '#type': email\n      '#title': Email\n      '#required': true\n      '#unique': true\n      '#unique_error': 'This email has already been registered for this event.'\n    telephone:\n      '#type': webform_telephone\n      '#title': Telephone\n      '#title_display': invisible\n      '#required': true\n      '#type__access': false\n      '#phone__required': true\n      '#ext__access': false\n      '#phone__international_initial_country': US\n    attending_poster_session_:\n      '#type': select\n      '#title': 'Attending poster session?'\n      '#options': yes_no\n    presenting_a_poster_:\n      '#type': select\n      '#title': 'Presenting a poster?'\n      '#options': yes_no\n      '#required': true\n    if_presenting_a_poster_would_you_like_to_present_a_poster_talk_:\n      '#type': select\n      '#title': 'If presenting a poster, would you like to present a poster talk? '\n      '#options': yes_no\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n    title_of_poster:\n      '#type': textfield\n      '#title': 'Title of Poster'\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\n    abstract_of_poster:\n      '#type': textarea\n      '#title': 'Abstract of Poster'\n      '#states':\n        invisible:\n          - ':input[name=\"presenting_a_poster_\"]':\n              empty: true\n          - or\n          - ':input[name=\"presenting_a_poster_\"]':\n              value: 'No'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'"
+css: ".center-block {\r\n    float: none !important\r\n}"
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: next/chemical-biology-consortium-symposium
+  page_confirm_path: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: 'Registration Submitted'
+  confirmation_message: "<p><br />\r\n<br />\r\nThank you for registering for the <strong>Chemical Biology Consortium Summer Symposium 2019</strong>.</p>"
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+  form_login: false
+  form_login_message: ''
+  submission_login: false
+  submission_login_message: ''
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  registrant_s_email:
+    id: email
+    label: 'Registrant''s Email'
+    handler_id: registrant_s_email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: 'Chemical Biology Consortium Summer Symposium 2019'
+      subject: 'Chemical Biology Consortium Summer Symposium 2019 - Registration'
+      body: "[webform_submission:values:first_name] [webform_submission:values:last_name],<br />\r\n<br />\r\nThank you for registering for the <strong>Chemical Biology Consortium Summer Symposium 2019.</strong><br />\r\n<br />\r\nEvent Location:<br />\r\nVanderbilt&nbsp;University<br />\r\nTBA<br />\r\nNashville, TN<br />\r\n<br />\r\nEvent Date: July 10, 2019"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme: ''
+      theme_name: ''

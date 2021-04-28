@@ -1,0 +1,32 @@
+uuid: abb2e3bc-d9f0-42df-a404-4daa061ea2b5
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.menu---next---chemical-biol
+  module:
+    - system
+    - user
+  theme:
+    - cct
+id: menunextchemicalbiologyconsortiumsymposium
+theme: cct
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:menu---next---chemical-biol'
+settings:
+  id: 'system_menu_block:menu---next---chemical-biol'
+  label: 'Block - Event - next - NCI Chemical Biology Consortium Symposium'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

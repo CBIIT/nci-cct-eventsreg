@@ -1,0 +1,205 @@
+uuid: d5aea0ff-46e0-4405-b2f7-991c1fa1a205
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 27
+template: false
+archive: false
+id: dceg_rad_epi_course
+title: dceg-rad-epi-course
+description: 'DCEG/REB Radiation Epidemiology &amp; Dosimetry Course'
+category: dceg
+elements: "row:\n  '#type': container\n  '#attributes':\n    class:\n      - row\n  container:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    your_information:\n      '#type': fieldset\n      '#title': 'Your Information'\n      first_name:\n        '#type': textfield\n        '#title': 'First Name'\n        '#required': true\n      last_name:\n        '#type': textfield\n        '#title': 'Last Name'\n        '#required': true\n      credentials:\n        '#type': textfield\n        '#title': Credentials\n      email:\n        '#type': webform_email_confirm\n        '#title': Email\n        '#required': true\n        '#confirm__title': 'Confirm Email Address'\n  container_01:\n    '#type': container\n    '#attributes':\n      class:\n        - col-md-6\n    organization_details:\n      '#type': fieldset\n      '#title': 'Organization Details'\n      organization:\n        '#type': textfield\n        '#title': Organization\n      department:\n        '#type': textfield\n        '#title': Department\n      title:\n        '#type': textfield\n        '#title': Title\n        '#required': true\n      address:\n        '#type': webform_address\n        '#title': Address\n        '#address__access': false\n        '#address_2__access': false\n        '#postal_code__access': false\nflexbox:\n  '#type': container\n  please_indicate_the_day_s_you_plan_to_attend_:\n    '#type': fieldset\n    '#title': 'Please indicate the day(s) you plan to attend.'\n    monday_september_9_:\n      '#type': checkbox\n      '#title': 'Monday, September 9 '\n      '#description': \"<ul>\\r\\n\\t<li>\\r\\n\\t<p>Fundamentals of radiation epidemiology, dosimetry, risk modeling, and the statistical software package<em> EPICURE</em>.</p>\\r\\n\\t</li>\\r\\n</ul>\"\n      '#description_display': after\n      '#default_value': true\n    tuesday_september_10_:\n      '#type': checkbox\n      '#title': 'Tuesday, September 10 '\n      '#description': \"<ul>\\r\\n\\t<li>Overview of radiation health effects (cancer and non-cancer), exposure assessment, and radiobiology</li>\\r\\n\\t<li>Diagnostic medical radiation exposure</li>\\r\\n</ul>\"\n      '#description_display': after\n      '#default_value': true\n    wednesday_september_11_:\n      '#type': checkbox\n      '#title': 'Wednesday, September 11 '\n      '#description': \"<ul>\\r\\n  <li>Therapeutic medical radiation exposure </li>\\r\\n  <li>Occupational radiation exposure </li>\\r\\n</ul>\"\n      '#description_display': after\n      '#default_value': true\n    thursday_september_12_:\n      '#type': checkbox\n      '#title': 'Thursday, September 12 '\n      '#description': \"<ul>\\r\\n\\t<li>Environmental radiation exposure</li>\\r\\n\\t<li>Genetic susceptibility to radiation health effects</li>\\r\\n\\t<li>Non-ionizing radiation exposure</li>\\r\\n</ul>\"\n      '#description_display': after\n      '#default_value': true\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: 'Thank you for registering for the&nbsp;DCEG/REB Radiation Epidemiology &amp; Dosimetry Course&nbsp;during September 9-12, 2019. A confirmation email will be sent to you shortly with your registration details.'
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  limit_total: 200
+  limit_total_interval: null
+  limit_total_message: "Sorry, but registration is closed due to meeting maximum&nbsp;capacity at this event.&nbsp; To request to be put on a waiting list, please contact:<br />\r\n<br />\r\n<strong>Abigail Ukwuani, MPA</strong><br />\r\nCourse Administrator<br />\r\nRadiation Epidemiology Branch/DCEG/NCI<br />\r\n<a href=\"mailto:ukwuania@mail.nih.gov\">ukwuania@mail.nih.gov</a><br />\r\n240-276-7369<br />\r\n&nbsp;"
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: 'dceg rad_epi_course Confirmation Email'
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: '2019 Radiation Epidemiology and Dosimetry Course '
+      subject: '2019 Radiation Epidemiology and Dosimetry Course Registration Confirmation'
+      body: "Thank you for registering for the&nbsp;2019 Radiation Epidemiology and Dosimetry Course.&nbsp;<br />\r\n<br />\r\nAs space is limited, please let us know if your plans change after registration and you are no longer able to attend the course.&nbsp; Please contact:<br />\r\n&nbsp;\r\n<p><strong>Abigail Ukwuani, MPA</strong><br />\r\nCourse Administrator<br />\r\nRadiation Epidemiology Branch/DCEG/NCI<br />\r\nEmail: <a href=\"mailto:ukwuania@mail.nih.gov\">ukwuania@mail.nih.gov</a><br />\r\nPhone: 240-276-7369</p>\r\n\r\n<p>Below are your registration details.</p>\r\n\r\n<p>Submitted on [webform_submission:created]</p>\r\n\r\n<p>Submitted by: [webform_submission:values:first_name] [webform_submission:values:last_name]</p>\r\n\r\n<p>Submitted values are:</p>\r\n[webform_submission:values]<br />\r\n<br />\r\n<a download=\"\" href=\"https://events.cancer.gov/sites/default/files/assets/dceg-rad-epi-course/Radiation_Epidemiology_and_Dosimetry_Course.ics\">Add to Calendar</a><br />\r\n<br />\r\n&nbsp;"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''

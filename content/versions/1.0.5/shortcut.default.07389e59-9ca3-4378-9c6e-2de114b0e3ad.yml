@@ -1,0 +1,26 @@
+uuid:
+  -
+    value: 07389e59-9ca3-4378-9c6e-2de114b0e3ad
+langcode:
+  -
+    value: en
+shortcut_set:
+  -
+    target_id: default
+    target_type: shortcut_set
+    target_uuid: 79cb7289-a234-4bfa-99cc-df8b2f2dd418
+title:
+  -
+    value: all-events
+weight: {  }
+link:
+  -
+    uri: 'internal:/all-events'
+    title: ''
+    options: {  }
+default_langcode:
+  -
+    value: true
+_content_sync:
+  entity_type: shortcut
+  entity_dependencies: {  }

@@ -1,0 +1,75 @@
+uuid:
+  -
+    value: fb62f11d-f54a-4dac-8a3f-6fef558863e7
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: webform
+    target_type: node_type
+    target_uuid: 126e8cd7-951e-4541-bb64-779ff023c63a
+revision_timestamp:
+  -
+    value: '2018-11-30T19:10:37+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: 'cct-st (Registration)'
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-11-30T19:09:48+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-12-03T17:19:06+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: false
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'cct-st (Registration) | Events Registration'
+    canonical_url: 'http://localhost:8080/cct/st/registration'
+path:
+  -
+    alias: /cct/st/registration
+menu_link: {  }
+body: {  }
+webform:
+  -
+    target_id: cct_st
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_type: webform
+    target_uuid: 29d48ec2-6671-4a51-ab45-bb25968c17ed
+    url: /form/cct-st
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

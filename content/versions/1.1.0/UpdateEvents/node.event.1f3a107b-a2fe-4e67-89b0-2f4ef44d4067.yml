@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: 1f3a107b-a2fe-4e67-89b0-2f4ef44d4067
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-19T21:13:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: cct-fyic19
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-10-01T17:17:17+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-19T21:13:33+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'cct-fyic19 | Events Registration'
+    canonical_url: 'http://localhost:8080/node/24'
+    description: '19th Annual CCR Fellows and Young Investigators Colloquium'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>The 19th Annual Fellows and Young Investigators Colloquium will be held on February 28 – March 1, 2019, and is open to all NCI fellows and trainees, including postdoctoral fellows, clinical fellows, post-baccalaureate fellows, and graduate students.</p>\r\n"
+    format: basic_html
+    processed: '<p>The 19th Annual Fellows and Young Investigators Colloquium will be held on February 28 – March 1, 2019, and is open to all NCI fellows and trainees, including postdoctoral fellows, clinical fellows, post-baccalaureate fellows, and graduate students.</p>'
+    summary: '19th Annual CCR Fellows and Young Investigators Colloquium'
+    summary_processed: '19th Annual CCR Fellows and Young Investigators Colloquium'
+field_acronym:
+  -
+    value: cct-fyi-colloquium-2019
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-12-13T05:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/cct/fyi-colloquium-2019'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-10-01'
+    end_value: '2019-02-02'
+field_registration_open:
+  -
+    value: '2018-09-30'
+    end_value: '2019-02-02'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/cct_fyi_colloquium_2019_registra/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224

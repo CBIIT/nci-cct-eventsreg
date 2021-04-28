@@ -1,0 +1,47 @@
+uuid: c5761704-ff60-49ce-ac76-e78f0d4a7c15
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.organization
+id: organization-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: organization
+permissions_ui: true
+permissions:
+  0: 'view group'
+  1: 'create group_node:article entity'
+  2: 'delete own group_node:article entity'
+  3: 'update any group_node:article entity'
+  4: 'view group_node:article entity'
+  5: 'view unpublished group_node:article entity'
+  6: 'create group_node:article content'
+  7: 'delete own group_node:article content'
+  8: 'update own group_node:article content'
+  9: 'view group_node:article content'
+  10: 'view group_membership content'
+  11: 'create group_node:page entity'
+  12: 'delete own group_node:page entity'
+  13: 'update own group_node:page entity'
+  14: 'view group_node:page entity'
+  15: 'view unpublished group_node:page entity'
+  16: 'update own group_membership content'
+  17: 'create group_node:page content'
+  18: 'delete own group_node:page content'
+  19: 'update own group_node:page content'
+  20: 'view group_node:page content'
+  21: 'delete any group_node:page entity'
+  22: 'update any group_node:page entity'
+  23: 'delete any group_node:page content'
+  24: 'update any group_node:page content'
+  25: 'access group_node overview'
+  26: 'delete any group_node:article entity'
+  27: 'update own group_node:article entity'
+  28: 'delete any group_node:article content'
+  29: 'update any group_node:article content'
+  60: 'view group_node:webform entity'
+  61: 'view unpublished group_node:webform entity'
+  62: 'view group_node:webform content'

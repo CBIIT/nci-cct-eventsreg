@@ -1,0 +1,101 @@
+uuid:
+  -
+    value: 74d48207-7951-416f-a939-0af0b16fe6f7
+langcode:
+  -
+    value: en
+type:
+  -
+    target_id: event
+    target_type: node_type
+    target_uuid: 6dbf4d5e-37d8-41cc-a702-673021ea0092
+revision_timestamp:
+  -
+    value: '2018-11-16T00:59:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+revision_uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+revision_log: {  }
+status:
+  -
+    value: true
+title:
+  -
+    value: cct-pdd18
+uid:
+  -
+    target_type: user
+    target_uuid: 62cd2e5e-b41b-4e81-abe3-89288e00d224
+created:
+  -
+    value: '2018-09-18T18:58:14+00:00'
+    format: 'Y-m-d\TH:i:sP'
+changed:
+  -
+    value: '2018-11-16T00:59:01+00:00'
+    format: 'Y-m-d\TH:i:sP'
+promote:
+  -
+    value: true
+sticky:
+  -
+    value: false
+default_langcode:
+  -
+    value: true
+revision_translation_affected:
+  -
+    value: true
+metatag:
+  value:
+    title: 'cct-pdd18 | Events Registration'
+    canonical_url: 'http://localhost:8080/node/16'
+    description: 'SSSC Professional Development Day'
+path:
+  -
+    alias: null
+    pid: null
+    langcode: en
+menu_link: {  }
+body:
+  -
+    value: "<p>This year the Professional Development Day has invited Dr. Hannah Valentine to discuss her views as Chief Officer of Scientific Workforce Diversity.</p>\r\n"
+    format: basic_html
+    processed: '<p>This year the Professional Development Day has invited Dr. Hannah Valentine to discuss her views as Chief Officer of Scientific Workforce Diversity.</p>'
+    summary: 'SSSC Professional Development Day'
+    summary_processed: 'SSSC Professional Development Day'
+field_acronym:
+  -
+    value: cct-sssc-pdd-2018
+field_event_banner_logo: {  }
+field_event_date_time:
+  -
+    value: '2018-11-16T14:00:00+00:00'
+    format: 'Y-m-d\TH:i:sP'
+field_event_home_link:
+  -
+    uri: 'internal:/cct/sssc-pdd-2018/'
+    title: ''
+    options: {  }
+field_event_published:
+  -
+    value: '2018-09-18'
+    end_value: '2019-01-01'
+field_registration_open:
+  -
+    value: '2018-09-17'
+    end_value: '2019-01-01'
+field_results:
+  -
+    uri: 'internal:/admin/structure/webform/manage/cct_sssc_pdd_2018_registration_/results/submissions'
+    title: registrations
+    options: {  }
+field_tags: {  }
+_content_sync:
+  entity_type: node
+  entity_dependencies:
+    user:
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
+      - user.user.62cd2e5e-b41b-4e81-abe3-89288e00d224
