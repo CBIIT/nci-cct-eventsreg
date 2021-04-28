@@ -1,8 +1,0 @@
-uuid: 76111ad1-6b0b-4509-af5b-0be63a3ce463
-langcode: en
-status: true
-dependencies: {  }
-id: cct-st-menu
-label: cct-st-menu
-description: 'cct-st (Menu)'
-locked: false

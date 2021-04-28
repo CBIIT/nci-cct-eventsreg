@@ -1,8 +1,0 @@
-uuid: bb0e1e56-9c0f-4a3a-839e-132e0406b483
-langcode: en
-status: true
-dependencies: {  }
-id: dctd-lung-spore-menu
-label: dctd-lung-spore-menu
-description: 'dctd-lung-spore (Menu)'
-locked: false

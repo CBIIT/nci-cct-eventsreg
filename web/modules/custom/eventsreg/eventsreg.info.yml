@@ -1,6 +1,0 @@
-name: EventsReg
-description: Custom module for the EventsReg project.
-package: Custom
-type: module
-version: 1.0
-core: 8.x

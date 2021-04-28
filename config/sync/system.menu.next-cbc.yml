@@ -1,8 +1,0 @@
-uuid: a32e819d-e14f-4a33-a550-0078ffb4f617
-langcode: en
-status: true
-dependencies: {  }
-id: next-cbc
-label: next-cbc
-description: 'next-cbcs Chemical Biology Consortium'
-locked: false

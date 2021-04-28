@@ -1,8 +1,0 @@
-uuid: 52b28413-b09e-48d2-8fb1-7ed7042317d1
-langcode: en
-status: true
-dependencies: {  }
-id: cct-sssc-mentor-award-util
-label: cct-sssc-mentor-award-util
-description: 'cct-sssc-mentor-award (Util)'
-locked: false

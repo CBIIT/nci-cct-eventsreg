@@ -1,8 +1,0 @@
-uuid: 007c73ca-837b-44e6-a08e-0e2c8b6299cc
-langcode: en
-status: true
-dependencies: {  }
-id: cct-jhu-menu
-label: cct-jhu-menu
-description: 'cct-jhu (Menu)'
-locked: false

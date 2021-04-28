@@ -1,8 +1,0 @@
-uuid: ff972f74-b00a-49f3-a3aa-15a797cadf01
-langcode: en
-status: true
-dependencies: {  }
-id: cct-st-util
-label: cct-st-util
-description: 'cct-st (Util)'
-locked: false

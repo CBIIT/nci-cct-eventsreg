@@ -1,8 +1,0 @@
-uuid: 516c3d41-3dc4-43e5-bc16-4944ff05f7e6
-langcode: en
-status: true
-dependencies: {  }
-id: cct-njflf-util
-label: cct-njflf-util
-description: 'cct-njflf (Util)'
-locked: false

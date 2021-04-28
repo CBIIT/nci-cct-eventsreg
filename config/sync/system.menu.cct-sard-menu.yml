@@ -1,8 +1,0 @@
-uuid: 0bd75972-500c-42a4-ac9e-e10d8e4d2124
-langcode: en
-status: true
-dependencies: {  }
-id: cct-sard-menu
-label: cct-sard-menu
-description: 'cct-sard (Menu)'
-locked: false

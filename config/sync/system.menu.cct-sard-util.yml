@@ -1,8 +1,0 @@
-uuid: f353599c-edf3-447c-8178-936b9ca16211
-langcode: en
-status: true
-dependencies: {  }
-id: cct-sard-util
-label: cct-sard-util
-description: 'cct-sard (Util)'
-locked: false

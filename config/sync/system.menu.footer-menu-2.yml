@@ -1,8 +1,0 @@
-uuid: 7bc09184-26f8-4660-80b3-570818d20d22
-langcode: en
-status: true
-dependencies: {  }
-id: footer-menu-2
-label: 'Footer Menu 2'
-description: 'Site Information Links'
-locked: false

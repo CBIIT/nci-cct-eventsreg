@@ -1,8 +1,0 @@
-uuid: a16c2acd-dc55-40e1-a899-24188460a4ab
-langcode: en
-status: true
-dependencies: {  }
-id: cct-njflf-menu
-label: cct-njflf-menu
-description: 'cct-njflf (Menu)'
-locked: false

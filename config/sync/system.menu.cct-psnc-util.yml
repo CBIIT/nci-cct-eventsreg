@@ -1,8 +1,0 @@
-uuid: 7f9bcd14-9942-4884-a0da-f31d13a25b79
-langcode: en
-status: true
-dependencies: {  }
-id: cct-psnc-util
-label: cct-psnc-util
-description: 'cct-psnc (Util)'
-locked: false

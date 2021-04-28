@@ -1,8 +1,0 @@
-uuid: 7db312ec-fb41-470f-834c-b9941d3a61b1
-langcode: en
-status: true
-dependencies: {  }
-id: cct-wcga-menu
-label: cct-wcga-menu
-description: 'cct-wcga (Menu)'
-locked: false

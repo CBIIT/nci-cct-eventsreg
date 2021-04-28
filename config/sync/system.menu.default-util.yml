@@ -1,8 +1,0 @@
-uuid: 3d5266d4-f80f-4a5f-9d5a-7402c6c78692
-langcode: en
-status: true
-dependencies: {  }
-id: default-util
-label: default-util
-description: 'default-util (Utility)'
-locked: false

@@ -1,8 +1,0 @@
-uuid: 2c82f073-8ce0-4750-a501-6d0b7b59b8ad
-langcode: en
-status: true
-dependencies: {  }
-id: cct-wcga-util
-label: cct-wcga-util
-description: 'cct-wcga (Util)'
-locked: false

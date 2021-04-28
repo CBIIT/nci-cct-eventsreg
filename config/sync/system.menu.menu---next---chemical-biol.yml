@@ -1,8 +1,0 @@
-uuid: 549c7782-f2bb-4962-be58-f85b1c355c25
-langcode: en
-status: true
-dependencies: {  }
-id: menu---next---chemical-biol
-label: 'next - Chemical Biology Consortium Symposium'
-description: 'Chemical Biology Consortium Symposium'
-locked: false

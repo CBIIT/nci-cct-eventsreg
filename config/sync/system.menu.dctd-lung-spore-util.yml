@@ -1,8 +1,0 @@
-uuid: a1a0bfd5-f831-4fce-a279-6c49a5e56f1f
-langcode: en
-status: true
-dependencies: {  }
-id: dctd-lung-spore-util
-label: dctd-lung-spore-util
-description: 'dctd-lung-spore (Utility)'
-locked: false

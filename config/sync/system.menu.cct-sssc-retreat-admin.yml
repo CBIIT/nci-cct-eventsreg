@@ -1,8 +1,0 @@
-uuid: ca05b4c0-613c-43ed-b991-aedb51393c1c
-langcode: en
-status: true
-dependencies: {  }
-id: cct-sssc-retreat-admin
-label: cct-sssc-retreat-admin
-description: 'cct-sssc-retreat (Admin)'
-locked: false

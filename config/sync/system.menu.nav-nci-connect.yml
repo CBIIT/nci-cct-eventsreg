@@ -1,8 +1,0 @@
-uuid: e6306b2a-e224-41f7-973c-fd82e2a95b2e
-langcode: en
-status: true
-dependencies: {  }
-id: nav-nci-connect
-label: 'Nav NCI Connect'
-description: ''
-locked: false

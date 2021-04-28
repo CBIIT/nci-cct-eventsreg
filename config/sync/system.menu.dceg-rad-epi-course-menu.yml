@@ -1,8 +1,0 @@
-uuid: 20c58c96-e266-45cf-aeaa-78fc62aee4ed
-langcode: en
-status: true
-dependencies: {  }
-id: dceg-rad-epi-course-menu
-label: dceg-rad-epi-course-menu
-description: 'dceg-rad-epi-course (Menu)'
-locked: false

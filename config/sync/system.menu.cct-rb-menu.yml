@@ -1,8 +1,0 @@
-uuid: dab90d63-3670-4124-934b-b7deac6a3324
-langcode: en
-status: true
-dependencies: {  }
-id: cct-rb-menu
-label: cct-rb-menu
-description: 'cct-rb (Menu)'
-locked: false
